@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <site id="1" text="Yallakora أخبار ياللاكورة" site="www.yallakora.com"
+        largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png">
+    <rssItem id="1_1" text="الأخبار - مصر" link="http://www.yallakora.com/arabic/rss.aspx?id=0"
+        largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_3" text="الدوري الاسباني" link="http://www.yallakora.com/rss.aspx?tourid=217"
+       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_4" text="كأس ملك اسبانيا" link="http://www.yallakora.com/rss.aspx?tourid=252"
+       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_5" text="دوري أبطال أوروبا" link="http://www.yallakora.com/rss.aspx?tourid=232"
+       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_6" text="الدوري الإنجليزي" link="http://www.yallakora.com/rss.aspx?tourid=214"
+       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_7" text="الدوري الفرنسي" link="http://www.yallakora.com/rss.aspx?tourid=221"
+       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_8" text="الدوري الايطالي" link="http://www.yallakora.com/rss.aspx?tourid=218"
+       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_9" text="الدوري الالماني" link="http://www.yallakora.com/rss.aspx?tourid=216"
+       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_2" text="مقالات" link="http://www.yallakora.com/rss.aspx?id=5&amp;Region="
+    largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_10" text="حوارات" link="http://www.yallakora.com/rss.aspx?id=4"
+       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_11" text="عيون ياللاكورة" link="http://www.yallakora.com/rss.aspx?id=11"
+      largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_12" text="سوق الانتقالات" link="http://www.yallakora.com/rss.aspx?tourid=229"
+      largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+  </site>
+</items>

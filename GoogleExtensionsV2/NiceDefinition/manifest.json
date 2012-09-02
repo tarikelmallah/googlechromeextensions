@@ -1,0 +1,18 @@
+﻿{
+  "name": "Nice Definition",
+  "version": "1.1",
+  "description": "Nice Definition is a free site for English definitions, we try to collect all definitions from all world dictionaries..",
+  "browser_action": {
+    "default_title": "Nice Definition",
+    "default_icon": "128.ico",
+    "popup": "NiceDefinition.html"
+  },
+  "icons": {
+    "16": "16.ico",
+    "48": "48.ico",
+    "128": "128.ico"
+  },
+  "permissions": [
+    "http://*.nicedefinition.com/*"
+  ]
+}

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <site id="1" text="Popular BBC News" site="www.bbc.co.uk"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="1_1" text="Top Stories" link="http://feeds.bbci.co.uk/news/rss.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_2" text="World" link="http://feeds.bbci.co.uk/news/world/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_3" text="UK" link="http://feeds.bbci.co.uk/news/uk/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_4" text="Business" link="http://feeds.bbci.co.uk/news/business/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_5" text="Politics" link="http://feeds.bbci.co.uk/news/politics/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_6" text="Health" link="http://feeds.bbci.co.uk/news/health/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_7" text="Education &amp; Family" link="http://feeds.bbci.co.uk/news/education/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_8" text="Science &amp; Environment" link="http://feeds.bbci.co.uk/news/science_and_environment/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_9" text="Technology" link="http://feeds.bbci.co.uk/news/technology/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_10" text="Entertainment &amp; Arts" link="http://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  
+  <site id="4" text="Global and UK News" site="www.bbc.co.uk"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="4_11" text="Africa" link="http://feeds.bbci.co.uk/news/world/africa/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_12" text="Asia" link="http://feeds.bbci.co.uk/news/world/asia/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_13" text="Europe" link="http://feeds.bbci.co.uk/news/world/europe/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_14" text="Latin America" link="http://feeds.bbci.co.uk/news/world/latin_america/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_14_1" text="Middle East" link="http://feeds.bbci.co.uk/news/world/middle_east/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_14_2" text="US &amp; Canada" link="http://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_14_3" text="England" link="http://feeds.bbci.co.uk/news/england/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_15" text="Northern Ireland" link="http://feeds.bbci.co.uk/news/northern_ireland/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_16" text="Scotland" link="http://feeds.bbci.co.uk/news/scotland/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_17" text="Wales" link="http://feeds.bbci.co.uk/news/wales/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+
+  <site id="2" text="Video &amp; Audio News" site="www.bbc.co.uk"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="2_1" text="Video &amp; Audio Top Stories" link="http://feeds.bbci.co.uk/news/video_and_audio/news_front_page/rss.xml?edition=uk"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_2" text="Video &amp; Audio World" link="http://feeds.bbci.co.uk/news/video_and_audio/world/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_3" text="Video &amp; Audio UK" link="http://feeds.bbci.co.uk/news/video_and_audio/uk/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_4" text="Video &amp; Audio Business" link="http://feeds.bbci.co.uk/news/video_and_audio/business/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_5" text="Video &amp; Audio Politics" link="http://feeds.bbci.co.uk/news/video_and_audio/politics/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_6" text="Video &amp; Audio Health" link="http://feeds.bbci.co.uk/news/video_and_audio/health/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_8" text="Video &amp; Audio Science &amp; Environment" link="http://feeds.bbci.co.uk/news/video_and_audio/science_and_environment/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_9" text="Video &amp; Audio Technology" link="http://feeds.bbci.co.uk/news/video_and_audio/technology/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_10" text="Video &amp; Audio Entertainment &amp; Arts &amp Arts" link="http://feeds.bbci.co.uk/news/video_and_audio/entertainment_and_arts/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  
+  <site id="3" text="Other News" site="www.bbc.co.uk"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="3_1" text="Latest published stories" link="http://feeds.bbci.co.uk/news/system/latest_published_content/rss.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="3_2" text="Magazine" link="http://feeds.bbci.co.uk/news/magazine/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="3_3" text="Also in the news" link="http://feeds.bbci.co.uk/news/also_in_the_news/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="3_4" text="In Pictures" link="http://newsrss.bbc.co.uk/rss/newsonline_uk_edition/in_pictures/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="3_5" text="Special Reports" link="http://feeds.bbci.co.uk/news/special_reports/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="3_6" text="Have your say" link="http://feeds.bbci.co.uk/news/have_your_say/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="3_8" text="Editors Blog" link="http://www.bbc.co.uk/blogs/theeditors/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="3_9" text="BBC Sport" link="http://news.bbc.co.uk/sport1/hi/help/rss/default.stm"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+</items>

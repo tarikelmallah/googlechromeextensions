@@ -1,0 +1,24 @@
+﻿{
+  "name": "New York Times News",
+  "version": "1.8",
+  "description": "New York Times News chrome extensions, and news notifications",
+  "icons": { "128": "ExtImages/fav.ico" },
+  "background_page": "FeedExtensionBackground.html",
+  "browser_action": {
+    "default_title": "New York Times News",
+    "default_icon": "ExtImages/fav2.ico",
+    "popup": "FeedExtensionPop.html"
+  },
+  "icons": {
+    "16": "ExtImages/fav2.ico",
+    "48": "ExtImages/fav2.ico",
+    "128": "ExtImages/fav2.ico"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "tabs",
+    "notifications",
+    "http://*.nytimes.com/*",
+    "http://*.nicewebtools.com/*"
+  ]
+}

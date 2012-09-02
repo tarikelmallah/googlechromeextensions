@@ -1,0 +1,26 @@
+﻿{
+  "name": "Yahoo News",
+  "version": "1.67",
+  "description": "Yahoo News, Stay on top of the latest news stories with Yahoo! news",
+  "browser_action": {
+    "default_title": "Yahoo News",
+    "default_icon": "128.ico",
+    "popup": "YahooNews.html"
+  },
+  "icons": {
+    "16": "16.ico",
+    "48": "48.ico",
+    "128": "128.ico"
+  },
+   "content_scripts": [
+    {
+      "matches": ["http://*.news.yahoo.com/*","http://*.sparts.yahoo.com/*","http://*.omg.yahoo.com/*","http://*.finance.yahoo.com/*","http://*.autos.yahoo.com/*"],
+      "css": ["yahoo1.css"],
+      "js": ["jquery-1.6.2.min.js", "yahoo.js"],
+      "all_frames": true
+    }
+  ],
+  "permissions": [
+    "http://*.yahoo.com/*"
+  ]
+}

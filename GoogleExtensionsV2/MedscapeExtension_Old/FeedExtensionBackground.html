@@ -1,0 +1,218 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script language="javascript" type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript">
+
+        //////////Configurations//////////'http://www.yallakora.com/arabic/rss.aspx?id=0'
+        var cnfg_rssUrlOfTheNews = 'http://www.medscape.com/cx/rssfeeds/2700.xml';        
+        var NotificationRotationPeriod = 5000;
+        var FinalNotificationRotationPeriodBeforeClose = 15000;
+        var FeedExtensionPopCssFile = 'FeedExtensionPop';
+        var NotificationsCssFile = 'Notification';
+
+        var ModuleName = 'Medscape Medical News Headlines'
+        var ModuleNameOptions = 'Medscape Medical News Headlines - Options';
+        var cnfg_ReadMoreWords = 'Read more';
+        var ofWord = 'Of';
+        var lang = 'en';
+
+        //        var ModuleName = 'Yallakora - ياللاكورة'
+        //        var ModuleNameOptions = 'Yallakora - ياللاكورة - Options';
+        //        var cnfg_ReadMoreWords = 'إقرأ المزيد';
+        //        var ofWord = 'من';
+        //        var lang = 'ar';
+        //////////End Configurations//////////
+
+        var ChannelTitle = '';
+        var Channellink = '';
+        var ChannelChannelPubDate = '';
+        var Channeldescription = '';
+        var Channellanguage = '';
+        var theImagetitle = '';
+        var Channeldescription = '';
+        var theImageLinkTo = '';
+        var fruitvegbasket = new Array();
+        var firstTimegetData = true;
+        var testnotificationWindow;
+        var isNotificationWindowOppened = false;
+        var CurrentAllNotificationQueue = '';
+        var showNotificationsOption = true;
+        function init() {
+            if (localStorage["optShowNotifications"] == undefined || localStorage["optShowNotifications"] == '')
+                localStorage["optShowNotifications"] = '1'; //default show notifications
+
+            showNotificationsOption = (localStorage["optShowNotifications"] == '1');
+        }
+
+        $(document).ready(function () {
+            init();
+            fruitvegbasket = new Array();
+            GetDataFromScratch();
+            timerMeEverySeconds();
+        });
+
+        function timerMeEverySeconds() {
+            window.setTimeout(function () {
+                try {
+                    fruitvegbasket = new Array();
+                    GetDataFromScratch();
+                } catch (ex) { }
+                //timer again after 1000
+                timerMeEverySeconds();
+            }, 60000);
+        }
+
+        //main Method
+        function GetDataFromScratch() {
+            $.ajax({
+                url: cnfg_rssUrlOfTheNews,
+                dataType: 'xml',
+                data: null,
+                success: function (DataItem) {
+                    //channel title
+                    ChannelTitle = $(DataItem).find('channel>title').text();
+                    Channellink = $(DataItem).find('channel>link').text();
+                    ChannelChannelPubDate = $(DataItem).find('channel>ChannelPubDate').text();
+                    Channeldescription = $(DataItem).find('channel>description').text();
+                    Channellanguage = $(DataItem).find('channel>language').text();
+
+                    $('#allInfo').html('<div class="LastUpdatedDate" >' + ChannelChannelPubDate + '</div>');
+
+                    //get image
+                    theImagetitle = $(DataItem).find('channel>image').find('title').text();
+                    theImageSrcUrl = $(DataItem).find('channel>image').find('url').text();
+                    theImageLinkTo = $(DataItem).find('channel>image').find('link').text();
+
+
+                    $(DataItem).find('channel>item').each(function () {
+
+                        itemTitle = $(this).find('title').text();
+                        itemlink = $(this).find('link').text();
+                        itempubDate = $(this).find('pubDate').text();
+                        itemdate = $(this).find('date').text();
+                        itemguid = $(this).find('guid').text();
+                        itemdescription = $(this).find('description').text();
+                        itemdate = $(this).find('date').text();
+                        if ($(this).find('image').length > 0) {
+                            //get image from this tag and add it to the discription
+                            var addImgTitle = '';
+                            var addImglink = '';
+                            if ($($(this).find('image')[0]).find('title').length > 0)
+                                addImgTitle = $($(this).find('image')[0]).find('title').text();
+                            if ($($(this).find('image')[0]).find('link').length > 0)
+                                addImglink = $($(this).find('image')[0]).find('link').text();
+                            addImg = "<img src='" + addImglink + "' title='" + addImgTitle + "' />";
+                            itemdescription = addImg + itemdescription;
+                        }
+                        var theItem = new function () {
+                            this.itemTitle = itemTitle;
+                            this.itemlink = itemlink
+                            this.itempubDate = itempubDate;
+                            this.itemdate = itemdate;
+                            this.itemguid = itemguid;
+                            this.itemdescription = itemdescription;
+                            this.itemdate = itemdate;
+                        };
+                        fruitvegbasket.push(theItem);
+                    });
+
+                    //check differeance for notification
+                    var AllNotificationQueue = '';
+                    if (localStorage["OldArts"] == undefined || localStorage["OldArts"] == '') {
+                        localStorage["OldArts"] = '';
+                    }
+                    var OldArts = localStorage["OldArts"];
+
+                    //check if exists then go do nothing
+                    for (i = 0; i < fruitvegbasket.length; i++) {
+                        var varNowItem = fruitvegbasket[i];
+                        if (OldArts.indexOf(varNowItem.itemlink) > -1) {
+                            //Exists then do nothing
+                        }
+                        else {
+                            //not exists , then add to notification pool
+                            if (AllNotificationQueue != '')
+                                AllNotificationQueue += '\n' + varNowItem.itemlink;
+                            else
+                                AllNotificationQueue = varNowItem.itemlink;
+                        }
+                    }
+                    if (AllNotificationQueue != '' && isNotificationWindowOppened) {
+                        closeThenotification();
+                    }
+                    CurrentAllNotificationQueue = AllNotificationQueue;
+                    //save new values to localStorage
+                    localStorage["OldArts"] = '';
+                    for (i = 0; i < fruitvegbasket.length; i++) {
+                        var varItem = fruitvegbasket[i];
+                        if (localStorage["OldArts"] == '')
+                            localStorage["OldArts"] = varItem.itemlink;
+                        else
+                            localStorage["OldArts"] += "\n" + varItem.itemlink;
+                    }
+
+
+                    //image and url
+                    $('#title_a').attr('href', theImageLinkTo);
+                    $('#mainImage').attr('alt', theImagetitle);
+                    $('#mainImage').attr('src', theImageSrcUrl);
+
+                    if (CurrentAllNotificationQueue != '' && showNotificationsOption) {
+                        //test notification
+                        testnotificationWindow = webkitNotifications.createHTMLNotification(
+                        'Notification.html'  // html url - can be relative
+                        );
+                        testnotificationWindow.onclose = closeTheNotification;
+                        isNotificationWindowOppened = true;
+                        testnotificationWindow.show();
+
+                        console.log("\n -- here -- \n" + CurrentAllNotificationQueue);
+                    }
+                },
+                error: function (err) {
+                    console.log(err.toString() + err.message + err.error);
+                }
+            });
+        }
+
+        function closeThenotification() {
+            testnotificationWindow.cancel();
+        }
+        //class type definition
+        function myobject() {
+            this.itemTitle = '';
+            this.itemlink = '';
+            this.itempubDate = '';
+            this.itemdate = '';
+            this.itemguid = '';
+            this.itemdescription = '';
+            this.itemdate = '';
+        }
+
+        function closeTheNotification() {
+            CurrentAllNotificationQueue = '';
+            //sel variable isNotificationWindowOppened=false
+            isNotificationWindowOppened = false
+        }
+
+
+        
+    </script>
+</head>
+<body onload="">
+    <script src="analytics.js"></script>
+    <div style="width: 550px; direction: rtl; padding: 5px; font-family: Tahoma;">
+        <a id="title_a" tabindex="0">
+            <img id='mainImage' alt="Google News logo"></a>
+        <div id="allInfo">
+        </div>
+        <div id="feed">
+            <div id="accordion">
+            </div>
+        </div>
+        <div id="feedmoreInfo">
+        </div>
+    </div>
+</body>
+</html>

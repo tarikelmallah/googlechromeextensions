@@ -1,0 +1,31 @@
+﻿{
+  "name": "Bubble Translate1",
+  "version": "1.6",
+  "description": "Real-Time & inline text translator from any language to yours.",  
+  "options_page": "preferences.html",
+  "background_page": "BubbleTranslate.html",
+   "permissions": [
+    "tabs",
+    "notifications",
+    "http://*.nicewebtools.com/*",
+	"http://*/*",
+	"https://*/*"
+  ],
+  "content_scripts": [
+    {
+	﻿  "matches": ["http://*/*","https://*/*"],
+	﻿  "js": ["BubbleTranslate.js"]
+    }
+  ],
+  "page_action": {
+	﻿  "default_title": "Bubble Translate",
+	﻿  "default_icon": "16.png",
+	﻿  "popup": "popup.html"
+  },
+  "icons": { 
+	﻿  "16": "16.png",
+	﻿  "32": "128.png",
+	﻿  "48": "128.png",
+	﻿  "128": "128.png"
+  }
+}

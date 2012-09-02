@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <site id="1" text="Wall Street Journal WSJ U.S." site="wsj.com"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="1_1" text="U.S. Home Page" link="http://online.wsj.com/xml/rss/3_7011.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_2" text="U.S News" link="http://online.wsj.com/xml/rss/3_8068.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_3" text="Politics &amp; Campaign" link="http://online.wsj.com/xml/rss/3_7087.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_4" text="Politics &amp; Policy" link="http://online.wsj.com/xml/rss/3_7087.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_5" text="Washington Wire" link="http://blogs.wsj.com/washwire/feed/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="4" text="WSJ Todays Newspaper" site="online.wsj.com"
+    largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="4_1" text="Page One - Print" link="http://online.wsj.com/xml/rss/3_7205.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+
+  </site>
+  <site id="12" text="WSJ World" site="wsj.com"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="12_1" text="World News" link="http://online.wsj.com/xml/rss/3_7085.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_2" text="Asia Whats News" link="http://online.wsj.com/xml/rss/3_7013.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_3" text="Europe Whats News" link="http://online.wsj.com/xml/rss/3_7012.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_4" text="World Markets" link="http://online.wsj.com/xml/rss/3_7432.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+
+    <rssItem id="12_5" text="Home Asia" link="http://online.wsj.com/xml/rss/3_7480.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_6" text="China" link="http://online.wsj.com/xml/rss/3_7441.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_7" text="Hong Kong" link="http://online.wsj.com/xml/rss/3_8070.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_8" text="Southeast Asia" link="http://online.wsj.com/xml/rss/3_9033.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+
+    <rssItem id="12_9" text="India" link="http://online.wsj.com/xml/rss/3_7442.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_10" text="Scene HK" link="http://blogs.wsj.com/scene/tag/hong-kong/feed/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_11" text="Exchange HK" link="http://blogs.wsj.com/exchange/feed/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_12" text="Managing in Asia" link="http://online.wsj.com/xml/rss/3_7448.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_13" text="Home Europe" link="http://online.wsj.com/xml/rss/3_7481.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_14" text="Financial Muse" link="http://www.efinancialnews.com/blog/feed/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_15" text="U.K" link="http://online.wsj.com/xml/rss/3_7440.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_16" text="Middle East" link="http://online.wsj.com/xml/rss/3_7701.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_17" text="Africa" link="http://online.wsj.com/xml/rss/3_7736.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_18" text="Americas - en Espanol" link="http://online.wsj.com/xml/rss/3_7687.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_19" text="Americas - em Portugues" link="http://online.wsj.com/xml/rss/3_7688.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_20" text="Latin America" link="http://online.wsj.com/xml/rss/3_7921.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_21" text="Canada" link="http://online.wsj.com/xml/rss/3_7922.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />   
+  </site>
+  <site id="13" text="WSJ New York" site="online.wsj.com"
+   largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="13_1" text="New York Main" link="http://online.wsj.com/xml/rss/3_7730.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="13_2" text="New York News" link="http://online.wsj.com/xml/rss/3_7731.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="13_3" text="New York Culture" link="http://online.wsj.com/xml/rss/3_7732.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="13_4" text="New York Sports" link="http://online.wsj.com/xml/rss/3_7733.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="2" text="WSJ Business" site="online.wsj.com"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="2_1" text="U.S. Business" link="http://online.wsj.com/xml/rss/3_7014.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_2" text="Managing in Asia" link="http://online.wsj.com/xml/rss/3_7448.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_3" text="Earnings" link="http://online.wsj.com/xml/rss/3_7088.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_4" text="Economy" link="http://online.wsj.com/xml/rss/3_7086.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_5" text="Health" link="http://online.wsj.com/xml/rss/3_7089.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_6" text="Law" link="http://online.wsj.com/xml/rss/3_7091.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_7" text="Management" link="http://online.wsj.com/xml/rss/3_7433.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_8" text="Media &amp; Marketing" link="http://online.wsj.com/xml/rss/3_7020.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_9" text="Autos" link="http://online.wsj.com/xml/rss/3_7925.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_10" text="Energy" link="http://online.wsj.com/xml/rss/3_7275.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="3" text="WSJ Technology" site="online.wsj.com"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="3_1" text="Technology Whats News" link="http://online.wsj.com/xml/rss/3_7455.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="3_2" text="Personal Technology" link="http://online.wsj.com/xml/rss/3_7454.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="3_3" text="Digits" link="http://blogs.wsj.com/digits/feed/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="11" text="OTHER" site="online.wsj.com"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="11_1" text="Markets News" link="http://online.wsj.com/xml/rss/3_7031.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_2" text="World Markets" link="http://online.wsj.com/xml/rss/3_7432.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_3" text="Personal Finance" link="http://online.wsj.com/xml/rss/3_7104.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_4" text="Taxes" link="http://online.wsj.com/xml/rss/3_7428.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_5" text="Opinion" link="http://online.wsj.com/xml/rss/3_7041.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_6" text="Careers" link="http://online.wsj.com/xml/rss/3_7107.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_7" text="Real Estate" link="http://online.wsj.com/xml/rss/3_7400.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_8" text="Small Business" link="http://online.wsj.com/xml/rss/3_7672.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_9" text="Franchising" link="http://online.wsj.com/xml/rss/3_7415.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_11" text="Most Commented Articles" link="http://online.wsj.com/community/rss/mostactivediscussions.sync"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_12" text="Community Live" link="http://online.wsj.com/community/rss/communitylive.sync?mod=rss_com_live"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_13" text="WSJ Most Viewed Today" link="http://online.wsj.com/xml/rss/3_7198.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_14" text="This Weeks Magazine" link="http://online.wsj.com/xml/rss/3_7510.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_15" text="MarketWatch" link="http://www.marketwatch.com/rss/topstories"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_16" text="Internet" link="http://www.marketwatch.com/rss/internet"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_17" text="SmartMoney" link="http://feeds.smartmoney.com/smartmoney/headlines"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_18" text="Investing Articles" link="http://feeds.smartmoney.com/smartmoney/investing"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="5" text="WSJ Columnists" site="online.wsj.com"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="5_1" text="Ask Teri/Agins" link="http://online.wsj.com/xml/rss/3_7323.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_2" text="Tax Report/Saunders" link="http://online.wsj.com/xml/rss/3_7129.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_3" text="Middle Seat/McCartney" link="http://online.wsj.com/xml/rss/3_7139.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_4" text="Health Journal/Beck" link="http://online.wsj.com/xml/rss/3_7150.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_5" text="Washington Wire/Staff" link="http://online.wsj.com/xml/rss/3_7172.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_6" text="Capital/Wessel" link="http://online.wsj.com/xml/rss/3_7164.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_7" text="Family Value/Greene" link="http://online.wsj.com/xml/rss/3_7924.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_8" text="The Outlook" link="http://online.wsj.com/xml/rss/3_7338.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+</items>
+

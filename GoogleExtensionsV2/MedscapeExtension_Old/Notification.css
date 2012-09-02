@@ -1,0 +1,124 @@
+﻿#content
+        {
+            height: 137px;
+            width: 300px;
+            overflow: hidden;
+            padding: 3px;
+        }
+        .contentUpper
+        {
+            border: 1px solid #B9C7D3;
+            clear: both;
+            height: 15px;
+            width: 290px;
+            padding: 1.5px;
+            font-family: verdana;
+            font-size: 12px;
+            margin-bottom: 2px;
+        }
+        .contentUpper a, .contentUppe img
+        {
+            border: 0px;
+        }
+        .contentUpperRight
+        {
+            float: left;
+        }
+        .contentUpperLeft
+        {
+            float: right;
+        }
+        .contentLower
+        {
+            border: 1px solid #B9C7D3;
+            width: 290px;
+            padding: 1.5px;
+            font-family: verdana;
+            font-size: 12px;
+            height: 115px;
+        }
+        .contentLower h3
+        {
+            font-size: 12px;
+            text-decoration: none;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            margin-right: 0px;
+            margin-top: 2px;
+            padding-right: 4px;
+            padding-left: 4px;
+        }
+        body
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        .hideThis
+        {
+            display: none;
+        }
+        .contentLower a
+        {
+            font-family: Tahoma !important;
+            font-size: 12px;
+            border: 0px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .contentLower div
+        {
+            font-family: Tahoma !important;
+            font-size: 11px;
+            border: 0px;
+        }
+        .contentLower img
+        {
+            float: right;
+            padding-left: 9px;
+            border: 0px;
+            max-width: 50px;
+            padding-right: 4px;
+            padding-top: 0px;
+            padding-bottom: 4px;
+        }
+        .thedescription124
+        {
+            height: 100px;
+        }.thedescription124 a
+        {
+            font-size:8px;
+        }
+        .aBolder
+        {
+            font-weight: bolder;
+            color: Blue;
+            float: right;
+        }
+        .LastUpdatedDateItem
+        {
+            font-family: Tahoma !important;
+            font-size: 9px !important;
+            width: 100%;
+        }
+        .LastUpdatedDate
+        {
+            font-family: Tahoma !important;
+            font-size: 9px !important;
+            width: 100%;
+            background: #E5E5E5;
+        }
+        .allInfoRight
+        {
+            float: left;
+        }
+        .divMainHolder
+        {
+            width: 550px;
+            padding: 5px;
+            font-family: Tahoma;
+        }
+        .opacity4
+        {
+            opacity: 0.4;
+            filter: alpha(opacity=40); //msie
+        }

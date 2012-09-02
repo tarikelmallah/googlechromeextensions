@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <site id="1" text="News" site="latimes.com"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="1_2" text="Top News" link="http://feeds.latimes.com/latimes/news"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_1" text="The Latest" link="http://pipes.yahoo.com/pipes/pipe.run?_id=5dc8a87340794a992d374f7389268bc3&amp;_render=rss"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_3" text="Most E-mailed" link="http://feeds.latimes.com/MostEmailed"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_4" text="California | Local News" link="http://feeds.latimes.com/latimes/news/local"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_5" text="National" link="http://feeds.latimes.com/latimes/news/nationworld/nation"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_6" text="National Politics" link="http://feeds.latimes.com/latimes/news/politics/"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_7" text="Business" link="http://feeds.latimes.com/latimes/business"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_8" text="Education" link="http://feeds.latimes.com/latimes/news/education"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_9" text="Environment" link="http://feeds.latimes.com/latimes/news/science/environment"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_10" text="Religion" link="http://feeds.latimes.com/latimes/features/religion"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_11" text="Science" link="http://feeds.latimes.com/latimes/news/science"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_12" text="Technology" link="http://feeds.latimes.com/latimes/technology"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_13" text="World" link="http://feeds.latimes.com/latimes/news/nationworld/world"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_14" text="Africa" link="http://feeds.latimes.com/latimes/africa"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_15" text="Asia" link="http://feeds.latimes.com/latimes/asia"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_16" text="Europe" link="http://feeds.latimes.com/latimes/europe"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_17" text="Latin America" link="http://feeds.latimes.com/latimes/latinamerica"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_18" text="Middle East" link="http://feeds.latimes.com/latimes/middleeast"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+
+  <site id="4" text="Opinion &amp; Columns" site="latimes.com"
+    largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="4_1" text="Commentary" link="http://feeds2.feedburner.com/latimes/news/opinion/commentary/"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_2" text="Sandy Banks" link="http://feeds.latimes.com/LosAngelesTimes-SandyBanks"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_3" text="Meghan Daum" link="http://feeds.latimes.com/MeghanDaum/"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_4" text="Jonah Goldberg" link="http://feeds.latimes.com/JonahGoldberg/"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_5" text="Patrick Goldstein" link="http://feeds.latimes.com/PatrickGoldstein/"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_6" text="David Lazarus" link="http://feeds.latimes.com/ConsumerConfidential"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_7" text="Steve Lopez" link="http://feeds.latimes.com/SteveLopez/"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_8" text="Patt Morrison" link="http://feeds.feedburner.com/PattMorrison"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_9" text="Tom Petruno" link="http://feeds.latimes.com/TomPetruno/"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_10" text="Bill Plaschke" link="http://feeds.latimes.com/BillPlaschke/"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_11" text="TGeorge Skelton" link="http://feeds.latimes.com/GeorgeSkelton/"
+    largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+
+  <site id="2" text="Sports" site="latimes.com"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="2_1" text="Sports" link="http://feeds.latimes.com/latimes/sports/"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_2" text="Auto Racing" link="http://feeds.latimes.com/latimes/sports/motorracing/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_3" text="Baseball" link="http://feeds.latimes.com/latimes/sports/baseball/mlb/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_4" text="Basketball" link="http://feeds.latimes.com/latimes/sports/basketball/nba/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_5" text="Boxing" link="http://feeds.latimes.com/latimes/sports/boxing/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_6" text="College Basketball" link="http://feeds.latimes.com/latimes/sports/college/basketball/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+
+    <rssItem id="2_7" text="College Football" link="http://feeds.latimes.com/latimes/sports/college/football/"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_8" text="Golf" link="http://feeds.latimes.com/latimes/sports/golf/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_9" text="High School Sports" link="http://feeds.latimes.com/latimes/sports/highschool/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_10" text="Hockey" link="http://feeds.latimes.com/latimes/sports/hockey/nhl/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+
+    <rssItem id="2_11" text="Horse Racing" link="http://feeds.latimes.com/latimes/sports/horseracing/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_12" text="Olympics" link="http://feeds.latimes.com/OlympicsBlog"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_13" text="Pro Football" link="http://feeds.latimes.com/latimes/sports/football/nfl/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_14" text="Soccer" link="http://feeds.latimes.com/latimes/sports/soccer/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_15" text="Tennis" link="http://feeds.latimes.com/latimes/sports/tennis/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_16" text="USC Trojans Sports" link="http://feeds.latimes.com/latimes/sports/college/usc/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+
+  <site id="11" text="Living" site="latimes.com"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="11_1" text="Autos" link="http://feeds.latimes.com/latimes/classified/automotive/highway1/"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_2" text="Books" link="http://feeds.latimes.com/features/books"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_3" text="Food" link="http://feeds.latimes.com/latimes/features/food/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_4" text="Health" link="http://feeds.latimes.com/latimes/features/health/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_5" text="Home &amp; Garden" link="http://feeds.feedburner.com/home_blog"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_6" text="Los Angeles Connections" link="http://www.latimes.com/includes/icu/required/mrss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_7" text="Image" link="http://feeds.latimes.com/latimes/features/lifestyle"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_8" text="Living Green" link="http://feeds.latimes.com/latimes/features/lifestyle/green"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_9" text="Real Estate" link="http://feeds.latimes.com/latimes/classified/realestate/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_11" text="Travel" link="http://feeds.latimes.com/DailyDealsLosAngelesTimesTravel"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_12" text="Travel - Europe" link="http://feeds.latimes.com/EuropeStories/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_13" text="Travel - Hawaii" link="http://feeds.latimes.com/HawaiiStories/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_14" text="Travel - Las Vegas" link="http://feeds.latimes.com/LasVegasStories/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_15" text="Travel - Mexico" link="http://feeds.latimes.com/MexicoStories/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+
+  <site id="5" text="Blogs" site="latimes.com"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="5_1" text="24 Frames" link="http://latimesblogs.latimes.com/movies/rss.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_2" text="Afterword" link="http://feeds.feedburner.com/latimes/afterword"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_3" text="All The Rage" link="http://feeds.latimes.com/alltherageblog"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_4" text="Awards Tracker" link="http://latimesblogs.latimes.com/awards/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_5" text="Babylon &amp; Beyond" link="http://feeds.latimes.com/BabylonBeyond"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_6" text="The Big Picture" link="http://feeds.latimes.com/PatrickGoldstein"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_7" text="Brand X" link="http://latimesblogs.latimes.com/brandx/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_8" text="Company Town" link="http://feeds.latimes.com/newsandbuzz"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+
+
+    <rssItem id="5_9" text="Culture Monster" link="http://feeds.latimes.com/CultureMonster"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_11" text="Daily Dish" link="http://feeds.latimes.com/latimesdailydish"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_12" text="The Daily Mirror" link="http://feeds.latimes.com/TheDailyMirror"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_13" text="Daily Travel &amp; Deal Blog" link="http://feeds.latimes.com/DailyDealsLosAngelesTimesTravel"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_14" text="Dodgers Blog" link="http://latimesblogs.latimes.com/dodgers/rss.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_15" text="The Fabulous Forum" link="http://feeds.latimes.com/LAT_Sports_Blog"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_16" text="Greenspace" link="http://feeds.latimes.com/GreenspaceEnvironmentBlog"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_17" text="Hero Complex" link="http://herocomplex.latimes.com/feed/"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_18" text="The Homicide Report" link="http://projects.latimes.com/homicide/feeds/posts/"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_19" text="Jacket Copy" link="http://feeds.latimes.com/JacketCopy"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_20" text="L.A. at Home" link="http://feeds.feedburner.com/home_blog"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+
+
+    <rssItem id="5_21" text="L.A. Now" link="http://feeds.latimes.com/lanowblog"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_22" text="L.A. Unleashed" link="http://feeds.latimes.com/Unleashedblog"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_23" text="La Plaza" link="http://feeds.latimes.com/LaPlaza"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_24" text="Lakers Blog" link="http://lakersblog.latimes.com/lakersblog/atom.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_25" text="Ministry of Gossip" link="http://feeds.latimes.com/MinistryOfGossip"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_26" text="Money &amp; Company" link="http://feeds.latimes.com/MoneyCompany"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_27" text="Ticket to Vancouver" link="http://feeds.latimes.com/OlympicsBlog"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_28" text="Opinion LA" link="http://feeds.latimes.com/OpinionLa"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_29" text="Outposts" link="http://feeds.latimes.com/Outposts"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_30" text="PolitiCal" link="http://latimesblogs.latimes.com/california-politics/atom.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_31" text="Pop &amp; Hiss" link="http://feeds.latimes.com/PopHisss"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_32" text="Readers Repres" link="http://feeds.latimes.com/readersblog"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_33" text="Show Tracker" link="http://feeds.latimes.com/ShowTracker"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_34" text="Technology" link="http://feeds.latimes.com/LATtechblog"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_35" text="Top of the Ticket" link="http://feeds.latimes.com/topoftheticket"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_36" text="Varsity Times Insider" link="http://feeds.latimes.com/VarsityTimesInsider"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+
+</items>
+

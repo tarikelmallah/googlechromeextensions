@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <site id="1" text="USA Today News" site="usatoday.com"
+        largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png">
+    <rssItem id="1_1" text="Top Headlines" link="http://rssfeeds.usatoday.com/usatoday-NewsTopStories"
+        largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_2" text="On Deadline Blog" link="http://rssfeeds.usatoday.com/TP-OnDeadline"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_3" text="National" link="http://rssfeeds.usatoday.com/UsatodaycomNation-TopStories"
+      largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_4" text="Washington" link="http://rssfeeds.usatoday.com/UsatodaycomWashington-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_5" text="World" link="http://i.usatoday.net/marketing/_images/xmlbox.gif"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_6" text="Religion" link="http://rssfeeds.usatoday.com/Religion-TopStories"
+      largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_7" text="Education" link="http://rssfeeds.usatoday.com/Education-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_8" text="Offbeat News" link="http://rssfeeds.usatoday.com/UsatodaycomOffbeat-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_9" text="Health" link="http://rssfeeds.usatoday.com/UsatodaycomHealth-TopStories"
+        largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_10" text="Weight Loss" link="http://rssfeeds.usatoday.com/Usatodaycom-Weightloss"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_11" text="Al Neuharth" link="http://rssfeeds.usatoday.com/UsatodaycomNewsOpinion-Neuharth"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_12" text="Chuck Raasch" link="http://rssfeeds.usatoday.com/UsatodaycomNewsOpinion-Raasch"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_13" text="DeWayne Wickham" link="http://rssfeeds.usatoday.com/UsatodaycomNewsOpinion-Wickham"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_14" text="Opinion" link="http://rssfeeds.usatoday.com/News-Opinion"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_15" text="OnPolitics" link="http://rssfeeds.usatoday.com/TP-OnPolitics"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_16" text="The Oval" link="http://rssfeeds.usatoday.com/TheOvalTopStoriesCommunityFeed"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+  </site>
+
+
+  <site id="12" text="Sports" site="usatoday.com"
+     largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png">
+    <rssItem id="12_1" text="Sports Headlines" link="http://rssfeeds.usatoday.com/UsatodaycomSports-TopStories"
+        largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_2" text="Game On" link="http://rssfeeds.usatoday.com/TP-GameOn"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_3" text="The Huddle" link="http://rssfeeds.usatoday.com/TP-TheHuddle"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_4" text="NFL" link="http://rssfeeds.usatoday.com/UsatodaycomNfl-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_5" text="AL Baseball" link="http://rssfeeds.usatoday.com/UsatodaycomMlbAl-TopStories"
+        largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_6" text="NL Baseball" link="http://rssfeeds.usatoday.com/UsatodaycomMlbNl-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_7" text="NBA" link="http://rssfeeds.usatoday.com/UsatodaycomNba-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_8" text="Boxing" link="http://rssfeeds.usatoday.com/UsatodaycomBoxing-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_9" text="College Sports" link="http://rssfeeds.usatoday.com/UsatodaycomCollegeSports-TopStories"
+        largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_10" text="College Football" link="http://rssfeeds.usatoday.com/UsatodaycomCollegeFootball-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_11" text="College Basketball Mens" link="http://rssfeeds.usatoday.com/UsatodaycomCollegeMensBasketball-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_12" text="College Basketball Womens" link="http://rssfeeds.usatoday.com/UsatodaycomCollegeWomensBasketball-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_13" text="Golf" link="http://rssfeeds.usatoday.com/UsatodaycomGolf-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_14" text="Hockey" link="http://rssfeeds.usatoday.com/UsatodaycomNhl-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_15" text="Horse Racing" link="http://rssfeeds.usatoday.com/usatoday-HorseRacing"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_16" text="Motor Sports" link="http://rssfeeds.usatoday.com/UsatodaycomMotorSports-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_17" text="Prep Sports" link="http://rssfeeds.usatoday.com/UsatodaycomPreps-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_18" text="Soccer" link="http://rssfeeds.usatoday.com/UsatodaycomSoccer-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_19" text="WNBA" link="http://rssfeeds.usatoday.com/UsatodaycomWnba-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_18_1" text="Tennis" link="http://rssfeeds.usatoday.com/UsatodayTennis-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_19_2" text="Cycling" link="http://rssfeeds.usatoday.com/UsatodayCycling-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_20_3" text="Olympics" link="http://rssfeeds.usatoday.com/UsatodaycomOlympicsCoverage-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_21" text="Kevin Allen (NHL)" link="http://rssfeeds.usatoday.com/UsatodaycomSports-Allen"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_22" text="Christine Brennan" link="http://rssfeeds.usatoday.com/UsatodaycomSports-Brennan"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_23" text="Steve Gardner (Baseball)" link="http://rssfeeds.usatoday.com/UsatodaycomSports-Gardner"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_24" text="Rob Harrington - Basketball" link="http://rssfeeds.usatoday.com/UsatodaycomSports-Harrington"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_25" text="Michael Hiestand" link="http://rssfeeds.usatoday.com/UsatodaycomSports-Hiestand"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_26" text="Mike Lopresti" link="http://rssfeeds.usatoday.com/UsatodaycomSports-Lopresti"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_27" text="Michael McCarthy" link="http://rssfeeds.usatoday.com/UsatodaycomSports-McCarthy"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="12_28" text="Kyle Woodlief" link="http://rssfeeds.usatoday.com/UsatodaycomSports-Woodlief"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+  </site>
+
+
+  <site id="21" text="Tech" site="usatoday.com"
+     largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png">
+    <rssItem id="21_1" text="Tech Headlines" link="http://rssfeeds.usatoday.com/usatoday-TechTopStories"
+        largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="21_2" text="Science &amp; Space" link="http://rssfeeds.usatoday.com/UsatodaycomScienceAndSpace-TopStories"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="21_3" text="Edward C. Baig" link="http://rssfeeds.usatoday.com/UsatodaycomTech-PersonalTalk"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="21_4" text="Jinny Gudmundsen" link="http://rssfeeds.usatoday.com/UsatodaycomTech-CSpeak-Gudmundsen"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="21_5" text="Kim Komando" link="http://rssfeeds.usatoday.com/TP-Komando"
+        largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="21_6" text="Marc Saltzman" link="http://rssfeeds.usatoday.com/UsatodaycomTech-CSpeak-Saltzman"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="21_7" text="Science Fair" link="http://rssfeeds.usatoday.com/TP-ScienceFair"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="21_8" text="Technology Live" link="http://rssfeeds.usatoday.com/TP-TechnologyLive"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+  </site>
+
+
+  <site id="2" text="Travel" site="usatoday.com"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png">
+    <rssItem id="2_1" text="Travel Headlines" link="http://rssfeeds.usatoday.com/UsatodaycomTravel-TopStories"
+        largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="2_2" text="Travel - Today in the Sky" link="http://rssfeeds.usatoday.com/TP-TodayInTheSky"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="2_3" text="Hotels" link="http://rssfeeds.usatoday.com/UsatodayTravel-Hotels"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="2_4" text="Hotel Check-In" link="http://rssfeeds.usatoday.com/hotelcheckincommunityfeed"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="2_5" text="The Cruise Log" link="http://rssfeeds.usatoday.com/TP-TheCruiseLog"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="2_6" text="Travelers Aide" link="http://rssfeeds.usatoday.com/UsatodaycomTravel-TravelersAide"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+
+    <rssItem id="2_7" text="Business Travel" link="http://rssfeeds.usatoday.com/UsatodaycomTravel-BT-Grossman"
+        largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="2_8" text="At the Airport" link="http://rssfeeds.usatoday.com/UsatodaycomTravel-OTRW-Baskas"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="2_9" text="Behind the Screen" link="http://rssfeeds.usatoday.com/UsatodaycomTravel-OTRW-McGee"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="2_10" text="Flights" link="http://rssfeeds.usatoday.com/UsatodayTravel-Flights"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="2_11" text="Destinations" link="http://rssfeeds.usatoday.com/UsatodayTravel-Destinations"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+
+  </site>
+
+
+  <site id="3" text="Money" site="usatoday.com"
+      largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png">
+    <rssItem id="3_1" text="Money Headlines" link="http://rssfeeds.usatoday.com/UsatodaycomMoney-TopStories"
+        largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="3_2" text="Test Drive" link="http://rssfeeds.usatoday.com/UsatodaycomMoney-Healey"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="3_3" text="Your Money" link="http://rssfeeds.usatoday.com/UsatodaycomMoney-Block"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+
+    <rssItem id="3_4" text="Investing" link="http://rssfeeds.usatoday.com/UsatodaycomMoney-Waggoner"
+      largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="3_5" text="Small Business" link="http://rssfeeds.usatoday.com/UsatodaycomMoney-Strauss"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="3_6" text="Ask Matt about Stocks" link="http://rssfeeds.usatoday.com/UsatodaycomTech-AskMatt"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+
+    <rssItem id="3_7" text="Small Business" link="http://rssfeeds.usatoday.com/ColEdmundsRss"
+        largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+  </site>
+
+
+  <site id="11" text="Life" site="usatoday.com"
+     largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png">
+    <rssItem id="11_1" text="Books" link="http://rssfeeds.usatoday.com/UsatodaycomBooks-TopStories"
+        largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+  </site>
+
+  <site id="5" text="Weather" site="usatoday.com"
+      largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png">
+    <rssItem id="5_1" text="Weather Headlines" link="http://rssfeeds.usatoday.com/usatoday-WeatherTopStories"
+        largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+  </site>
+  <site id="6" text="Podcast" site="usatoday.com"
+       largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png">
+    <rssItem id="6_1" text="Podcast ITunes" link="http://rssfeeds.usatoday.com/TalkingTechPodCast"
+        largeimage="\VarFiles\SpecialLogo.png" smallimage="\VarFiles\small.png" description="" />
+  </site>
+</items>
+

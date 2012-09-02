@@ -1,0 +1,27 @@
+﻿{
+  "name": "BBC Football",
+  "version": "1.5",
+  "background_page": "Background.html",
+  "description": "The latest BBC Football news plus live scores, fixtures, results, tables, video, audio, blogs and analysis and more....",
+  "app": {
+    "launch": {
+      "local_path": "redirect.html"
+    }
+  },
+  "icons": {
+    "16": "1.ico",
+    "48": "1.ico",
+    "128": "1.ico"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["js/jquery-1.6.2.min.js","contentWIMI.js"],
+      "all_frames": false
+    }
+  ],
+  "permissions": [
+	"tabs",
+	"http://*/*"
+  ]
+}

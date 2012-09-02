@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <site id="1" text="أخبار المصري اليوم" site="http://www.almasryalyoum.com/"
+               largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png">
+    <rssItem id="1_1" text="أخبار الصفحة الاولى" link="http://www.almasryalyoum.com/news_homepage_feed"
+               largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_2" text="اخبار" link="http://www.almasryalyoum.com/rss_feed_term/1/rss.xml"
+              largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_3" text="أخبار مصر" link="http://www.almasryalyoum.com/rss_feed_term/2/rss.xml"
+              largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_4" text="الحوادث" link="http://www.almasryalyoum.com/rss_feed_term/3/rss.xml"
+              largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_5" text="الشارع السياسي" link="http://www.almasryalyoum.com/rss_feed_term/4/rss.xml"
+              largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_6" text="العالم" link="http://www.almasryalyoum.com/rss_feed_term/5/rss.xml"
+              largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_7" text="العالم العربي" link="http://www.almasryalyoum.com/rss_feed_term/6/rss.xml"
+              largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_8" text="اقتصاد" link="http://www.almasryalyoum.com/rss_feed_term/7/rss.xml"
+              largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_9" text="أسواق وشركات" link="http://www.almasryalyoum.com/rss_feed_term/8/rss.xml"
+              largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_10" text="استثمار" link="http://www.almasryalyoum.com/rss_feed_term/9/rss.xml"
+              largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_11" text="البترول والطاقة" link="http://www.almasryalyoum.com/rss_feed_term/10/rss.xml"
+             largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_12" text="البورصة" link="http://www.almasryalyoum.com/rss_feed_term/11/rss.xml"
+             largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_13" text="بنوك وتأمين" link="http://www.almasryalyoum.com/rss_feed_term/12/rss.xml"
+         largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_14" text="تحليل" link="http://www.almasryalyoum.com/rss_feed_term/13/rss.xml"
+         largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_15" text="الرياضة" link="http://www.almasryalyoum.com/rss_feed_term/14/rss.xml"
+         largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_16" text="كرة مصرية" link="http://www.almasryalyoum.com/rss_feed_term/19/rss.xml"
+         largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_17" text="علوم وتكنولوجيا" link="http://www.almasryalyoum.com/rss_feed_term/24/rss.xml"
+         largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_18" text="برامج وألعاب" link="http://www.almasryalyoum.com/rss_feed_term/25/rss.xml"
+         largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_19" text="طب وصحة" link="http://www.almasryalyoum.com/rss_feed_term/26/rss.xml"
+         largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_20" text="كمبيوتر وانترنت" link="http://www.almasryalyoum.com/rss_feed_term/28/rss.xml"
+         largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_21" text=">موبايل واتصالات" link="http://www.almasryalyoum.com/rss_feed_term/29/rss.xml"
+         largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_22" text="تحقيقات" link="http://www.almasryalyoum.com/rss_feed_term/37/rss.xml"
+         largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_23" text="حوارات" link="http://www.almasryalyoum.com/rss_feed_term/38/rss.xml"
+         largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_24" text="قالوا" link="http://www.almasryalyoum.com/rss_feed_term/3037/rss.xml"
+         largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_25" text="الأخيرة" link="http://www.almasryalyoum.com/rss_feed_term/5238/rss.xml"
+         largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_26" text="تقارير المراسلين" link="http://www.almasryalyoum.com/rss_feed_term/40703/rss.xml"
+             largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_27" text="انتخابات" link="http://www.almasryalyoum.com/rss_feed_term/141741/rss.xml"
+             largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+  </site>
+
+  <site id="2" text="المصري اليوم" site="http://www.almasryalyoum.com/"
+               largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png">
+    <rssItem id="2_1" text="رأى" link="http://www.almasryalyoum.com/rss_feed_opinion/opinion_article/rss.xml"
+               largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="2_2" text="السكوت ممنوع" link="http://www.almasryalyoum.com/rss_feed_opinion/silence_forbidden/rss.xml"
+              largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="2_3" text="فيديو" link="http://www.almasryalyoum.com/rss_feed_video/rss.xml"
+              largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="2_4" text="صور" link="http://www.almasryalyoum.com/rss_feed_photo/rss.xml"
+              largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="2_5" text="كاريكاتير" link="http://www.almasryalyoum.com/rss_feed_caricature/rss.xml"
+              largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="2_6" text="مساهمات القراء" link="http://www.almasryalyoum.com/rss_feed_multimedia_user/rss.xml"
+              largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+  </site>
+</items>

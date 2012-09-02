@@ -1,0 +1,31 @@
+﻿{
+  "name": "Yallakora - ياللاكورة",
+  "version": "4.0",
+  "description": "أكبر موقع رياضي يغطي أخبار الرياضة في الشرق الأوسط والعالم العربي بشكل متميز. تغطية إخبارية .",
+  "icons": { "128": "ExtImages/fav.ico" },
+  "background_page": "FeedExtensionBackground.html",
+  "browser_action": {
+    "default_title": "Yallakora News - أخبار ياللاكورة",
+    "default_icon": "ExtImages/fav.ico",
+    "popup": "FeedExtensionPop.html"
+  },
+  "icons": {
+    "16": "ExtImages/fav.ico",
+    "48": "ExtImages/fav.ico",
+    "128": "ExtImages/fav.ico"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*.yallakora.com/*"],
+      "js": ["js/jquery-1.6.2.min.js", "VarFiles/content_script.js"],
+	  "all_frames": true
+    }
+  ],
+  "options_page": "options.html",
+  "permissions": [
+    "tabs",
+    "notifications",
+    "http://*.yallakora.com/*",
+    "http://*.nicewebtools.com/*"
+  ]
+}

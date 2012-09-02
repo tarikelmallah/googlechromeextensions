@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <site id="1" text="News" site="mercurynews.com"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="1_2" text="News" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200735.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_1" text="Breaking News" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200734.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_3" text="National News" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200736.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_4" text="World" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200737.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_5" text="Crime and Courts" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200738.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_6" text="Police Blotter" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200739.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_7" text="Gay Marriage" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/204623.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_8" text="Earthquake News" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/215501.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_9" text="Barry Bonds on Trial" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200916.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_10" text="High-Speed Rail" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/216101.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_11" text="Politics" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200740.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_12" text="Government Watch" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200741.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_13" text="Education" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200742.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_14" text="Health" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200743.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_15" text="Weather" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200744.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_16" text="Traffic / Transportation" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200745.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_18" text="Obituaries" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200747.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_19" text="Death Notices" link="http://www.legacy.com/services/obitrss.asp?Source=MercuryNews"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="2" text="News-Columns" site="mercurynews.com"
+         largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="2_1" text="Mr. Roadshow" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200764.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_2" text="Action Line" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200756.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_3" text="Patty Fisher" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200759.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_4" text="Scott Herhold" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200760.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_5" text="Internal Affairs" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200762.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_6" text="Sal Pizarro" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200763.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+
+    <rssItem id="2_7" text="Joe Rodriguez" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200765.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="4" text="Local News" site="mercurynews.com"
+   largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="4_1" text="Local News" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200748.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_2" text="San Jose/Valley" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200749.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_3" text="Los Gatos" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200750.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_4" text="Saratoga" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200751.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_5" text="Cupertino" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/201801.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_6" text="Sunnyvale" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/203708.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+
+    <rssItem id="4_7" text="Campbell" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/205403.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_8" text="Peninsula" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200752.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_9" text="Alameda County" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200753.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_10" text="Santa Cruz/Central Coast" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200754.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_11" text="California" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200755.xml"
+    largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="11" text="Opinion &amp; Editorial" site="mercurynews.com"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="11_1" text="Editorials" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200766.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_2" text="Letters" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200767.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_3" text="Opinion" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200224.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="5" text="Business" site="mercurynews.com"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="5_1" text="Business" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200222.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_2" text="Financial Markets" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200768.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_3" text="Green Energy" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200769.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_4" text="Technology" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200770.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_5" text="Personal Technology" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200771.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_6" text="Personal Finance" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200772.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_7" text="Stock Options Scandals" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200773.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_8" text="Venture Capital News" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200774.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_9" text="People &amp; Events" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200775.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_11" text="Drive" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200776.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_12" text="Real Estate" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200777.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_13" text="Careers" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200778.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="6" text="Company News" site="mercurynews.com"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="6_1" text="Adobe Systems" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/214511.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_2" text="Apple" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200779.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_3" text="Cisco" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200780.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_4" text="Google" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200781.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_5" text="HP" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200782.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_6" text="Intel" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200783.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_7" text="Microsoft" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200784.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_8" text="Oracle" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200785.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_9" text="Sun Microsystems" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200786.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="7" text="Business-Columns" site="mercurynews.com"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="7_1" text="Mike Cassidy" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200757.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="7_2" text="Scott Duke Harris" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/210825.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="7_3" text="Chris O'Brien" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/210701.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="7_4" text="Troy Wolverton" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/217904.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="7_5" text="Tech Notebook" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200789.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="7_6" text="60-Second BizBreak" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200792.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="8" text="Sports" site="mercurynews.com"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="8_1" text="Sports" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200223.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_2" text="Baseball" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200793.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_3" text="Basketball" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200794.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_4" text="College Sports" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200795.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_5" text="Football" link="http://rss.mnginteractive.com/live/sanjose/SanJose_1923281.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_6" text="Golf" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200901.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_7" text="High School Sports" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200902.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_8" text="Hockey" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200903.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_9" text="Other Sports" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200904.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="9" text="Teams" site="mercurynews.com"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="9_1" text="Golden State Warriors" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200905.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="9_2" text="Oakland Athletics" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200906.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="9_3" text="Oakland Raiders" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200907.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="9_4" text="San Francisco Giants" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200908.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="9_5" text="San Francisco 49ers" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200909.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="9_6" text="San Jose Earthquakes" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200729.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="9_7" text="San Jose Sabercats" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200910.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="9_8" text="San Jose Sharks" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200892.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="10" text="College Teams" site="mercurynews.com"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="10_1" text="Cal" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200912.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="10_2" text="San Jose State" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200913.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="10_3" text="Santa Clara" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200914.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="10_4" text="Stanford" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200915.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="12" text="Special Reports" site="mercurynews.com"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="12_1" text="South Bay Pro Baseball" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200917.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_2" text="South Bay Pro Football" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200918.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="13" text="Sports-Columns" site="mercurynews.com"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="13_1" text="Bud Geracie" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200919.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="13_2" text="Tim Kawakami" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200920.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="13_3" text="Ann Killion" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200921.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="13_4" text="Morning Buzz" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200922.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="13_5" text="Mark Purdy" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200923.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="14" text="Entertainment" site="mercurynews.com"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="14_1" text="Books" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200924.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="14_2" text="Events" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200927.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="14_3" text="Food &amp; Dining" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200934.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="14_4" text="Restaurant Reviews" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200936.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="14_5" text="Quick Bite" link="http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/200935.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  <site id="15" text="Multimedia" site="mercurynews.com"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="15_1" text="News video &amp; slide shows" link="http://feeds.feedburner.com/mercurynewsphoto.com"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+  
+  <site id="16" text="General" site="mercurynews.com"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="16_1" text="Most Emailed" link="http://extras.mnginteractive.com/live/xsl/memv/xml/568_most_emailed_rss.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="16_2" text="Most Viewed" link="http://extras.mnginteractive.com/live/xsl/memv/xml/568_most_viewed_rss.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+</items>
+

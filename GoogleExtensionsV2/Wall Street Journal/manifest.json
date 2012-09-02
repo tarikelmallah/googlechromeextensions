@@ -1,0 +1,33 @@
+﻿{
+  "name": "The Wall Street Journal",
+  "version": "3.2",
+  "description": "WSJ online coverage of breaking news and current headlines from the US and around the world.",
+  "icons": { "128": "ExtImages/fav3.ico" },
+  "background_page": "FeedExtensionBackground.html",
+  "browser_action": {
+    "default_title": "The Wall Street Journal",
+    "default_icon": "ExtImages/fav.ico",
+    "popup": "FeedExtensionPop.html"
+  },
+  "icons": {
+    "16": "ExtImages/fav.ico",
+    "48": "ExtImages/fav3.ico",
+    "128": "ExtImages/fav3.ico"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*.wsj.com/*"],
+      "css": ["VarFiles/content.css"],
+      "js": ["js/jquery-1.6.2.min.js", "VarFiles/content_script.js"],
+	  "all_frames": false
+    }
+  ],
+  "options_page": "options.html",
+  "permissions": [
+    "tabs",
+    "notifications",
+    "http://*.wsj.com/*",
+    "http://*.plus.google.com/*",
+    "http://*.nicewebtools.com/*"
+  ]
+}

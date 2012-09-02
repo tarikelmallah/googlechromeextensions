@@ -1,0 +1,31 @@
+﻿{
+  "name": "Nice Bubble Translate (Working Version)",
+  "version": "5.0",
+  "description": "Real-Time and inline text translator from any language to your language.",  
+  "options_page": "preferences.html",
+  "background_page": "BubbleTranslate.html",
+   "icons": {
+    "16": "ExtImages/128.ico",
+    "48": "ExtImages/128.ico",
+    "128": "ExtImages/128.ico"
+  },
+  "page_action": {
+	"default_title": "Bubble Translate",
+    "default_icon": "ExtImages/128.ico",
+    "popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["jquery-1.6.2.min.js","BubbleTranslate.js"],
+      "all_frames": true
+    }
+  ],
+	 "permissions": [
+    "tabs",
+    "notifications",
+    "http://*.nicewebtools.com/*",
+	"http://*/*",
+	"https://*/*"
+  ]
+}

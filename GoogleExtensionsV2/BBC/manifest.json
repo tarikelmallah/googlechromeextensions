@@ -1,0 +1,37 @@
+﻿{
+ "name": "BBC News",
+  "version": "6.0",
+  "description": "News feeds allow you to see when websites have added new content",
+  "background":  {"scripts": ["js/jquery-1.6.2.min.js","exFilesV4/analytics.js","FeedExtensionBackground_Settings.js","exFilesV4/FeedExtensionBackground.js"]},
+  "browser_action": {
+    "default_title": "BBC News",
+    "default_icon": "ExtImages/fav.ico",
+    "default_popup": "FeedExtensionPop.html"
+  },
+  "icons": {
+    "16": "ExtImages/fav.ico",
+    "48": "ExtImages/fav.ico",
+    "128": "ExtImages/fav.ico"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*.bbc.co.uk/*","http://*.bbc.com/*","http://*.bbci.co.uk/*","http://*.bbcamerica.com/*"],
+      "css": ["VarFiles/content.css"],
+      "js": ["js/jquery-1.6.2.min.js", "VarFiles/BBCcontent_script.js"],
+	  "all_frames": false
+    }
+  ],
+  "options_page": "options.html",
+  "permissions": [
+    "tabs",
+    "notifications",
+	"http://*.bbc.co.uk/*",
+	"http://*.bbcamerica.com/*",
+	"http://*.bbc.com/*",
+    "http://*.bbci.co.uk/*",
+    "http://*.nicewebtools.com/*"
+  ],
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://ssl.google-analytics.com/; object-src 'self';connect-src http://feeds.bbci.co.uk http://www.bbc.co.uk http://news.bbc.co.uk 'self'"
+
+}

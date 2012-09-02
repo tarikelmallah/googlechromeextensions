@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <site id="1" text="Masrawy أخبار" site="www.Masrawy.com"
+        largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png">
+    <rssItem id="1_1" text="سياسة" link="http://www.masrawy.com/News/rss/LocalPolitics.aspx"
+        largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_2" text="رياضة" link="http://www.masrawy.com/News/rss/Local_Sports.aspx"
+       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_3" text="اقتصاد" link="http://www.masrawy.com/News/rss/RSS_Economy.aspx"
+       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_4" text="الحوادث والقضايا" link="http://www.masrawy.com/News/rss/LocalCases.aspx"
+       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_5" text="السيارات" link="http://www.masrawy.com/News/rss/Cars.aspx"
+       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_6" text="رياضة عالمية" link="http://www.masrawy.com/News/rss/InternationalSports.aspx"
+       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_7" text="الشرق الأوسط" link="http://www.masrawy.com/News/rss/MiddleEast.aspx"
+       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_8" text="أخبار العالم" link="http://www.masrawy.com/News/rss/World.aspx"
+       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_9" text="اقتصاد عالمى" link="http://www.masrawy.com/News/rss/InternationalEconomy.aspx"
+       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_10" text="الصحة" link="http://www.masrawy.com/women/rss/health.aspx"
+       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_11" text="لطفلك" link="http://www.masrawy.com/women/rss/kids.aspx"
+      largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    <rssItem id="1_12" text="الموجز" link="http://www.almogaz.com/rss.xml"
+      largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
+    
+  </site>
+ </items>

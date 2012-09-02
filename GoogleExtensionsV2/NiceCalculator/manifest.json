@@ -1,0 +1,19 @@
+﻿{
+  "name": "Calculator",
+  "version": "1.7",
+  "description": "With Nice Chrome Calculator just click , you will have see the Calculator, Multiplication, Addition, Subtraction, Division and more.",
+  "background_page": "Background.html",
+  "browser_action": {
+    "default_title": "Nice Chrome Calculator",
+    "default_icon": "favicon.ico",
+    "popup": "NiceCalculator.html"
+  },
+  "icons": {
+    "16": "favicon.ico",
+    "48": "favicon.ico",
+    "128": "favicon.ico"
+  },
+  "permissions": [
+    "http://*.google.com/*"
+  ]
+}

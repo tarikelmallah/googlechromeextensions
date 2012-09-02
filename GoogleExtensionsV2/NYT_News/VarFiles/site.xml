@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <site id="1" text="NYT NEWS" site="CNN.com"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="1_1" text="NYT-Home U.S." link="http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_2" text="NYT-Home Global" link="http://www.nytimes.com/services/xml/rss/nyt/GlobalHome.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_3" text="World" link="http://www.nytimes.com/services/xml/rss/nyt/World.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_4" text="U.S." link="http://www.nytimes.com/services/xml/rss/nyt/US.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_5" text="N.Y. Region" link="http://www.nytimes.com/services/xml/rss/nyt/NYRegion.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_6" text="Business" link="http://feeds.nytimes.com/nyt/rss/Business"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_7" text="Technology" link="http://feeds.nytimes.com/nyt/rss/Technology"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_8" text="Sports" link="http://www.nytimes.com/services/xml/rss/nyt/Sports.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_9" text="Science" link="http://www.nytimes.com/services/xml/rss/nyt/Science.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_10" text="Health" link="http://www.nytimes.com/services/xml/rss/nyt/Health.xml"
+   largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+
+  <site id="12" text="MARKETPLACE" site="CNN.com"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="12_1" text="Jobs" link="http://www.nytimes.com/services/xml/rss/nyt/JobMarket.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_2" text="Real Estate" link="http://www.nytimes.com/services/xml/rss/nyt/RealEstate.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_3" text="Autos-Wheels Blog" link="http://wheels.blogs.nytimes.com/feed/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="12_4" text="Autos-Formula" link="http://formulaone.blogs.nytimes.com/feed"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+
+  <site id="13" text="OPINION" site="CNN.com"
+   largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="13_1" text="Op-Extra" link="http://www.nytimes.com/services/xml/rss/nyt/Opinion.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="13_2" text="Editorials" link="http://topics.nytimes.com/top/opinion/editorialsandoped/editorials/index.html?rss=1"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="13_3" text="Sunday Review" link="http://www.nytimes.com/services/xml/rss/nyt/sunday-review.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+
+  <site id="11" text="OTHER" site="CNN.com"
+     largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="11_1" text="Lens Blog" link="http://lens.blogs.nytimes.com/feed/"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_2" text="Obituaries" link="http://www.nytimes.com/services/xml/rss/nyt/Obituaries.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_3" text="Most E-Mailed" link="http://www.nytimes.com/services/xml/rss/nyt/pop_top.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_4" text="Times Wire" link="http://nytimes.com/timeswire/feeds/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_5" text="Topics Blog" link="http://topics.blogs.nytimes.com/feed"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="11_6" text="Wordplay Blog" link="http://wordplay.blogs.nytimes.com/feed"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+
+  <site id="2" text="World" site="CNN.com"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="2_1" text="World" link="http://www.nytimes.com/services/xml/rss/nyt/World.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_2" text="Africa" link="http://www.nytimes.com/services/xml/rss/nyt/Africa.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_3" text="Americas" link="http://www.nytimes.com/services/xml/rss/nyt/Americas.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_4" text="Asia Pacific" link="http://www.nytimes.com/services/xml/rss/nyt/AsiaPacific.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_5" text="Europe" link="http://www.nytimes.com/services/xml/rss/nyt/Europe.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="2_6" text="Middle East" link="http://www.nytimes.com/services/xml/rss/nyt/MiddleEast.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+
+
+  <site id="3" text="U.S." site="CNN.com"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="3_1" text="U.S." link="http://www.nytimes.com/services/xml/rss/nyt/US.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="3_2" text="Education" link="http://www.nytimes.com/services/xml/rss/nyt/Education.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="3_3" text="Politics" link="http://www.nytimes.com/services/xml/rss/nyt/Politics.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="3_4" text="The Lede Blog" link="http://thelede.blogs.nytimes.com/feed/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+
+
+  <site id="4" text="N.Y. Region" site="CNN.com"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="4_1" text="N.Y. Region" link="http://www.nytimes.com/services/xml/rss/nyt/NYRegion.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_2" text="City Room Blog" link="http://cityroom.blogs.nytimes.com/feed/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_3" text="Fort Greene Blog" link="http://fort-greene.blogs.nytimes.com/feed"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="4_4" text="East Village Blog" link="http://eastvillage.thelocal.nytimes.com/feed/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+
+  <site id="5" text="Business" site="CNN.com"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="5_1" text="Business" link="http://feeds.nytimes.com/nyt/rss/Business"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_2" text="Energy &amp; Environment" link="http://www.nytimes.com/services/xml/rss/nyt/EnergyEnvironment.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_3" text="Global Business" link="http://www.nytimes.com/services/xml/rss/nyt/GlobalBusiness.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_4" text="Small Business" link="http://www.nytimes.com/services/xml/rss/nyt/SmallBusiness.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_5" text="Economy" link="http://www.nytimes.com/services/xml/rss/nyt/Economy.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_6" text="DealBook" link="http://dealbook.blogs.nytimes.com/feed/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_7" text="Media &amp; Advertising" link="http://www.nytimes.com/services/xml/rss/nyt/MediaandAdvertising.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="5_8" text="Your Money" link="http://www.nytimes.com/services/xml/rss/nyt/YourMoney.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+
+  <site id="6" text="Technology" site="CNN.com"
+    largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="6_1" text="Technology" link="http://feeds.nytimes.com/nyt/rss/Technology"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_2" text="Bits Blog" link="http://bits.blogs.nytimes.com/feed/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_3" text="Business Computing" link="http://www.nytimes.com/services/xml/rss/nyt/business-computing.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_4" text="Companies" link="http://www.nytimes.com/services/xml/rss/nyt/companies.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_5" text="Internet" link="http://www.nytimes.com/services/xml/rss/nyt/internet.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_6" text="Personal Tech" link="http://www.nytimes.com/services/xml/rss/nyt/PersonalTech.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_7" text="Start-Ups" link="http://www.nytimes.com/services/xml/rss/nyt/start-ups.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+
+
+  <site id="7" text="Technology" site="CNN.com"
+    largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="6_1" text="Technology" link="http://feeds.nytimes.com/nyt/rss/Technology"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_2" text="Bits Blog" link="http://bits.blogs.nytimes.com/feed/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_3" text="Business Computing" link="http://www.nytimes.com/services/xml/rss/nyt/business-computing.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_4" text="Companies" link="http://www.nytimes.com/services/xml/rss/nyt/companies.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_5" text="Internet" link="http://www.nytimes.com/services/xml/rss/nyt/internet.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_6" text="Personal Tech" link="http://www.nytimes.com/services/xml/rss/nyt/PersonalTech.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="6_7" text="Start-Ups" link="http://www.nytimes.com/services/xml/rss/nyt/start-ups.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+
+  <site id="8" text="Sports" site="CNN.com"
+    largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    <rssItem id="8_1" text="Sports" link="http://www.nytimes.com/services/xml/rss/nyt/Sports.xml"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_2" text="Global Sports" link="http://www.nytimes.com/services/xml/rss/nyt/GlobalSports.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_3" text="Baseball" link="http://www.nytimes.com/services/xml/rss/nyt/Baseball.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_4" text="College Basketball" link="http://www.nytimes.com/services/xml/rss/nyt/CollegeBasketball.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_5" text="College Football" link="http://www.nytimes.com/services/xml/rss/nyt/CollegeFootball.xml"
+      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_6" text="Golf" link="http://www.nytimes.com/services/xml/rss/nyt/Golf.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_7" text="Hockey" link="http://www.nytimes.com/services/xml/rss/nyt/Hockey.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_8" text="Pro-Basketball" link="http://www.nytimes.com/services/xml/rss/nyt/ProBasketball.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_9" text="Pro-Football" link="http://www.nytimes.com/services/xml/rss/nyt/ProFootball.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_10" text="Soccer" link="http://www.nytimes.com/services/xml/rss/nyt/Soccer.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_11" text="Tennis" link="http://www.nytimes.com/services/xml/rss/nyt/Tennis.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_12" text="Gambit Blog" link="http://gambit.blogs.nytimes.com/feed/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_13" text="Formula One Blog" link="http://formulaone.blogs.nytimes.com/feed/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_14" text="The Rail Blog" link="http://therail.blogs.nytimes.com/feed"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="8_15" text="Olympics" link="http://www.nytimes.com/pages/sports/olympics/index.html"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+
+</items>
+

@@ -1,0 +1,61 @@
+﻿<html>
+<head>
+    <title>News - Options</title>
+    <script language="javascript" type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+    <script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+    <link href="css/theme/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css" />
+    <link href="http://nicewebtools.com/GoogleExtensions/exFilesV4/options.css?swedf=easdg"
+        rel="stylesheet" type="text/css" />
+    <script src="http://nicewebtools.com/GoogleExtensions/exFilesV4/options.js?sd=qewefg"
+        type="text/javascript"></script>
+    <link href="css/shared.css" rel="stylesheet" type="text/css" />
+    <link href="VarFiles/override.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="aboveHeader">
+        <div id="header">
+            <div class="innerHeaderSps">
+            </div>
+            <h1 id="ModuleName">
+                Options
+            </h1>
+        </div>
+    </div>
+    <div class="section-header nicewebtoolsdiv  first">
+        Customize your News and Notifications<div class="underCustomizeDiv" ></div></div>
+    <div id="theFormItems">
+    </div>
+    <div id="footer">
+        <div class="nicewebtoolsDiv ui-widget-header    ui-corner-all">
+            <a href="javascript:void(0)" onclick="chrome.tabs.create({url:'http://nicewebtools.com/extensions.aspx'})"
+                title="Nice web tools" id="link-nicewebtools">By Nice Web Tools Corporation</a></div>
+    </div>
+    <div id="buttonLeftFixed">
+        <div>
+            <span class="buttonLeftFixedSvDn">.. Save Done ..</span></div>
+        <button id="Button1" style="font-weight: bold" onclick="save();">
+            Save</button>
+        <div class="additionUnderSave">
+            <a  id="feedbacklink" 
+                href="#"
+                target="_blank">
+                <div class="feedbacklinkDiv" style="">
+                    feedback
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="chkShowNotifDiv" style="display: none;">
+        <input type="checkbox" id="chkShowNotif" onchange="markDirty()" checked="checked" />
+        <label for="chkShowNotif">
+            Show Notifications</label>
+        <div>
+            <button id="save-button" style="font-weight: bold" onclick="save()">
+                Save</button>
+            <button onclick="init()">
+                Cancel</button>
+        </div>
+    </div>
+</body>
+</html>

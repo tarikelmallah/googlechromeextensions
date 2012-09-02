@@ -1,0 +1,193 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="templates/css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/start/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css" />
+    <link href="Notification.css" rel="stylesheet" type="text/css" />
+
+    <script language="javascript" type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+
+    <script language="javascript" type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+
+    <script src="Shared.js" type="text/javascript"></script>
+
+    <script language="javascript" type="text/javascript">
+        //main module code
+        $(function() {
+            var bk = chrome.extension.getBackgroundPage();
+            //load CSS
+            $("head").append("<link>");
+            css = $("head").children(":last");
+            css.attr({
+                rel: "stylesheet",
+                type: "text/css",
+                href: bk.NotificationsCssFile + '.css'
+            });
+            //lang specific css
+            $("head").append("<link>");
+            css = $("head").children(":last");
+            css.attr({
+                rel: "stylesheet",
+                type: "text/css",
+                href: (bk.NotificationsCssFile + '_' + bk.lang + '.css')
+            });
+
+            var notifItms = bk.CurrentAllNotificationQueue; //the notification Queue
+            if (notifItms == '' || notifItms == undefined) {
+                bk.closeThenotification();
+            }
+
+            var cnter = 1;
+            for (i = 0; i < bk.fruitvegbasket.length; i++) {
+                var varItem = bk.fruitvegbasket[i];
+                if (notifItms.indexOf(varItem.itemlink) > -1) {
+                    $('<div class="hideThis" id="itemNo_' + cnter + '" theId="' + cnter + '"><h3><a href="javascript:void(0)" theHref="' + varItem.itemlink + '" onclick="goOpenUrl(this);" >' + varItem.itemTitle + '</a></h3><div class="thedescription124" >' + varItem.itemdescription.replace('<br>', '').replace('<br/>', '').replace('<BR>', '') + ' .. <a href="javascript:void(0)" theHref="' + varItem.itemlink + '" onclick="goOpenUrl(this);" >' + bk.cnfg_ReadMoreWords + '</a>' + '</div></div>').appendTo('.contentLower');
+                    cnter++;
+                }
+            }
+            if (cnter == 1) {
+                bk.closeThenotification();
+            }
+
+            //hide error images
+            $("img").error(function () {
+                $(this).hide();
+            })
+
+            //show first Item
+            selectItemFromList(1);
+
+            //start the GoNextTimer()
+            window.setTimeout("GoNextTimer()", bk.NotificationRotationPeriod);
+
+            //stop the timer temporary if user enter the notification with mouse
+            $("body").mouseenter(function() {
+                isTemporaryPaused = true;
+            });
+            $("body").mouseleave(function() {
+                isTemporaryPaused = false;
+            });
+
+            //close notification if user (right click)
+            $('body').mouseup(function(event) {
+                switch (event.which) {
+                    case 2:
+                        //alert('Middle mouse button pressed');
+                        bk.closeThenotification();
+                        break;
+                    case 3:
+                        //alert('Right mouse button pressed');
+                        bk.closeThenotification();
+                        break;
+                }
+            });
+        })
+
+        //previos button script
+        function btnPrevios() {
+            //get current node
+            var theId = $('div.current[id^="itemNo"]').attr('theId')
+            theId = parseInt(theId) - 1;
+            selectItemFromList(theId)
+        }
+
+        //Next button script
+        function btnNext() {
+            var theId = $('div.current[id^="itemNo"]').attr('theId')
+            theId = parseInt(theId) + 1;
+            selectItemFromList(theId);
+        }
+
+        //Pause button script
+        function btnPause() {
+            if (isTimerPaused) {
+                $('#imgPause').attr('src', 'images/pause.png');
+                isTimerPaused = false;
+            } else {
+                $('#imgPause').attr('src', 'images/pause1.png');
+                isTimerPaused = true;
+            }
+            clearTimeout(timerRotation);
+            GoNextTimer();
+        }
+
+        //Select Item By ID (number)
+        function selectItemFromList(theId) {
+            if ($('#itemNo_' + theId).length > 0) {
+                var bk = chrome.extension.getBackgroundPage();
+                $('div[id^="itemNo"]').removeClass('current');
+                $('div[id^="itemNo"]').slideUp();
+
+                $('#itemNo_' + theId).addClass('current');
+                $('#itemNo_' + theId).slideDown('slow');
+
+                //contentUpperLeft
+                $('.contentUpperLeft img').removeClass('opacity4');
+
+                //is it the last item
+                if ($('#itemNo_' + (parseInt(theId) + 1)).length == 0) {
+                    $('#imgRight').addClass('opacity4');
+                }
+
+                //is it the first item
+                var Pre1 = '#itemNo_' + (parseInt(theId) - 1);
+                if ($(Pre1).length == 0) {
+                    $('#imgLeft').addClass('opacity4');
+                }
+
+                //some of count
+                var countAllItems = $('div[id^="itemNo"]').length;
+                $('.contentUpperRight').text(theId + ' ' + bk.ofWord + ' ' + countAllItems);
+            }
+        }
+
+        //rotation timer
+        var isTimerPaused = false;
+        var isTemporaryPaused = false;
+        var timerRotation;
+        function GoNextTimer() {
+            //check if there is anything in the queue
+            var bk = chrome.extension.getBackgroundPage();
+            if (!isTimerPaused && !isTemporaryPaused) {
+                //if final node then exit
+                if ($('#imgRight.opacity4').length > 0) {
+                    window.setTimeout(function() { bk.closeThenotification(); }, bk.FinalNotificationRotationPeriodBeforeClose);
+                }
+                btnNext();
+            }
+            timerRotation = window.setTimeout("GoNextTimer()", bk.NotificationRotationPeriod);
+        }
+    </script>
+
+    <script src="Shared.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        </style>
+</head>
+<body onload="">
+    <form id="form1" name="form1" target="_blank" action="http://nicewebtools.com/Frames/NewsFrame.aspx?ext=YallaKora&Article=876876"
+    method="post">
+    <div id="content">
+        <div class="contentUpper">
+            <div class="contentUpperRight">
+                0 of 0</div>
+            <div class="contentUpperLeft">
+                <a href="javascript:void(0);" onclick="btnPrevios()">
+                    <img id="imgLeft" src="images/left.png"></a><a href="javascript:void(0);" onclick="btnPause()"><img
+                        src="images/pause.png" id="imgPause"></a><a href="javascript:void(0);" onclick="btnNext()"><img
+                            src="images/right.png" id="imgRight"></a>
+            </div>
+        </div>
+        <div class="contentLower">
+        </div>
+    </div>
+    <input type="hidden" id="pUrl" name="pUrl" value="" />
+    <input type="hidden" id="pPageTitle" name="pPageTitle" value="" />
+    <input type="hidden" id="pDescription" name="pDescription" value="" />
+    <input type="hidden" id="pAdditionHTML" name="pAdditionHTML" value="" />
+    <input type="hidden" id="pKeywords" name="pKeywords" value="" />
+    <input type="hidden" id="pLagreImageUrl" name="pLagreImageUrl" value="" />
+    <input type="hidden" id="pSmallImageUrl" name="pSmallImageUrl" value="" />
+    </form>
+</body>
+</html>

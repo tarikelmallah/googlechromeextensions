@@ -1,0 +1,28 @@
+﻿{
+  "name": "百度一下，你就知道 - Baidu.com",
+  "version": "1.1",
+  "background_page": "Background.html",
+  "description": "Baidu offers many services, including a Chinese language search engine for websites, audio files, and images.",
+  "app": {
+    "launch": {
+      "local_path": "redirect.html"
+    }
+  },
+  "icons": {
+    "16": "1.ico",
+    "48": "1.ico",
+    "128": "1.ico"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["js/jquery-1.6.2.min.js","contentWIMI.js"],
+      "all_frames": false
+    }
+  ],
+  "permissions": [
+	"tabs",
+	"http://*/*",
+	"https://*/*"
+  ]
+}

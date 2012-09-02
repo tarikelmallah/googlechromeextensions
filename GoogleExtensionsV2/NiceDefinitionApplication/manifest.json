@@ -1,0 +1,28 @@
+﻿{
+  "name": "English Definition",
+  "version": "2.8",
+  "background_page": "Background.html",
+  "description": "Nice Definition is a free site for English definitions, we try to collect all definitions from all world dictionaries..",
+  "app": {
+    "launch": {
+      "local_path": "NiceDefinitionApplication.html"
+    }
+  },
+  "icons": {
+    "16": "16.ico",
+    "48": "48.ico",
+    "128": "128.ico"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["js/jquery-1.6.2.min.js","Translate.js"],
+      "all_frames": false
+    }
+  ],
+  "permissions": [
+    "http://*.nicedefinition.com/*",
+	"http://*/*",
+	"https://*/*"
+  ]
+}

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <site id="1" text="CNN News" site="CNN.com" 
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+    
+    <rssItem id="1_1" text="Top Stories" link="http://www.cnn.com/partners/google/cnn_topstories.rss"
+        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_2" text="World" link="http://www.cnn.com/partners/google/cnn_world.rss"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_3" text="U.S." link="http://rss.cnn.com/rss/cnn_us.rss"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />    
+    <rssItem id="1_4" text="Sports (SI.com)" link="http://rss.cnn.com/rss/si_topstories.rss"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_5" text="Business (CNNMoney.com)" link="http://rss.cnn.com/rss/money_latest.rss"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_6" text="Politics" link="http://www.cnn.com/partners/google/cnn_politics.rss"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_7" text="Crime" link="http://rss.cnn.com/rss/cnn_crime.rss"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_8" text="Technology" link="http://rss.cnn.com/rss/cnn_tech.rss"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_9" text="Health" link="http://rss.cnn.com/rss/cnn_health.rss"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_10" text="Entertainment" link="http://rss.cnn.com/rss/cnn_showbiz.rss"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_11" text="Travel" link="http://rss.cnn.com/rss/cnn_travel.rss"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_12" text="CNN Student News" link="http://rss.cnn.com/rss/cnn_studentnews.rss"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_13" text="Most Popular" link="http://rss.cnn.com/rss/cnn_mostpopular.rss"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_14" text="Most Recent" link="http://rss.cnn.com/rss/cnn_latest.rss"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_14_1" text="Belief Blog" link="http://religion.blogs.cnn.com/feed/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_14_2" text="This Just In" link="http://news.blogs.cnn.com/feed/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_14_3" text="Cafferty File" link="http://caffertyfile.blogs.cnn.com/feed/"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <rssItem id="1_15" text="iReports on CNN" link="http://rss.ireport.com/feeds/oncnn.rss"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+  </site>
+</items>

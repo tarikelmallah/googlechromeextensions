@@ -1,0 +1,19 @@
+﻿{
+  "name": "Amazon.com Shortcut",
+  "version": "1.3
+  ",
+  "background_page": "Background.html",
+  "description": "Shortcut to Amazon.com site : Online shopping - books, electronics, music, DVDs, software, video games & more.",
+  "app": {
+    "launch": {
+      "local_path": "redirect.html"
+    }
+  },
+  "icons": {
+    "16": "1.ico",
+    "48": "1.ico",
+    "128": "1.ico"
+  },
+  "permissions": [
+  ]
+}

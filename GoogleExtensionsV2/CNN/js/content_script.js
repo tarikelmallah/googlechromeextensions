@@ -1,0 +1,1 @@
+$().ready(function () { alert('done'); });

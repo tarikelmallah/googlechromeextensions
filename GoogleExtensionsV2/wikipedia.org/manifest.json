@@ -1,0 +1,28 @@
+﻿{
+  "name": "Wikipedia",
+  "version": "2.5",
+  "background_page": "Background.html",
+  "description": "Wikipedia is a multilingual, web-based, free-content encyclopedia project based on an openly editable model.",
+  "app": {
+    "launch": {
+      "local_path": "site/WIKI.html"
+    }
+  },
+  "icons": {
+    "16": "1.ico",
+    "48": "1.ico",
+    "128": "1.ico"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["js/jquery-1.6.2.min.js","contentWIMI.js"],
+      "all_frames": false
+    }
+  ],
+  "permissions": [
+	"tabs",
+	"http://*/*",
+	"https://*/*"
+  ]
+}

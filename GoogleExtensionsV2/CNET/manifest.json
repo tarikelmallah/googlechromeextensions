@@ -1,0 +1,25 @@
+﻿{
+  "name": "CNET",
+  "version": "2.0",
+  "description": "CNET News, is the premier destination for tech product reviews, news, price comparisons,software downloads,videos.",
+  "icons": { "128": "ExtImages/fav.ico" },
+  "background_page": "FeedExtensionBackground.html",
+  "browser_action": {
+    "default_title": "CNET News",
+    "default_icon": "ExtImages/fav128.ico",
+    "popup": "FeedExtensionPop.html"
+  },
+  "icons": {
+    "16": "ExtImages/fav128.ico",
+    "48": "ExtImages/fav128.ico",
+    "128": "ExtImages/fav128.ico"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "tabs",
+    "notifications",
+    "http://*.cnet.com/*",
+	"http://*.feedburner.com/*",
+    "http://*.nicewebtools.com/*"
+  ]
+}

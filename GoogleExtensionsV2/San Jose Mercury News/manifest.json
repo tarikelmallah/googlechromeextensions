@@ -1,0 +1,25 @@
+﻿{
+  "name": "San Jose Mercury News",
+  "version": "2.0",
+  "description": "San Jose Mercury News - breaking news, weather, traffic, shopping, sports, jobs, cars, homes and local events.",
+  "icons": { "128": "ExtImages/fav.ico" },
+  "background_page": "FeedExtensionBackground.html",
+  "browser_action": {
+    "default_title": "San Jose Mercury News",
+    "default_icon": "ExtImages/fav128.ico",
+    "popup": "FeedExtensionPop.html"
+  },
+  "icons": {
+    "16": "ExtImages/fav128.ico",
+    "48": "ExtImages/fav128.ico",
+    "128": "ExtImages/fav128.ico"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "tabs",
+    "notifications",
+    "http://*.mercurynews.com/*",
+    "http://*.plus.google.com/*",
+    "http://*.nicewebtools.com/*"
+  ]
+}

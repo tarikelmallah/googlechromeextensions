@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+    <site id="1" text="Medscape Headlines" site="www.bbc.co.uk"
+          largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
+        <rssItem id="_1_3_8" text="Medscape Medical News" link="http://www.medscape.com/cx/rssfeeds/2700.xml"
+       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="1_1" text="All Medscape Articles" link="http://www.medscape.com/cx/rssfeeds/2699.xml"
+            largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="1_2" text="Allergy &amp; Clinical Immunology" link="http://www.medscape.com/cx/rssfeeds/2667.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="1_3" text="Anesthesiology" link="http://www.medscape.com/cx/rssfeeds/4319.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="1_4" text="Business of Medicine" link="http://www.medscape.com/cx/rssfeeds/2668.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="1_5" text="Cardiology" link="http://www.medscape.com/cx/rssfeeds/2669.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="1_6" text="Critical Care" link="http://www.medscape.com/cx/rssfeeds/2670.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="1_7" text="Dermatology" link="http://www.medscape.com/cx/rssfeeds/2671.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="1_8" text="Diabetes &amp; Endocrinology" link="http://www.medscape.com/cx/rssfeeds/2672.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="1_9" text="Emergency Medicine" link="http://www.medscape.com/cx/rssfeeds/2673.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="1_10" text="Family Medicine" link="http://www.medscape.com/cx/rssfeeds/2674.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+
+        <rssItem id="4_11" text="Gastroenterology" link="http://www.medscape.com/cx/rssfeeds/2675.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="4_12" text="General Surgery" link="http://www.medscape.com/cx/rssfeeds/2676.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="4_13" text="HIV/AIDS" link="http://www.medscape.com/cx/rssfeeds/2677.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="4_14" text="Infectious Diseases" link="http://www.medscape.com/cx/rssfeeds/2679.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="4_14_1" text="Internal Medicine" link="http://www.medscape.com/cx/rssfeeds/2680.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="4_14_2" text="Med Students" link="http://www.medscape.com/cx/rssfeeds/2681.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="4_14_3" text="Medscape Today" link="http://www.medscape.com/cx/rssfeeds/2682.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="4_15" text="Nephrology" link="http://www.medscape.com/cx/rssfeeds/2683.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="4_16" text="Neurology" link="http://www.medscape.com/cx/rssfeeds/2684.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="4_17" text="Nursing" link="http://www.medscape.com/cx/rssfeeds/2685.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+
+        <rssItem id="2_1" text="Ob/Gyn &amp; Women's Health" link="http://www.medscape.com/cx/rssfeeds/2686.xml"
+            largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="2_2" text="Oncology" link="http://www.medscape.com/cx/rssfeeds/2678.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="2_3" text="Ophthalmology" link="http://www.medscape.com/cx/rssfeeds/2687.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="2_4" text="Orthopaedics" link="http://www.medscape.com/cx/rssfeeds/2688.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="2_5" text="Pathology &amp; Lab Medicine" link="http://www.medscape.com/cx/rssfeeds/2689.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="2_6" text="Pediatrics" link="http://www.medscape.com/cx/rssfeeds/2690.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="2_8" text="Pharmacists" link="http://www.medscape.com/cx/rssfeeds/2691.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="2_9" text="Plastic Surgery &amp; Aesthetic Medicine" link="http://www.medscape.com/cx/rssfeeds/4331.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="2_10" text="Psychiatry &amp; Mental Health" link="http://www.medscape.com/cx/rssfeeds/2692.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+
+        <rssItem id="3_1" text="Public Health &amp; Prevention" link="http://www.medscape.com/cx/rssfeeds/2693.xml"
+            largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="3_2" text="Pulmonary Medicine" link="http://www.medscape.com/cx/rssfeeds/2694.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="3_3" text="Radiology" link="http://www.medscape.com/cx/rssfeeds/2695.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="3_4" text="Rheumatology" link="http://www.medscape.com/cx/rssfeeds/2696.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="3_5" text="Transplantation" link="http://www.medscape.com/cx/rssfeeds/2697.xml"
+           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <rssItem id="3_6" text="Urology" link="http://www.medscape.com/cx/rssfeeds/2698.xml"
+         largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+
+    </site>
+</items>

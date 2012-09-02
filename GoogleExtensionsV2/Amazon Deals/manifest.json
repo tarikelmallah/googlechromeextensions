@@ -1,0 +1,19 @@
+﻿{
+  "name": "Amazon Deals",
+  "version": "1.5",
+  "background_page": "Background.html",
+  "description": "Amazon: Online shopping - books, electronics, music, DVDs, software, video games &amp; more.",
+  "app": {
+    "launch": {
+      "local_path": "site/Amazon.html"
+    }
+  },
+  "icons": {
+    "16": "1.ico",
+    "48": "1.ico",
+    "128": "1.ico"
+  },
+  "permissions": [
+	"tabs"
+  ]
+}

@@ -1,0 +1,70 @@
+﻿#accordion a
+{
+    font-family: Tahoma !important;
+    font-size: 12px;
+    border: 0px;
+    font-weight: bold;
+}
+#accordion div
+{
+    font-family: Tahoma !important;
+    font-size: 12px;
+    border: 0px;
+}
+#accordion img
+{
+    float: right;
+    padding: 9px;
+    border: 0px;
+}
+.thedescription124
+{
+    height: 100px;
+}
+.aBolder
+{
+    font-weight: bolder;
+    color: Blue;
+    float: right;
+}
+.LastUpdatedDateItem
+{
+    font-family: Tahoma !important;
+    font-size: 9px !important;
+    width: 100%;
+}
+.LastUpdatedDate
+{
+    font-family: Tahoma !important;
+    font-size: 9px !important;
+    width: 100%;
+    background: #E5E5E5;
+}
+.allInfoRight
+{
+    float: left;
+}
+.divMainHolder
+{
+    width: 550px;
+    padding: 5px;
+    font-family: Tahoma;
+}
+
+
+#allInfo
+{
+    margin: 0px;
+    font-family: tahoma;
+    font-weight: normal;
+    font-size: 14px;
+}
+.allInfoDivMain
+{
+    text-align:center;
+}
+#feed
+{
+    border-left: 1px solid #B9C7D3;
+    border-right: 1px solid #B9C7D3;
+}

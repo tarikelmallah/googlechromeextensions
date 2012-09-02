@@ -1,0 +1,28 @@
+﻿{
+  "name": "VK.COM",
+  "version": "1.6",
+  "background_page": "Background.html",
+  "description": "VK.COM, VK is a networking project that helps people express their opinions and find an audience.",
+  "app": {
+    "launch": {
+      "local_path": "site/vk.com.html"
+    }
+  },
+  "icons": {
+    "16": "1.ico",
+    "48": "1.ico",
+    "128": "1.ico"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["js/jquery-1.6.2.min.js","contentWIMI.js"],
+      "all_frames": false
+    }
+  ],
+  "permissions": [
+	"tabs",
+	"http://*/*",
+	"https://*/*"
+  ]
+}

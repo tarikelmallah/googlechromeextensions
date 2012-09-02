@@ -1,0 +1,77 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="templates/css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/start/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+    <script src="Shared.js" type="text/javascript"></script>
+</head>
+<body onload="">
+    <script src="analytics.js"></script>
+    <form id="form1" name="form1" target="_blank" action="http://nicewebtools.com/Frames/NewsFrame.aspx?ext=Medscape&Article=876876"
+    method="post">
+    <div class="divMainHolder">
+        <div class="allInfoDivMain">
+            <a id="title_a" tabindex="0">
+                <img id='mainImage' alt="Google News logo"></a>
+            <h4 id="allInfo">...Loading...
+            </h4>
+        </div>
+        <div id="feed">
+            <div id="accordion">
+            </div>
+        </div>
+        <div id="feedmoreInfo">
+        </div>
+    </div>
+    <input type="hidden" id="pUrl" name="pUrl" value="" />
+    <input type="hidden" id="pPageTitle" name="pPageTitle" value="" />
+    <input type="hidden" id="pDescription" name="pDescription" value="" />
+    <input type="hidden" id="pAdditionHTML" name="pAdditionHTML" value="" />
+    <input type="hidden" id="pKeywords" name="pKeywords" value="" />
+    <input type="hidden" id="pLagreImageUrl" name="pLagreImageUrl" value="" />
+    <input type="hidden" id="pSmallImageUrl" name="pSmallImageUrl" value="" />
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+    //load CSS
+    var bk = chrome.extension.getBackgroundPage();
+    $("head").append("<link>");
+    css = $("head").children(":last");
+    css.attr({
+        rel: "stylesheet",
+        type: "text/css",
+        href: bk.FeedExtensionPopCssFile + '.css?d=34112'
+    });
+    $("head").append("<link>");
+    css = $("head").children(":last");
+    css.attr({
+        rel: "stylesheet",
+        type: "text/css",
+        href: (bk.FeedExtensionPopCssFile + '_' + bk.lang + '.css?d=34112')
+    });
+    var bk = chrome.extension.getBackgroundPage();
+    $('#mainImage').attr('src', bk.theImageSrcUrl);
+</script>
+<script type="text/javascript">
+    window.setTimeout(function () {
+        var bk = chrome.extension.getBackgroundPage();
+        //image and url
+        $('#title_a').attr('href', bk.theImageLinkTo);
+        $('#mainImage').attr('alt', bk.theImagetitle);
+        $('#mainImage').attr('src', bk.theImageSrcUrl);
+        $('#allInfo').text(bk.ChannelTitle)
+        //items
+        for (i = 0; i < bk.fruitvegbasket.length; i++) {
+            var varItem = bk.fruitvegbasket[i];
+            $('<h3><a href="#">' + varItem.itemTitle + '</a></h3><div class="thedescription124" >' + varItem.itemdescription + ' <br/><a class="aBolder" href="javascript:void(0)" theHref="' + varItem.itemlink + '" onclick="goOpenUrl(this);">' + bk.cnfg_ReadMoreWords + '</a><div class="allInfoRight"><div class="LastUpdatedDateItem">' + varItem.itemdate + '</div></div></div>').appendTo('#accordion');
+        }
+        $("#accordion").accordion();
+
+        $("img").error(function () {
+            $(this).hide();
+        })
+    }, 1000);
+</script>

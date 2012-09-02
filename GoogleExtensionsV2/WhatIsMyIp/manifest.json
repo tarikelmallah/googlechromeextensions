@@ -1,0 +1,28 @@
+﻿{
+  "name": "What Is My IP",
+  "version": "1.1",
+  "background_page": "Background.html",
+  "description": "What Is My IP, by NiceWebTools.com",
+  "app": {
+    "launch": {
+      "local_path": "redirect.html"
+    }
+  },
+  "icons": {
+    "16": "1.ico",
+    "48": "1.ico",
+    "128": "1.ico"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["js/jquery-1.6.2.min.js","contentWIMI.js"],
+      "all_frames": false
+    }
+  ],
+  "permissions": [
+	"tabs",
+	"http://*/*",
+	"https://*/*"
+  ]
+}
