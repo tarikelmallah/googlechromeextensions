@@ -1,4 +1,4 @@
-//load CSS
+//load CSS here
 $().ready(function () { initPop(); });
 
 function initPop() {
