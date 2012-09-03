@@ -140,7 +140,7 @@ form
     color: #2251A6;
 }
 #link-options {
-    background: url("../images/options.png") no-repeat center left;
+    background: url("images/options.png") no-repeat center left;
     padding-left: 17px;
     overflow: visible;
 }.OptionsDiv
@@ -156,7 +156,7 @@ form
 }
 .nicewebtoolsDiv
 {
-    margin-top:10px;background: url("../images/nicewebtools.png") no-repeat center left;
+    margin-top:10px;background: url("images/nicewebtools.png") no-repeat center left;
     float:right;width: 169px;
 }
 #link-buyme {
