@@ -7,7 +7,7 @@ var UseGuidInLink = true;
 var FeedExtensionPopCssFile = 'https://googlechromeextensions.googlecode.com/svn/GoogleExtensionsV2/exFilesV5/FeedExtensionPop';
 var NotificationsCssFile = 'https://googlechromeextensions.googlecode.com/svn/GoogleExtensionsV2/exFilesV5/Notification';
 var Logo128PngPath = 'ExtImages/BBC.png';
-var FormActionUrl = 'http://nicewebtools.com/Frames/NewsFrame.aspx?ext=BBC&Article=876876&Url=';
+var FormActionUrl = 'http://nativenews.info/Frames/NewsFrame.aspx?ext=BBC&Article=876876&Url=';
 //var paypalDonateUrl = 'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=TBCUW8HNPBXYJ&lc=CA&item_name=Nice%20Web%20Tools&currency_code=CAD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted';
 var paypalDonateUrl = 'https://docs.google.com/spreadsheet/viewform?formkey=dGhCOEtiLU9wbWpIU2RHVnM3RVJGQlE6MA';
 
