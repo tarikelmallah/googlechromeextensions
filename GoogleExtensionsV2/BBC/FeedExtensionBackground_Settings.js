@@ -1,11 +1,11 @@
-//////////Configurations//////////'http://www.yallakora.com/arabic/rss.aspx?id=0'
+//////////Configurations//////////
 var NotificationRotationPeriod = 5000;
 var FinalNotificationRotationPeriodBeforeClose = 15000;
 var MainTimer = 120000;
 var NotificationTimer = 30000;
 var UseGuidInLink = true;
-var FeedExtensionPopCssFile = 'http://nicewebtools.com/GoogleExtensions/exFilesV4/FeedExtensionPop';
-var NotificationsCssFile = 'http://nicewebtools.com/GoogleExtensions/exFilesV4/Notification';
+var FeedExtensionPopCssFile = 'https://googlechromeextensions.googlecode.com/svn/GoogleExtensionsV2/exFilesV5/FeedExtensionPop';
+var NotificationsCssFile = 'https://googlechromeextensions.googlecode.com/svn/GoogleExtensionsV2/exFilesV5/Notification';
 var Logo128PngPath = 'ExtImages/BBC.png';
 var FormActionUrl = 'http://nicewebtools.com/Frames/NewsFrame.aspx?ext=BBC&Article=876876&Url=';
 //var paypalDonateUrl = 'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=TBCUW8HNPBXYJ&lc=CA&item_name=Nice%20Web%20Tools&currency_code=CAD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted';
@@ -17,6 +17,7 @@ var ModuleName = 'BBC News'
 var ModuleNameOptions = 'BBC News- Options';
 var RemoveSelectorFromRssDescription = ".feedflare";
 var SearchUrl = 'http://www.bbc.co.uk/search/news/?q='
+var homepageUrl = 'http://www.bbc.co.uk/';
 
 //localized texts
 var lang = 'en';//'ar'

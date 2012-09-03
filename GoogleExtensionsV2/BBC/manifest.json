@@ -2,7 +2,8 @@
  "name": "BBC News",
   "version": "6.0",
   "description": "News feeds allow you to see when websites have added new content",
-  "background":  {"scripts": ["js/jquery-1.6.2.min.js","exFilesV4/analytics.js","FeedExtensionBackground_Settings.js","exFilesV4/FeedExtensionBackground.js"]},
+  "background":  {
+  "page":"FeedExtensionBackground.html"},
   "browser_action": {
     "default_title": "BBC News",
     "default_icon": "ExtImages/fav.ico",
@@ -32,6 +33,6 @@
     "http://*.nicewebtools.com/*"
   ],
   "manifest_version": 2,
-  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://ssl.google-analytics.com/; object-src 'self';connect-src http://feeds.bbci.co.uk http://www.bbc.co.uk http://news.bbc.co.uk 'self'"
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://feeds.bbci.co.uk http://www.bbc.co.uk http://news.bbc.co.uk http://newsrss.bbc.co.uk 'self'"
 
 }
