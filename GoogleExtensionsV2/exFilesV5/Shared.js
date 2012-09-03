@@ -19,7 +19,10 @@ function goOpenUrl(theLink) {
             var theLink2 = varItem.itemlink;
             if (bk.UseGuidInLink)
                 theLink2 = varItem.itemguid;
-            $($('form')[0]).attr('action', bk.FormActionUrl + escape(theLink2));
+
+
+            $($('form')[0]).attr('action', theLink2);
+            //$($('form')[0]).attr('action', bk.FormActionUrl + escape(theLink2));
             document.forms[$($('form')[0]).attr('id')].submit();
 
             window.setTimeout(function () { bk.closeThenotification(); }, 100);
