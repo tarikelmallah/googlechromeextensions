@@ -94,6 +94,10 @@ function initPop() {
             $(this).attr('src', $(this).attr('src2'));
         })
     }, 400);
+
+    //for homepage link
+    $('#title_a').click(function () { gotoHomepage(); });
+    $('#title_a').attr('href', 'javascript:void(0)');
 }
 function createTheAccordionfor(selectedItemClass) {
     $('.' + selectedItemClass).accordion({
@@ -176,6 +180,16 @@ function goSearch() {
     var yUrl = (bk.SearchUrl + escape($('#txtSearch').val()));
     chrome.tabs.create({
         'url': yUrl,
+        'selected': true
+    });
+}
+function gotoHomepage() {
+    var bk = chrome.extension.getBackgroundPage();
+    var homepageUrl = bk.SearchUrl;
+    if (bk.homepageUrl != undefined)
+        homepageUrl = bk.homepageUrl;
+    chrome.tabs.create({
+        'url': homepageUrl,
         'selected': true
     });
 }
