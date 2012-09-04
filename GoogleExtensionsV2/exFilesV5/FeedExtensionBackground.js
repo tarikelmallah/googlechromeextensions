@@ -391,12 +391,14 @@ function readXMLConfig() {
             if (localStorage["firstTime"] == undefined || localStorage["firstTime"] == '') {
                 localStorage["siteItemsOptions"] = siteItems[0].rssItems[0].id + '#10#true';
                 localStorage["firstTime"] = '1';
+                localStorage["firstTime_2"] = '1';
                 chrome.tabs.create({
                     'url': chrome.extension.getURL("options.html"),
                     'selected': true
                 });
             } else if (localStorage["firstTime_2"] == undefined || localStorage["firstTime_2"] == '') {
                 localStorage["firstTime_2"] = '1';
+                localStorage["firstTime"] = '1';
                 chrome.tabs.create({
                     'url': chrome.extension.getURL("options.html"),
                     'selected': true
