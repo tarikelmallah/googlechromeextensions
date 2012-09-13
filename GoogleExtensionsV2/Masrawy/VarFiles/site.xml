@@ -24,8 +24,6 @@
        largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
     <rssItem id="1_11" text="لطفلك" link="http://www.masrawy.com/women/rss/kids.aspx"
       largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
-    <rssItem id="1_12" text="الموجز" link="http://www.almogaz.com/rss.xml"
-      largeimage="\VarFiles\largeLogo.png" smallimage="\VarFiles\small.png" description="" />
-    
+     
   </site>
  </items>

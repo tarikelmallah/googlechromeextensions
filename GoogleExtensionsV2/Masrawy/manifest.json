@@ -1,13 +1,13 @@
 ﻿{
  "name": "Masrawy News-أخبار مصراوي",
-  "version": "2.0",
+  "version": "3.0",
   "description": "أخبار مصراوي Masrawy , أخبار مصر المتنوعة, سياسة رياضة -أول وأكبر بوابة مصرية",
   "icons": { "128": "ExtImages/fav.ico" },
-  "background_page": "FeedExtensionBackground.html",
+  "background":  {  "page":"FeedExtensionBackground.html"},
   "browser_action": {
     "default_title": "Masrawy News-أخبار مصراوي",
     "default_icon": "ExtImages/fav.ico",
-    "popup": "FeedExtensionPop.html"
+    "default_popup": "FeedExtensionPop.html"
   },
   "icons": {
     "16": "ExtImages/fav.ico",
@@ -20,5 +20,8 @@
     "notifications",
     "http://*.masrawy.com/*",
     "http://*.nicewebtools.com/*"
-  ]
+  ],
+ "manifest_version": 2,
+ "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://www.masrawy.com  'self'"
+
 }

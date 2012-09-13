@@ -1,13 +1,13 @@
 ﻿{
-  "name": "New York Times News",
-  "version": "1.8",
-  "description": "New York Times News chrome extensions, and news notifications",
+  "name": "New York Times News (Rss feed Reader)",
+  "version": "3.0",
+  "description": "New York Times News (Rss feed Reader) chrome extensions, and news notifications",
   "icons": { "128": "ExtImages/fav.ico" },
-  "background_page": "FeedExtensionBackground.html",
+  "background":  {  "page":"FeedExtensionBackground.html"},
   "browser_action": {
     "default_title": "New York Times News",
     "default_icon": "ExtImages/fav2.ico",
-    "popup": "FeedExtensionPop.html"
+    "default_popup": "FeedExtensionPop.html"
   },
   "icons": {
     "16": "ExtImages/fav2.ico",
@@ -20,5 +20,8 @@
     "notifications",
     "http://*.nytimes.com/*",
     "http://*.nicewebtools.com/*"
-  ]
+  ],
+ "manifest_version": 2,
+ "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://www.nytimes.com http://feeds.nytimes.com http://cityroom.blogs.nytimes.com http://fort-greene.blogs.nytimes.com http://eastvillage.thelocal.nytimes.com http://dealbook.blogs.nytimes.com http://bits.blogs.nytimes.com http://therail.blogs.nytimes.com http://wheels.blogs.nytimes.com http://formulaone.blogs.nytimes.com http://topics.nytimes.com http://lens.blogs.nytimes.com http://topics.blogs.nytimes.com http://wordplay.blogs.nytimes.com http://thelede.blogs.nytimes.com  'self'"
+
 }

@@ -1,13 +1,13 @@
 ﻿{
   "name": "CNN World News",
-  "version": "4.0",
+  "version": "5.0",
   "description": "News feeds allow you to see when websites have added new content",
   "icons": { "128": "ExtImages/fav.ico" },
-  "background_page": "FeedExtensionBackground.html",
+  "background":  {  "page":"FeedExtensionBackground.html"},
   "browser_action": {
     "default_title": "CNN World News",
     "default_icon": "ExtImages/fav.ico",
-    "popup": "FeedExtensionPop.html"
+    "default_popup": "FeedExtensionPop.html"
   },
   "icons": {
     "16": "ExtImages/fav.ico",
@@ -29,5 +29,8 @@
     "http://*.cnn.com/*",
 	"http://*.ireport.com/*",
     "http://*.nicewebtools.com/*"
-  ]
+  ],
+ "manifest_version": 2,
+ "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://www.cnn.com http://rss.cnn.com http://religion.blogs.cnn.com http://caffertyfile.blogs.cnn.com http://rss.ireport.com 'self'"
+
 }

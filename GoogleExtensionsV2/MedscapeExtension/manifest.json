@@ -1,13 +1,13 @@
 ﻿{
  "name": "Medscape Medical News",
-  "version": "4.5",
+  "version": "4.7",
   "description": "Latest medical news from Medscape.",
   "icons": { "128": "ExtImages/fav.ico" },
-  "background_page": "FeedExtensionBackground.html",
+  "background":  {  "page":"FeedExtensionBackground.html"},
   "browser_action": {
     "default_title": "Medscape Medical News",
     "default_icon": "ExtImages/fav.ico",
-    "popup": "FeedExtensionPop.html"
+    "default_popup": "FeedExtensionPop.html"
   },
   "icons": {
     "16": "ExtImages/fav.ico",
@@ -28,5 +28,8 @@
     "notifications",
 	"http://*.medscape.com/*",
     "http://*.nicewebtools.com/*"
-  ]
+  ],
+ "manifest_version": 2,
+ "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://www.medscape.com 'self'"
+
 }

@@ -1,13 +1,13 @@
 ﻿{
   "name": "The Wall Street Journal",
-  "version": "3.2",
+  "version": "4.2",
   "description": "WSJ online coverage of breaking news and current headlines from the US and around the world.",
   "icons": { "128": "ExtImages/fav3.ico" },
-  "background_page": "FeedExtensionBackground.html",
+  "background":  {  "page":"FeedExtensionBackground.html"},
   "browser_action": {
     "default_title": "The Wall Street Journal",
     "default_icon": "ExtImages/fav.ico",
-    "popup": "FeedExtensionPop.html"
+    "default_popup": "FeedExtensionPop.html"
   },
   "icons": {
     "16": "ExtImages/fav.ico",
@@ -27,7 +27,13 @@
     "tabs",
     "notifications",
     "http://*.wsj.com/*",
+	"http://*.efinancialnews.com/",
+	"http://*.marketwatch.com/",
+	"http://*.smartmoney.com/",
     "http://*.plus.google.com/*",
     "http://*.nicewebtools.com/*"
-  ]
+  ],
+ "manifest_version": 2,
+ "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://online.wsj.com http://blogs.wsj.com http://www.efinancialnews.com http://www.marketwatch.com http://feeds.smartmoney.com 'self'"
+
 }
