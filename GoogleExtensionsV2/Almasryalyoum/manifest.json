@@ -1,13 +1,13 @@
 ﻿{
  "name": "AlMasry AlYoum - المصري اليوم",
-  "version": "2.1",
+  "version": "3.0",
   "description": "المصري اليوم، أخبار اليوم من مصر علي جوجل كروم , almasryalyoum",
   "icons": { "128": "ExtImages/fav.ico" },
-  "background_page": "FeedExtensionBackground.html",
+  "background":  { "page":"FeedExtensionBackground.html"},
   "browser_action": {
     "default_title": "AlMasry AlYoum - المصري اليوم",
     "default_icon": "ExtImages/fav.ico",
-    "popup": "FeedExtensionPop.html"
+    "default_popup": "FeedExtensionPop.html"
   },
   "icons": {
     "16": "ExtImages/fav.ico",
@@ -20,5 +20,8 @@
     "notifications",
     "http://*.almasryalyoum.com/*",
     "http://*.nicewebtools.com/*"
-  ]
+  ],
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://www.almasryalyoum.com 'self'"
+
 }

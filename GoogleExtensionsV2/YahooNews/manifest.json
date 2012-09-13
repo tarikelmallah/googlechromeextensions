@@ -1,13 +1,13 @@
 ﻿{
   "name": "Yahoo News",
-  "version": "3.1",
+  "version": "4.1",
   "description": "Yahoo! News Chrome Extension, The latest news and headlines, breaking news and coverage with photos and more.",
   "icons": { "128": "ExtImages/fav128.ico" },
-  "background_page": "FeedExtensionBackground.html",
+  "background":  {  "page":"FeedExtensionBackground.html"},
   "browser_action": {
     "default_title": "Yahoo News",
     "default_icon": "ExtImages/fav128.ico",
-    "popup": "FeedExtensionPop.html"
+    "default_popup": "FeedExtensionPop.html"
   },
   "icons": {
     "16": "ExtImages/fav128.ico",
@@ -28,5 +28,9 @@
     "notifications",
     "http://*.yahoo.com/*",
     "http://*.nicewebtools.com/*"
-  ]
+  ],
+ "manifest_version": 2,
+ "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://news.yahoo.com  'self'"
+
+
 }

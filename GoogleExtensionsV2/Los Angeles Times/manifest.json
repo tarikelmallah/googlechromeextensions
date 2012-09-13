@@ -1,13 +1,13 @@
 ﻿{
   "name": "Los Angeles Times",
-  "version": "2.0",
+  "version": "3.0",
   "description": "The Los Angeles Times is a leading source of news on Southern California.",
   "icons": { "128": "ExtImages/fav.ico" },
-  "background_page": "FeedExtensionBackground.html",
+  "background":  {  "page":"FeedExtensionBackground.html"},
   "browser_action": {
     "default_title": "Los Angeles Times",
     "default_icon": "ExtImages/fav128.ico",
-    "popup": "FeedExtensionPop.html"
+    "default_popup": "FeedExtensionPop.html"
   },
   "icons": {
     "16": "ExtImages/fav128.ico",
@@ -21,5 +21,8 @@
     "http://*.latimes.com/*",
     "http://*.plus.google.com/*",
     "http://*.nicewebtools.com/*"
-  ]
+  ],
+ "manifest_version": 2,
+ "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://feeds.latimes.com http://pipes.yahoo.com http://feeds2.feedburner.com http://latimesblogs.latimes.com http://herocomplex.latimes.com http://projects.latimes.com http://lakersblog.latimes.com http://latimesblogs.latimes.com 'self'"
+
 }

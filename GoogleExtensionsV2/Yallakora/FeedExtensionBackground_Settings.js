@@ -4,10 +4,10 @@ var FinalNotificationRotationPeriodBeforeClose = 15000;
 var MainTimer = 120000;
 var NotificationTimer = 30000;
 var UseGuidInLink = true;
-var FeedExtensionPopCssFile = 'http://nicewebtools.com/GoogleExtensions/exFilesV4/FeedExtensionPop';
-var NotificationsCssFile = 'http://nicewebtools.com/GoogleExtensions/exFilesV4/Notification';
+var FeedExtensionPopCssFile = 'https://googlechromeextensions.googlecode.com/svn/GoogleExtensionsV2/exFilesV5/FeedExtensionPop';
+var NotificationsCssFile = 'https://googlechromeextensions.googlecode.com/svn/GoogleExtensionsV2/exFilesV5/Notification';
 var Logo128PngPath = 'VarFiles/Logo.png';
-var FormActionUrl = 'http://nicewebtools.com/Frames/NewsFrame.aspx?ext=yallakora&bg=%23000&Url=';
+var FormActionUrl = 'http://nativenews.info/Frames/NewsFrame.aspx?ext=yallakora&bg=%23000&Url=';
 //var paypalDonateUrl = 'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=TBCUW8HNPBXYJ&lc=CA&item_name=Nice%20Web%20Tools&currency_code=CAD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted';
 var paypalDonateUrl = 'https://docs.google.com/spreadsheet/viewform?formkey=dHh4TTItOHpqT2d2WkRCS0ZXWHRGWkE6MA';
 
@@ -16,7 +16,9 @@ var cnfg_rssUrlOfTheNews = 'http://www.masrawy.com/News/rss/LocalPolitics.aspx';
 var ModuleName = 'Yallakora - ياللاكورة'
 var ModuleNameOptions = 'Yallakora -  ياللاكورة';
 var RemoveSelectorFromRssDescription = ".feedflare";
-var SearchUrl = 'http://www.yallakora.com/arabic/YKGeneral/SearchResult.aspx?q='
+var SearchUrl = 'http://www.yallakora.com/arabic/YKGeneral/SearchResult.aspx?q=';
+var homepageUrl = 'http://www.yallakora.com/';
+
 
 //localized texts
 var lang = 'ar'; //'ar'

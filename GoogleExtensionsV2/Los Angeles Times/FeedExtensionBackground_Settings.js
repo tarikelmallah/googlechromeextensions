@@ -4,10 +4,10 @@ var FinalNotificationRotationPeriodBeforeClose = 15000;
 var MainTimer = 120000;
 var NotificationTimer = 30000;
 var UseGuidInLink = false;
-var FeedExtensionPopCssFile = 'http://nicewebtools.com/GoogleExtensions/exFilesV4/FeedExtensionPop';
-var NotificationsCssFile = 'http://nicewebtools.com/GoogleExtensions/exFilesV4/Notification';
+var FeedExtensionPopCssFile = 'https://googlechromeextensions.googlecode.com/svn/GoogleExtensionsV2/exFilesV5/FeedExtensionPop';
+var NotificationsCssFile = 'https://googlechromeextensions.googlecode.com/svn/GoogleExtensionsV2/exFilesV5/Notification';
 var Logo128PngPath = 'VarFiles/Logo.gif';
-var FormActionUrl = 'http://nicewebtools.com/Frames/NewsFrame.aspx?ext=LATimes&Article=876876&Url=';
+var FormActionUrl = 'http://nativenews.info/Frames/NewsFrame.aspx?ext=LATimes&Article=876876&Url=';
 //var paypalDonateUrl = 'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=TBCUW8HNPBXYJ&lc=CA&item_name=Nice%20Web%20Tools&currency_code=CAD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted';
 var paypalDonateUrl = 'https://docs.google.com/spreadsheet/viewform?formkey=dEZWTXJyNjZaLUZ2Y0VmaG1hMnBDWHc6MA';
 
@@ -16,7 +16,8 @@ var cnfg_rssUrlOfTheNews = 'http://pipes.yahoo.com/pipes/pipe.run?_id=5dc8a87340
 var ModuleName = 'The Los Angeles Times'
 var ModuleNameOptions = 'The Los Angeles Times- Options';
 var RemoveSelectorFromRssDescription = ".feedflare";
-var SearchUrl = 'http://www.latimes.com/search/dispatcher.front?target=adv_article&Query='
+var SearchUrl = 'http://www.latimes.com/search/dispatcher.front?target=adv_article&Query=';
+var homepageUrl = 'http://www.latimes.com/';
 
 //localized texts
 var lang = 'en';//'ar'

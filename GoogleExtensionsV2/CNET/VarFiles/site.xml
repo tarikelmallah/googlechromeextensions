@@ -207,7 +207,7 @@
      largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
     <rssItem id="9_1" text="Buzz Out Loud" link="http://www.cnet.com/i/pod/cnet_buzz.xml"
         largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-    <rssItem id="9_2" text="Gadgettes" link="http://cnet.com/i/pod/cnet_gadgetgirls.xml"
+    <rssItem id="9_2" text="Gadgettes" link="http://www.cnet.com/i/pod/cnet_gadgetgirls.xml"
        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
     <rssItem id="9_3" text="MP3 Insider" link="http://www.cnet.com/i/pod/mp3insider.xml"
        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />

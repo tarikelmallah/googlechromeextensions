@@ -4,10 +4,10 @@ var FinalNotificationRotationPeriodBeforeClose = 15000;
 var MainTimer = 120000;
 var NotificationTimer = 30000;
 var UseGuidInLink = false;
-var FeedExtensionPopCssFile = 'http://nicewebtools.com/GoogleExtensions/exFilesV4/FeedExtensionPop';
-var NotificationsCssFile = 'http://nicewebtools.com/GoogleExtensions/exFilesV4/Notification';
+var FeedExtensionPopCssFile = 'https://googlechromeextensions.googlecode.com/svn/GoogleExtensionsV2/exFilesV5/FeedExtensionPop';
+var NotificationsCssFile = 'https://googlechromeextensions.googlecode.com/svn/GoogleExtensionsV2/exFilesV5/Notification';
 var Logo128PngPath = 'VarFiles/Logo.gif';
-var FormActionUrl = 'http://nicewebtools.com/Frames/NewsFrame.aspx?ext=CNET&Url=';
+var FormActionUrl = 'http://nativenews.info/Frames/NewsFrame.aspx?ext=CNET&Url=';
 //var paypalDonateUrl = 'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=TBCUW8HNPBXYJ&lc=CA&item_name=Nice%20Web%20Tools&currency_code=CAD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted';
 var paypalDonateUrl = 'https://docs.google.com/spreadsheet/viewform?formkey=dDhGeFJLcWc0MjloSU1pUmZOV1IzbHc6MA';
 
@@ -16,7 +16,8 @@ var cnfg_rssUrlOfTheNews = 'http://reviews.cnet.com/4924-5_7-0.xml?7eChoice=1&am
 var ModuleName = 'CNET News'
 var ModuleNameOptions = 'CNET News- Options';
 var RemoveSelectorFromRssDescription = ".feedflare";
-var SearchUrl = 'http://www.cnet.com/1770-5_1-0.html?tag=srch&query='
+var SearchUrl = 'http://www.cnet.com/1770-5_1-0.html?tag=srch&query=';
+var homepageUrl = 'http://www.cnet.com/';
 
 //localized texts
 var lang = 'en';//'ar'
