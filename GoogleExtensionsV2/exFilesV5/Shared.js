@@ -5,7 +5,7 @@ function goOpenUrl(theLink) {
         var varItem = bk.fruitvegbasket[i];
         if ($(theLink).attr('theHref') == varItem.itemlink) {
             var img = $($($(theLink).parent()).find('img')[0]).attr('src');
-            if ((img ==undefined || img == '') && $($($(theLink).parents('.thedescription124')).find('.popItemContent')[0]).find('img').length>0) {
+            if ((img == undefined || img == '') && $($($(theLink).parents('.thedescription124')).find('.popItemContent')[0]).find('img').length > 0) {
                 img = $($($($(theLink).parents('.thedescription124')).find('.popItemContent')[0]).find('img')[0]).attr('src');
             }
             if ((img == undefined || img == '') && $('<div>' + varItem.itemdescription + '</div>').find('>img').length > 0) {
@@ -22,7 +22,11 @@ function goOpenUrl(theLink) {
 
 
             //$($('form')[0]).attr('action', theLink2);
-            $($('form')[0]).attr('action', bk.FormActionUrl + escape(theLink2));
+            if (bk.FormActionUrl = '')
+                $($('form')[0]).attr('action', theLink2);
+            else
+                $($('form')[0]).attr('action', bk.FormActionUrl + escape(theLink2));
+
             document.forms[$($('form')[0]).attr('id')].submit();
 
             window.setTimeout(function () { bk.closeThenotification(); }, 100);
