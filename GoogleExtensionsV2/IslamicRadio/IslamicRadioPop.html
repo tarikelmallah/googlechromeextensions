@@ -1,0 +1,339 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="js/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <script src="pop.js" type="text/javascript"></script>
+    <style type="text/css">
+        .imgPlay
+        {
+            width: 36px;
+        }
+        
+        .tblAll
+        {
+            font-family: tahoma;
+            font-size: 12px;
+        }
+        .tblAll tr:nth-child(odd)
+        {
+            background: #CCC;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 500px; height: 50px; background-color: #5e5e5e; color: white;
+        font-family: tahoma; padding: 15px;">
+        <div style="float: left;">
+            <img class="imgPlay" id="play" src="play.png" alt="Play" value="Play" style="float: left;">
+            <img class="imgPlay" id="pause" src="pause.png" alt="pause" value="pause" style="float: left;">
+             <div id="duration" style="font-size: 22px;padding-left: 60px;">00 : 00</div>
+           
+            <input   id="volume" type="range" min="0" max="10" value="5"></div>
+       
+        <div style="float: left;">
+            &nbsp;</div>
+        <div id="message"" style="font-size: 14px;text-align: center;width: 324px;position: absolute;left: 171px;top: 17px;">
+            </div>
+    </div>
+    <div>
+        <table class="tblAll">
+            <tr>
+                <td>
+                    <input id="rd1" name="slctRd" value="1" type="radio" checked="checked" />
+                </td>
+                <td>
+                    الإذاعة العامة - اذاعة متنوعة لمختلف القراء
+                </td>
+                <td>
+                    Main Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio1" name="slctRd" value="2" type="radio" />
+                </td>
+                <td>
+                    تلاوات خاشعة لمختلف القراء
+                </td>
+                <td>
+                    _ Beautiful recitations
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio2" name="slctRd" value="3" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ ماهر المعيقلي
+                </td>
+                <td>
+                    _ Maher Al Meaqli Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio3" name="slctRd" value="4" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ أحمد العجمي
+                </td>
+                <td>
+                    _ Ahmad Al-Ajmy Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio4" name="slctRd" value="5" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ عبدالرحمن السديس
+                </td>
+                <td>
+                    _ Abdulrahman Alsudaes Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio5" name="slctRd" value="6" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ سعود الشريم
+                </td>
+                <td>
+                    _ Saud Al-Shuraim Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio6" name="slctRd" value="7" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ ياسر الدوسري
+                </td>
+                <td>
+                    _ Yasser Al-Dosari Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio7" name="slctRd" value="8" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ مشاري العفاسي
+                </td>
+                <td>
+                    _ Mishary Al Afasi Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio8" name="slctRd" value="9" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ عبدالباسط عبدالصمد
+                </td>
+                <td>
+                    _ Abdulbasit Abdulsamad Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio9" name="slctRd" value="10" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ ناصر القطامي
+                </td>
+                <td>
+                    _ Nasser Alqatami Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio10" name="slctRd" value="11" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ محمد صديق المنشاوي
+                </td>
+                <td>
+                    _ Mohammed Siddiq Al-Minshawi Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio11" name="slctRd" value="12" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ سعد الغامدي
+                </td>
+                <td>
+                    _ Saad Al-Ghamdi Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio12" name="slctRd" value="13" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ عبدالباسط عبدالصمد - المصحف المجود
+                </td>
+                <td>
+                    _ Abdulbasit Abdulsamad - MJAWOAD Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio13" name="slctRd" value="14" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ خالد القحطاني
+                </td>
+                <td>
+                    _ Khaled Al-Qahtani Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio14" name="slctRd" value="15" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ فارس عباد
+                </td>
+                <td>
+                    _ Fares Abbad Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio15" name="slctRd" value="16" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ إدريس أبكر
+                </td>
+                <td>
+                    _ Idrees Abkr Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio16" name="slctRd" value="17" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ شيخ أبو بكر الشاطري
+                </td>
+                <td>
+                    _ Shaik Abu Bakr Al Shatri Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio17" name="slctRd" value="18" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ علي جابر
+                </td>
+                <td>
+                    _ Ali Jaber Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio18" name="slctRd" value="19" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ محمد جبريل
+                </td>
+                <td>
+                    _ Mohammad Jibreel Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio19" name="slctRd" value="20" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ محمود الحصري
+                </td>
+                <td>
+                    _ Mahmoud Khalil Al-Hussary Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio20" name="slctRd" value="21" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ محمد أيوب
+                </td>
+                <td>
+                    _ Mohammad Ayyub Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio21" name="slctRd" value="22" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ عبدالباسط عبدالصمد - ورش عن نافع -
+                </td>
+                <td>
+                    _ Abdulbasit Abdulsamad (Warsh A'n Nafi') Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio22" name="slctRd" value="23" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ عبدالله بصفر
+                </td>
+                <td>
+                    _ Abdullah Basfer
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio23" name="slctRd" value="24" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ صابر عبدالحكم
+                </td>
+                <td>
+                    _ Saber Abdulhakm Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio24" name="slctRd" value="25" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ جمعان العصيمي
+                </td>
+                <td>
+                    _ Jamaan Alosaimi Radio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio26" name="slctRd" value="26" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ عبدالله خياط
+                </td>
+                <td>
+                    _ IAbduulah Kayyat
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Radio27" name="slctRd" value="27" type="radio" />
+                </td>
+                <td>
+                    إذاعة القارئ ابراهيم الأخضر
+                </td>
+                <td>
+                    _ Ibrahim Al-Akder
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
