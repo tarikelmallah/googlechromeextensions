@@ -16,7 +16,7 @@ function goOpenUrl(theLink) {
             $('#pDescription').val($('<div>' + varItem.itemdescription + '</div>').text().replace(/""/gi, ""))
             $('#pLagreImageUrl').val(img);
             $('#pSmallImageUrl').val(img);
-            var theLink2 = varItem.itemlink;
+            var theLink2 = varItem.itemlink; 
             if (bk.UseGuidInLink)
                 theLink2 = varItem.itemguid;
 
