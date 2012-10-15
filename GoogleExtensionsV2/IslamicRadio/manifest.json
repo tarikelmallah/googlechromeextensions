@@ -1,0 +1,18 @@
+﻿{
+  "name": "راديو القرآن الكريم - Quran Radio",
+  "version": "1.1",
+  "background":  {  "page":"BG.html"},
+  "description": "اذاعات القرآن الكريم -Quran Radio - Islamic Radio, by NiceWebTools.com",
+  "browser_action": {
+      "default_title": "Islamic Radio",
+      "default_icon": "128.ico",
+	  "default_popup": "IslamicRadioPop.html"
+  },
+  "icons": {
+    "16": "128.ico",
+    "48": "128.ico",
+    "128": "128.ico"
+  },
+   "manifest_version": 2,
+ "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/; object-src 'self';connect-src http://50.22.217.209:9998 'self'"
+}
