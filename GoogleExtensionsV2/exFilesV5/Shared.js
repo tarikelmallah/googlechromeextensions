@@ -22,7 +22,7 @@ function goOpenUrl(theLink) {
 
 
             //$($('form')[0]).attr('action', theLink2);
-            if (bk.FormActionUrl = '')
+            if (bk.FormActionUrl == '')
                 $($('form')[0]).attr('action', theLink2);
             else
                 $($('form')[0]).attr('action', bk.FormActionUrl + escape(theLink2));
