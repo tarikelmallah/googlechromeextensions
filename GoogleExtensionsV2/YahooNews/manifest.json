@@ -1,6 +1,6 @@
 ﻿{
   "name": "Yahoo News",
-  "version": "4.1",
+  "version": "4.3",
   "description": "Yahoo! News Chrome Extension, The latest news and headlines, breaking news and coverage with photos and more.",
   "icons": { "128": "ExtImages/fav128.ico" },
   "background":  {  "page":"FeedExtensionBackground.html"},

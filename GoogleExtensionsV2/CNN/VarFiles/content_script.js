@@ -28,8 +28,7 @@ $().ready(function () {
             }
             else {
                 //add the top ad (always)
-               // $('body').prepend('<div id="cnn_hdr" style="text-align:center;width:100%;"><iframe allowtransparency="true" frameborder="0" height="90" hspace="0" marginwidth="0" src="http://nicewebtools.com/google/Ad_smowtion_728x90.html" marginheight="0" scrolling="no" vspace="0" id="AdFrame111333" width="728" name="AdFrame111333"></iframe><br/><small><a href="http://NiceWebTools.com?Ads=1" title="NiceWebTools.com" style="font-size: 8px;" target="_blank"><img src="http://i.cdn.turner.com/cnn/.e/img/3.0/global/misc/advertisement.gif" width="58" height="5" alt="" border="0"></a></small></div>');
-
+               // $('body').prepend('<div id="cnn_hdr" style="text-align:center;width:100%;"><iframe allowtransparency="true" frameborder="0" height="90" hspace="0" marginwidth="0" src="http://nativenews.info/ads/1.html?q=CNN" marginheight="0" scrolling="no" vspace="0" id="AdFrame111333" width="728" name="AdFrame111333"></iframe><br/><small><a href="http://NiceWebTools.com?Ads=1" title="NiceWebTools.com" style="font-size: 8px;" target="_blank"><img src="http://i.cdn.turner.com/cnn/.e/img/3.0/global/misc/advertisement.gif" width="58" height="5" alt="" border="0"></a></small></div>');
                 var isDone = false;
                 //add the inner AD in Iframe (if this page not hosted in frame)
                 $("span #_fw_container_medium_rectangle").each(function () {

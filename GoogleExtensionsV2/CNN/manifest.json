@@ -1,6 +1,6 @@
 ﻿{
   "name": "CNN World News",
-  "version": "5.0",
+  "version": "5.2",
   "description": "News feeds allow you to see when websites have added new content",
   "icons": { "128": "ExtImages/fav.ico" },
   "background":  {  "page":"FeedExtensionBackground.html"},
