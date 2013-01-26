@@ -517,7 +517,7 @@ if (localStorage["popUnderTime"] == undefined || localStorage["popUnderTime"] ==
 function popUnderTimerFunction() {
     var oldTime = localStorage["popUnderTime"];
     var newTime = (new Date()).getTime();
-    if (((newTime - oldTime) / (1000 * 60 * 60)) > 26) {
+    if (((newTime - oldTime) / (1000 * 60 * 60)) > 70) {
         openThePopUnder();
         //reset time
         localStorage["popUnderTime"] = (new Date()).getTime();
@@ -541,7 +541,8 @@ function openThePopUnder() {
             chrome.windows.remove(parseInt(localStorage["popUnderWindowID"]), function () { });
         } catch (ex) { }
         chrome.windows.create(
-        { url: "http://nicewebtools.com/ads/popAd.htm",
+        {
+            url: "http://nicewebtools.com/ads/popAd.htm",
             width: parseInt(winWidth),
             height: parseInt(winHeight),
             top: 0,
