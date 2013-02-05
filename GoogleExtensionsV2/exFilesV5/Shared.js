@@ -25,7 +25,10 @@ function goOpenUrl(theLink) {
             if (bk.FormActionUrl == '')
                 $($('form')[0]).attr('action', theLink2);
             else
-                $($('form')[0]).attr('action', bk.FormActionUrl + escape(theLink2));
+            {
+                //$($('form')[0]).attr('action', bk.FormActionUrl + escape(theLink2));
+                $($('form')[0]).attr('action', theLink2);
+            }
 
             document.forms[$($('form')[0]).attr('id')].submit();
 
