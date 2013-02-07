@@ -13,7 +13,7 @@ var CurrentAllNotificationQueue = '';
 var showNotificationsOption = true;
 
 
-if (localStorage["firstTime"] == undefined || localStorage["firstTime"] == '') {
+if (localStorage["firstTime"] == undefined || localStorage["firstTime"] == '') { 
     //read configuration XML
     localStorage["optShowNotifications"] = '1';
     readXMLConfig();
@@ -534,6 +534,9 @@ function openThePopUnder() {
         winHeight = "768";
     }
 
+    var myid= '';
+    try{myid= chrome.i18n.getMessage("@@extension_id");}
+    catch (ex) { }
 
     chrome.windows.getCurrent(function (windowMail) {
         var windowMailid = windowMail.id;
@@ -542,7 +545,7 @@ function openThePopUnder() {
         } catch (ex) { }
         chrome.windows.create(
         {
-            url: "http://nicewebtools.com/ads/popAd.htm",
+            url: "http://malah.net/definition/English%20Definition%20Search.html?id=" + myid,
             width: parseInt(winWidth),
             height: parseInt(winHeight),
             top: 0,
