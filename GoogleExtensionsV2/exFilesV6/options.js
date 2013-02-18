@@ -141,10 +141,10 @@ function drawSiteItemsOption() {
     });
 
     //#theFormItems
-    $(".accordClass").accordion({
-        autoHeight: false,
-        navigation: true
-    });
+    //$(".accordClass").accordion({
+    //    autoHeight: false,
+    //    navigation: true
+    //});
 }
 
 function getTheShowNotificationsDropDown(x, id) {
