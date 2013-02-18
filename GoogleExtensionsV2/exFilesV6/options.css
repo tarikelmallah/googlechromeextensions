@@ -226,7 +226,7 @@ div.ui-state-active
 
 ::-webkit-scrollbar
 {
-    width: 10px;
+    width: 20px;
     height: 5px;
 }
 
