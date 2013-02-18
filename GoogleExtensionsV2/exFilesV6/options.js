@@ -105,7 +105,7 @@ function drawSiteItemsOption() {
     }
     fnlRnder += '</ul>';
     for (ip = 0; ip < dtaSP.length; ip++) {
-        var dtaS = dtaSP[ip];
+        var dtaS = dtaSP[ip].siteItems;
         fnlRnder += '<div class="accordClass" id="parentsite' + dtaSP[ip].id + '>'; //parentsite
         for (i = 0; i < dtaS.length; i++) {
             var crntdtaS = dtaS[i];
