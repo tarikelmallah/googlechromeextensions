@@ -141,10 +141,12 @@ function drawSiteItemsOption() {
     });
 
     //#theFormItems
-    //$(".accordClass").accordion({
-    //    autoHeight: false,
-    //    navigation: true
-    //});
+    $("#tabs").tabs().addClass("ui-tabs-vertical ui-helper-clearfix");
+    $("#tabs li").removeClass("ui-corner-top").addClass("ui-corner-left");
+    $(".accordClass").accordion({
+        autoHeight: false,
+        navigation: true
+    });
 }
 
 function getTheShowNotificationsDropDown(x, id) {
