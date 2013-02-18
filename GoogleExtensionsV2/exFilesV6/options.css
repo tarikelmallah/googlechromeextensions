@@ -168,7 +168,7 @@ ul
 {
     width: 849px;
     height: 300px;
-    overflow: scroll;
+    overflow: auto;
 }
 
 #theFormItems
