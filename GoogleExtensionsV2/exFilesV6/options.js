@@ -174,11 +174,15 @@ function getTheNumbersDropDown(x, id) {
 function showHideControlsItems() {
     $('.checkIsSelected').each(function () {
         if ($(this).is(':checked')) {
-            $($(this).parent().parent().find('.selShowNotificationYesNo')[0]).attr('visibility', 'visible');
-            $($(this).parent().parent().find('.selNumbersDropDown')[0]).attr('visibility', 'visible');
+            $($(this).parent().parent().find('.thedrpDownNumbers')[0]).show();
+            $($(this).parent().parent().find('.selNumbersDropDown')[0]).show();
+           // $($(this).parent().parent().find('.selShowNotificationYesNo')[0]).attr('disabled', false);
+            //$($(this).parent().parent().find('.selNumbersDropDown')[0]).attr('disabled', false);
         } else {
-            $($(this).parent().parent().find('.selShowNotificationYesNo')[0]).attr('visibility', 'hidden');
-            $($(this).parent().parent().find('.selNumbersDropDown')[0]).attr('visibility', 'hidden');
+            $($(this).parent().parent().find('.thedrpDownNumbers')[0]).hide();
+            $($(this).parent().parent().find('.selNumbersDropDown')[0]).hide();
+           // $($(this).parent().parent().find('.selShowNotificationYesNo')[0]).attr('disabled', true);
+           // $($(this).parent().parent().find('.selNumbersDropDown')[0]).attr('disabled', true);
         }
     });
 }
