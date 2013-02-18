@@ -405,7 +405,7 @@ function readXMLConfig() {
                 parentSites.push(ps);
             });
             if (localStorage["firstTime_6"] == undefined || localStorage["firstTime_6"] == '') {
-                localStorage["siteItemsOptions"] = siteItems[0].rssItems[0].id + '#10#true';
+                localStorage["siteItemsOptions"] =parentSites[0].siteItems[0].rssItems[0].id + '#10#true';
                 localStorage["firstTime_6"] = '1';
                 chrome.tabs.create({
                     'url': chrome.extension.getURL("options.html"),
