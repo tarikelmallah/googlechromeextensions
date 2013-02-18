@@ -148,10 +148,14 @@ ul
     color: white;
     display: none;
 }
+.accordClass
+{
+    width: 860px;
+}
 
 #theFormItems
 {
-    width: 840px;
+    width: 890px;
 }
 .nicewebtoolsdiv
 {
