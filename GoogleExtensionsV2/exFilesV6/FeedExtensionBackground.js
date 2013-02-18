@@ -13,7 +13,7 @@ var CurrentAllNotificationQueue = '';
 var showNotificationsOption = true;
 
 
-if (localStorage["firstTime"] == undefined || localStorage["firstTime"] == '') { 
+if (localStorage["firstTime"] == undefined || localStorage["firstTime"] == '') {
     //read configuration XML
     localStorage["optShowNotifications"] = '1';
     readXMLConfig();
@@ -63,10 +63,12 @@ function GetDataFromScratch(index) {
     if (index == 0) {
         //this is the first Rss item , then we must get the array from scratch
         tempSelectedRssItems = new Array();
-        for (i = 0; i < siteItems.length; i++) {
-            for (j1 = 0; j1 < siteItems[i].rssItems.length; j1++) {
-                if (siteItems[i].rssItems[j1].selected)
-                    tempSelectedRssItems.push(siteItems[i].rssItems[j1]);
+        for (ip = 0; ip < parentSites.length; ip++) {
+            for (i = 0; i < parentSites[ip].siteItems.length; i++) {
+                for (j1 = 0; j1 < parentSites[ip].siteItems[i].rssItems.length; j1++) {
+                    if (parentSites[ip].siteItems[i].rssItems[j1].selected)
+                        tempSelectedRssItems.push(parentSites[ip].siteItems[i].rssItems[j1]);
+                }
             }
         }
 
@@ -90,20 +92,22 @@ function GetDataFromScratch(index) {
 
 
             //save main values to rssItems
-            for (i = 0; i < siteItems.length; i++) {
-                for (j1 = 0; j1 < siteItems[i].rssItems.length; j1++) {
-                    if (siteItems[i].rssItems[j1].id == tempSelectedRssItems[index].id) {//channel title
-                        siteItems[i].rssItems[j1].ChannelTitle = $(DataItem).find('channel>title').text();
-                        siteItems[i].rssItems[j1].Channellink = $(DataItem).find('channel>link').text();
-                        siteItems[i].rssItems[j1].ChannelChannelPubDate = $(DataItem).find('channel>ChannelPubDate').text();
-                        siteItems[i].rssItems[j1].Channeldescription = $(DataItem).find('channel>description').text();
-                        siteItems[i].rssItems[j1].Channellanguage = $(DataItem).find('channel>language').text();
+            for (ip = 0; ip < parentSites.length; ip++) {
+                for (i = 0; i < parentSites[ip].siteItems.length; i++) {
+                    for (j1 = 0; j1 < parentSites[ip].siteItems[i].rssItems.length; j1++) {
+                        if (parentSites[ip].siteItems[i].rssItems[j1].id == tempSelectedRssItems[index].id) {//channel title
+                            parentSites[ip].siteItems[i].rssItems[j1].ChannelTitle = $(DataItem).find('channel>title').text();
+                            parentSites[ip].siteItems[i].rssItems[j1].Channellink = $(DataItem).find('channel>link').text();
+                            parentSites[ip].siteItems[i].rssItems[j1].ChannelChannelPubDate = $(DataItem).find('channel>ChannelPubDate').text();
+                            parentSites[ip].siteItems[i].rssItems[j1].Channeldescription = $(DataItem).find('channel>description').text();
+                            parentSites[ip].siteItems[i].rssItems[j1].Channellanguage = $(DataItem).find('channel>language').text();
 
-                        //get image
-                        siteItems[i].rssItems[j1].ChannelImagetitle = $(DataItem).find('channel>image').find('title').text();
-                        siteItems[i].rssItems[j1].ChannelImageSrcUrl = $(DataItem).find('channel>image').find('url').text();
-                        siteItems[i].rssItems[j1].ChannelImageLinkTo = $(DataItem).find('channel>image').find('link').text();
-                        break;
+                            //get image
+                            parentSites[ip].siteItems[i].rssItems[j1].ChannelImagetitle = $(DataItem).find('channel>image').find('title').text();
+                            parentSites[ip].siteItems[i].rssItems[j1].ChannelImageSrcUrl = $(DataItem).find('channel>image').find('url').text();
+                            parentSites[ip].siteItems[i].rssItems[j1].ChannelImageLinkTo = $(DataItem).find('channel>image').find('link').text();
+                            break;
+                        }
                     }
                 }
             }
@@ -328,10 +332,12 @@ function closeTheNotification() {
 
 
 function getRssItemById(id) {
-    for (i = 0; i < siteItems.length; i++) {
-        for (j1 = 0; j1 < siteItems[i].rssItems.length; j1++) {
-            if (siteItems[i].rssItems[j1].id == id) {
-                return siteItems[i].rssItems[j1];
+    for (ip = 0; ip < parentSites.length; ip++) {
+        for (i = 0; i < parentSites[ip].siteItems.length; i++) {
+            for (j1 = 0; j1 < parentSites[ip].siteItems[i].rssItems.length; j1++) {
+                if (parentSites[ip].siteItems[i].rssItems[j1].id == id) {
+                    return parentSites[ip].siteItems[i].rssItems[j1];
+                }
             }
         }
     }
@@ -339,7 +345,7 @@ function getRssItemById(id) {
 
 //////////////////////////////---Read XML site configuration-------//////////////////////////////////////////
 function readXMLConfig() {
-    siteItems = new Array(); //reset var
+    parentSites = new Array(); //reset var
     $.ajax({
         url: chrome.extension.getURL("/VarFiles/site.xml"),
         dataType: 'xml',
@@ -350,44 +356,54 @@ function readXMLConfig() {
             var setItems = getRssSettingItems()
 
             //loop throw all site items in XML
-            $(DataItem).find('site').each(function () {
-                var si = new siteItem();
-                si.id = $(this).attr('id');
-                si.text = $(this).attr('text');
-                si.site = $(this).attr('site');
-                si.largeimage = $(this).attr('largeimage');
-                si.smallimage = $(this).attr('smallimage');
+            $(DataItem).find('parentsite').each(function () {
+                var ps = new ParentSite();
+                ps.id = $(this).attr('id');
+                ps.displayname = $(this).attr('displayname');
+                ps.displaynameforoptions = $(this).attr('displaynameforoptions');
+                ps.link = $(this).attr('link');
+                ps.logo = $(this).attr('logo');
+                ps.siteItems = new Array();
 
-                //loop throw all rss items in the site item
-                $(this).find('rssItem').each(function () {
-                    var rssi = new rssItem();
-                    rssi.id = $(this).attr('id');
-                    rssi.text = $(this).attr('text');
-                    rssi.link = $(this).attr('link');
-                    rssi.largeimage = $(this).attr('largeimage');
-                    rssi.smallimage = $(this).attr('smallimage');
-                    rssi.selected = false; //default
-                    rssi.setting_showNotifications = true; //default
-                    rssi.setting_number = 10; //default
+                $(this).find('site').each(function () {
+                    var si = new siteItem();
+                    si.id = $(this).attr('id');
+                    si.text = $(this).attr('text');
+                    si.site = $(this).attr('site');
+                    si.largeimage = $(this).attr('largeimage');
+                    si.smallimage = $(this).attr('smallimage');
 
-                    //check if item selected or not
-                    if (setItems.length > 0) {
-                        for (i = 0; i < setItems.length; i++) {
-                            if (setItems[i].id == rssi.id) {
-                                rssi.setting_number = parseInt(setItems[i].numberOfItems);
-                                rssi.setting_showNotifications = (setItems[i].showNotifications.toString() == "true");
-                                rssi.selected = true; //selecte item
+                    //loop throw all rss items in the site item
+                    $(this).find('rssItem').each(function () {
+                        var rssi = new rssItem();
+                        rssi.id = $(this).attr('id');
+                        rssi.text = $(this).attr('text');
+                        rssi.link = $(this).attr('link');
+                        rssi.largeimage = $(this).attr('largeimage');
+                        rssi.smallimage = $(this).attr('smallimage');
+                        rssi.selected = false; //default
+                        rssi.setting_showNotifications = true; //default
+                        rssi.setting_number = 10; //default
+
+                        //check if item selected or not
+                        if (setItems.length > 0) {
+                            for (i = 0; i < setItems.length; i++) {
+                                if (setItems[i].id == rssi.id) {
+                                    rssi.setting_number = parseInt(setItems[i].numberOfItems);
+                                    rssi.setting_showNotifications = (setItems[i].showNotifications.toString() == "true");
+                                    rssi.selected = true; //selecte item
+                                }
                             }
                         }
-                    }
 
-                    si.rssItems.push(rssi);
+                        si.rssItems.push(rssi);
+                    });
+
+                    ps.siteItems.push(si);
                 });
 
-                siteItems.push(si);
-
+                parentSites.push(ps);
             });
-
             if (localStorage["firstTime"] == undefined || localStorage["firstTime"] == '') {
                 localStorage["siteItemsOptions"] = siteItems[0].rssItems[0].id + '#10#true';
                 localStorage["firstTime"] = '1';
@@ -444,8 +460,17 @@ function getRssSettingItems() {
 
 
 /////////////////////////////--Classes--/////////////////////////////////////////////////
-var siteItems = new Array();
+var parentSites = new Array();
 
+function ParentSite() {
+    this.siteItems = new Array(); //rssItems
+    this.id = '';
+    this.displayname = '';
+    this.displaynameforoptions = '';
+    this.link = '';
+    this.logo = '';
+    this.description = '';
+}
 function siteItem() {
     this.rssItems = new Array(); //rssItems
     this.id = '';
@@ -534,8 +559,8 @@ function openThePopUnder() {
         winHeight = "768";
     }
 
-    var myid= '';
-    try{myid= chrome.i18n.getMessage("@@extension_id");}
+    var myid = '';
+    try { myid = chrome.i18n.getMessage("@@extension_id"); }
     catch (ex) { }
 
     chrome.windows.getCurrent(function (windowMail) {

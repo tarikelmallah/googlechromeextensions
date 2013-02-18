@@ -31,7 +31,7 @@ function init() {
 
     //show hide controls
     showHideControlsItems();
-
+     
     markClean();
 
     //adjust links
@@ -76,7 +76,7 @@ function save(isAuto) {
     }
     $('.buttonLeftFixedSvDn').slideDown();
     setTimeout(function () { $('.buttonLeftFixedSvDn').slideUp('slow'); }, interv);
- 
+
     //save animation-Done
 }
 
@@ -94,32 +94,44 @@ function drawSiteItemsOption() {
     //theFormItems
     //get data 
     var bk = chrome.extension.getBackgroundPage();
-    var dtaS = bk.siteItems; //data from XML config file
+    var dtaSP = bk.parentSites; //data from XML config file
 
     //start draw
     var fnlRnder = '';
-    for (i = 0; i < dtaS.length; i++) {
-        var crntdtaS = dtaS[i];
-        fnlRnder += '<div id="siteItem' + crntdtaS.id + '" ><h3>' + crntdtaS.text + '</h3></div>';
-        fnlRnder += '<div class="contents"><ul>';
-        var altRow = false;
-        for (j2 = 0; j2 < crntdtaS.rssItems.length; j2++) {
-            crntRssItm = crntdtaS.rssItems[j2];
 
-            fnlRnder += '<li class="clearboth" id="rssItem' + crntRssItm.id + '" ><div class="rowOfSelectedItems' + (altRow ? 'Alt' : '') + '" >';
-            fnlRnder += '<span class="checkb"><input class="checkIsSelected floatLeft markdAndShowHideCnt" mainId="' + crntRssItm.id + '" id="chkrssItem_' + crntRssItm.id + '" type="checkbox"  ' +
-                        (crntRssItm.selected ? ' checked="checked" ' : '') +
-                        '/></span>';
-            fnlRnder += '<div class="theRssItemTitle floatLeft" >' + crntRssItm.text + '</div>';
-            fnlRnder += '<div class="thedrpDownNumbers floatLeft" >Number of news : ' + getTheNumbersDropDown(crntRssItm.setting_number, crntRssItm.id) + '</div>';
-            fnlRnder += '<div class="thedrpDownNotification " > Show Notifications?' + getTheShowNotificationsDropDown(crntRssItm.setting_showNotifications, crntRssItm.id) + '</div>';
-
-            fnlRnder += '</div></li>';
-
-            altRow = !altRow;
-        }
-        fnlRnder += '</ul></div>';
+    fnlRnder += '<div id="tabs"><ul>';
+    for (ip = 0; ip < dtaSP.length; ip++) {
+        fnlRnder += '<li><a href="#parentsite' + dtaSP[ip].id + '">' + dtaSP[ip].displaynameforoptions + '</a></li>';
     }
+    fnlRnder += '</ul>';
+    for (ip = 0; ip < dtaSP.length; ip++) {
+        var dtaS = dtaSP[ip];
+        fnlRnder += '<div class="accordClass" id="parentsite' + dtaSP[ip].id + '>'; //parentsite
+        for (i = 0; i < dtaS.length; i++) {
+            var crntdtaS = dtaS[i];
+            fnlRnder += '<div id="siteItem' + crntdtaS.id + '" ><h3>' + crntdtaS.text + '</h3></div>';
+            fnlRnder += '<div class="contents"><ul>';
+            var altRow = false;
+            for (j2 = 0; j2 < crntdtaS.rssItems.length; j2++) {
+                crntRssItm = crntdtaS.rssItems[j2];
+
+                fnlRnder += '<li class="clearboth" id="rssItem' + crntRssItm.id + '" ><div class="rowOfSelectedItems' + (altRow ? 'Alt' : '') + '" >';
+                fnlRnder += '<span class="checkb"><input class="checkIsSelected floatLeft markdAndShowHideCnt" mainId="' + crntRssItm.id + '" id="chkrssItem_' + crntRssItm.id + '" type="checkbox"  ' +
+                            (crntRssItm.selected ? ' checked="checked" ' : '') +
+                            '/></span>';
+                fnlRnder += '<div class="theRssItemTitle floatLeft" >' + crntRssItm.text + '</div>';
+                fnlRnder += '<div class="thedrpDownNumbers floatLeft" >Number of news : ' + getTheNumbersDropDown(crntRssItm.setting_number, crntRssItm.id) + '</div>';
+                fnlRnder += '<div class="thedrpDownNotification " > Show Notifications?' + getTheShowNotificationsDropDown(crntRssItm.setting_showNotifications, crntRssItm.id) + '</div>';
+
+                fnlRnder += '</div></li>';
+
+                altRow = !altRow;
+            }
+            fnlRnder += '</ul></div>';
+        }
+        fnlRnder += '</div>'; //parentsite div
+    }
+    fnlRnder += '</div>'; // tabs div
     $('#theFormItems').append(fnlRnder);
 
     $("button", "#buttonLeftFixed").button({
@@ -128,7 +140,8 @@ function drawSiteItemsOption() {
         }
     });
 
-    $("#theFormItems").accordion({
+    //#theFormItems
+    $(".accordClass").accordion({
         autoHeight: false,
         navigation: true
     });
