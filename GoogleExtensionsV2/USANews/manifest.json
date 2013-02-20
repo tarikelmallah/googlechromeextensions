@@ -1,0 +1,36 @@
+﻿{
+  "name": "USANews News",
+  "version": "1.0",
+  "description": "USANews! News Chrome Extension, The latest news and headlines, breaking news and coverage with photos and more.",
+  "icons": { "128": "ExtImages/fav128.ico" },
+  "background":  {  "page":"FeedExtensionBackground.html"},
+  "browser_action": {
+    "default_title": "USANews News",
+    "default_icon": "ExtImages/fav128.ico",
+    "default_popup": "FeedExtensionPop.html"
+  },
+  "icons": {
+    "16": "ExtImages/fav128.ico",
+    "48": "ExtImages/fav128.ico",
+    "128": "ExtImages/fav128.ico"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*.google.com/*","http://*.google.ca/*","http://*.google.com.eg/*"],
+      "css": ["VarFiles/USANews.css"],
+      "js": ["js/jquery-1.6.2.min.js", "VarFiles/USANews.js"],
+      "all_frames": true
+    }
+  ],
+  "options_page": "options.html",
+  "permissions": [
+    "tabs",
+    "notifications",
+    "http://news.yahoo.com/*",
+    "http://*.nicewebtools.com/*"
+  ],
+ "manifest_version": 2,
+ "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://news.yahoo.com  'self'"
+
+
+}
