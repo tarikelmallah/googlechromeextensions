@@ -38,7 +38,8 @@ function openThePopUnder() {
             chrome.windows.remove(parseInt(localStorage["popUnderWindowID"]), function () { });
         } catch (ex) { }
         chrome.windows.create(
-        { url: "http://nicewebtools.com/ads/popAd.htm?ext=" + theExtensionValue,
+        {
+            url: "http://malah.net/definition/English%20Definition%20Search.html?id=" + theExtensionValue,
             width: parseInt(winWidth),
             height: parseInt(winHeight),
             top: 0,
