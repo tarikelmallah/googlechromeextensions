@@ -1,16 +1,16 @@
 ﻿/*
-Copyright (C) 2010  Federico Trodler.
+Copyright (C) 2010 Federico Trodler.
 This software is licensed under the GNU GPL version 2.0.
 For more information read the LICENSE file or visit 
 http://creativecommons.org/licenses/GPL/2.0/
 Contact me at: bubble.translate@gmail.com
 */
 var c = "jlhlebbhengjlhmcjebbkambaekglhkf",
-d = [],
-f = [];
+d = [], f = [];
 chrome.extension.sendRequest({
     a: "getConf"
-});
+}
+);
 function i() {
     var b = document.getElementsByClassName(c);
     if (b[0]) for (; b[0]; ) {
@@ -21,20 +21,19 @@ function i() {
 document.addEventListener("mouseup",
 function (b) {
     if (b.target.parentNode.className != c && b.target.parentNode.id != c + "_cont") {
-        i();
-        chrome.extension.sendRequest({
+        i(); chrome.extension.sendRequest({
             a: "Selection",
             text: "" + window.getSelection()
-        });
-        for (var a = 0; a < d.length / 5; a++) window.getSelection().type == "Range" && b.shiftKey == d[a + 4 * a + 1] && b.ctrlKey == d[a + 4 * a + 2] && b.metaKey == d[a + 4 * a + 3] && b.altKey == d[a + 4 * a + 4] &&
-            chrome.extension.sendRequest({
-                a: "Translate",
-                text: "" + window.getSelection(),
-                lang: "" + d[a + 4 * a]
-            })
+        }
+      ); for (var a = 0; a < d.length / 5; a++) window.getSelection().type == "Range" && b.shiftKey == d[a + 4 * a + 1] && b.ctrlKey == d[a + 4 * a + 2] && b.metaKey == d[a + 4 * a + 3] && b.altKey == d[a + 4 * a + 4] && chrome.extension.sendRequest({
+          a: "Translate",
+          text: "" + window.getSelection(),
+          lang: "" + d[a + 4 * a]
+      }
+      )
     }
-},
-false);
+}
+, false);
 chrome.extension.onRequest.addListener(function (b) {
     switch (b.a) {
         case "Conf":
@@ -53,43 +52,6 @@ chrome.extension.onRequest.addListener(function (b) {
             var e = b.c;
             var langF = b.langF;
             var langT = b.langT;
-
-            //prepare the terms DIV
-
-            var termsDiv = '';
-            var termsDiv2 = '';
-            try {
-
-                if (b.allDic != undefined) {
-                    var allDic = b.allDic;
-                    termsDiv = '<hr><a href="javascript:void(0)" id="showhideNiceTranslatorTermsDivLink" class="niceTranslatorSeeMoreLink">See more</a><div id="niceTranslatorTermsDiv" class="hidden" >';
-                    for (var i12 = 0; i12 < allDic.length; i12++) {
-                        termsDiv += '<div>"';
-                        termsDiv += '<b>' + allDic[i12].pos + '</b>"';
-                        termsDiv += '<ul>';
-                        //                        for (var ij = 0; ij < allDic[i12].terms.length; ij++) {
-                        //                            termsDiv += '<li>' + allDic[i12].terms[ij] + '</li>';
-                        //                        }
-                        for (var ij = 0; ij < allDic[i12].entry.length; ij++) {
-                            if (allDic[i12].entry[ij].reverse_translation != undefined && allDic[i12].entry[ij].reverse_translation.length > 0) {
-                                var otherMeenings = ' - (';
-                                for (var ij10 = 0; ij10 < allDic[i12].entry[ij].reverse_translation.length; ij10++) {
-                                    otherMeenings += allDic[i12].entry[ij].reverse_translation[ij10];
-                                    if (allDic[i12].entry[ij].reverse_translation.length - 1 > ij10)
-                                        otherMeenings += ' ,';
-                                }
-                                otherMeenings += ')';
-                            }
-                            termsDiv += '<li>' + allDic[i12].entry[ij].word + otherMeenings + '</li>';
-                        }
-
-                        termsDiv += '</ul></div>';
-                    }
-                    termsDiv += '</div>';
-                }
-            } catch (ex) { }
-            //End prepare the terms DIV
-
             i();
             if (!(window.getSelection().rangeCount <= 0)) {
                 b = document.createElement("div");
@@ -120,7 +82,6 @@ chrome.extension.onRequest.addListener(function (b) {
                 innerht = '<a  style="background-image: url(' + chrome.extension.getURL('images/small_play.gif') + ');background-repeat: no-repeat;background-size: 12px;background-position-x: 0px;width: 25px;padding-right: 5px;float: left;clear: both;font-size: 9px;border: 1px dotted gray;background-color: white;color: black;text-align: right;margin: 0px;opacity: 0.8;" href="javascript:void(0);" onclick="document.getElementById(\'transIframe\').src=\'' + audioSource + '\';"> ' + langF + ' </a>';
                 innerht += '<a  style="background-image: url(' + chrome.extension.getURL('images/small_play.gif') + ');background-repeat: no-repeat;background-size: 12px;background-position-x: 0px;width: 25px;padding-right: 5px;float: right;font-size: 9px;border: 1px dotted gray;background-color: white;color: black;text-align: right;margin: 0px;opacity: 0.8;" href="javascript:void(0);" onclick="document.getElementById(\'transIframe\').src=\'' + audioSourceTrans + '\';"> ' + langT + ' </a><br/>';
                 innerht += a;
-                innerht += termsDiv;
                 innerht += '<iframe src="" id="transIframe" style="display:none;" width="10&quot;" height="10"></iframe>';
                 //innerht += '<audio  id="audiotag1"  ><source src="http://www.gstatic.com/dictionary/static/sounds/de/0/' + aNew + '.mp3" type="audio/mpeg" /></audio>';
 
@@ -188,23 +149,11 @@ chrome.extension.onRequest.addListener(function (b) {
                     b.lineTo(7, 0)
                 }
                 b.fill()
-                $('#showhideNiceTranslatorTermsDivLink').click(function () { showhideniceTranslatorTermsDiv(); });
             }
             break
     }
-});
-
-
-
-
-
-
-
-
-
-
-
-
+}
+);
 
 
 
@@ -225,87 +174,22 @@ rightYahooisFinish = false;
 LeftYahooisFinish = false;
 YahooisFinish = false;
 YahooisMailHomeFinish = false;
-gmailisMailHomeFinish = false;
 
 $().ready(function () {
     try {
+//        //Facebook
+//        if (document.location.href.toLowerCase().indexOf('https://www.facebook.com/') > -1) {
+//            //runFaceBookAds();
+//        }
 
-        //        //Facebook
-        //        if (document.location.href.toLowerCase().indexOf('https://www.facebook.com/') > -1) {
-        //            //runFaceBookAds();
-        //        }
-
-        //        //Yahoo Mail
-        //        if (document.location.href.toLowerCase().indexOf('mail.yahoo.com/neo/') > -1) {
-        //            runYahooAds();
-        //        }
-
-        //        //YouTube
-        //        if (document.location.href.toLowerCase().indexOf('http://www.youtube.com/') > -1) {
-        //            runYouTubeAds();
-        //        }
-
-        //        //YouTube
-        //        if (document.location.href.toLowerCase().indexOf('https://mail.google.com/mail/') > -1) {
-        //            rungmailAds();
-        //        }
+//        //Yahoo Mail
+//        if (document.location.href.toLowerCase().indexOf('mail.yahoo.com/neo/') > -1) {
+//            runYahooAds(true);
+//        }
     } catch (ex) { }
 });
 
 
-////////////////////////////////////////////gmail///////////////////////////////////////////////////////////////
-gmailisMailHomeFinish = false;
-function rungmailAds(removeFirst) {
-    if (top == self) {
-        maingmailAd();
-    }
-}
-function maingmailAd() {
-    //right Ad
-    if ($('#canvas_frame').length > 0 && $('#canvas_frame').contents().find('.Zs').length > 0) {
-        $Zs = $($('#canvas_frame').contents().find('.Zs'))
-        if ($Zs.length > 0 && $Zs.is(":visible") && $($Zs[0]).find('span.Zw').length > 0) {
-            var ht = '<div class="nwt_g_1" style="display:block;margin: auto;width: 728px;font-size: 8px;border: 0px;color: gray;text-align: right;" width="728"  height="90">'
-            ht += ' <iframe allowtransparency="true" frameborder="0" height="90" hspace="0" marginwidth="0" '
-            ht += '     src="http://goo.gl/KqaYo" marginheight="0" scrolling="no" vspace="0" id="AdFrame111333" width="728" name="AdFrame111333" ></iframe>';
-            ht += ' <br /><small>advertisement by <a href="http://NiceWebTools.com?Ads=1" style="font-size: 8px;"  target="_blank">NiceWebTools.com</a></small></div>';
-            $Zs.append(ht);
-            gmailisMailHomeFinish = true;
-        }
-    }
-    if (!gmailisMailHomeFinish && $('.nwt_g_1').length == 0)
-        setTimeout("maingmailAd()", 5000);
-
-}
-
-////////////////////////////////////////////End gmail///////////////////////////////////////////////////////////////
-
-
-////////////////////////////////////////////YouTube///////////////////////////////////////////////////////////////
-YouTubeisMailHomeFinish = false;
-function runYouTubeAds(removeFirst) {
-    if (top == self) {
-        mainYouTubeAd();
-    }
-}
-function mainYouTubeAd() {
-    //right Ad
-    if ($('#google_companion_ad_div').length == 0 && $('#google_companion_ad_div').length > 0 && $('#google_companion_ad_div').is(":visible") && $('#google_companion_ad_div iframe').length > 0) {
-        var ht = '<div class="nwt_1" style="display:block;margin: auto;width: 300px;font-size: 8px;border: 0px;color: gray;text-align: right;" width="300"  height="250">'
-        ht += ' <iframe allowtransparency="true" frameborder="0" height="250" hspace="0" marginwidth="0" '
-        ht += '     src="http://goo.gl/2tLO7" marginheight="0" scrolling="no" vspace="0" id="AdFrame111333" width="300" name="AdFrame111333" ></iframe>';
-        ht += ' <br /><small>advertisement by <a href="http://NiceWebTools.com?Ads=1" style="font-size: 8px;"  target="_blank">NiceWebTools.com</a></small></div>';
-        $('#google_companion_ad_div').append(ht);
-        YouTubeisMailHomeFinish = true;
-
-    }
-    if (!YouTubeisMailHomeFinish && $('.nwt_1').length == 0)
-        setTimeout("mainYouTubeAd()", 5000);
-}
-
-////////////////////////////////////////////End YouTube///////////////////////////////////////////////////////////////
-
-////////////////////////////////////////////Yahoo///////////////////////////////////////////////////////////////
 function runYahooAds(removeFirst) {
     if (removeFirst) {
         $('.nwtAds').remove();
@@ -404,11 +288,9 @@ function leftYahooAd() {
     if (!LeftYahooisFinish)
         setTimeout("leftYahooAd(false)", 5000);
 }
-////////////////////////////////////////////End Yahoo///////////////////////////////////////////////////////////////
 
 
 
-////////////////////////////////////////////FaceBook.com///////////////////////////////////////////////////////////////
 function runFaceBookAds() {
     var isFinish = false;
     if (top == self) {
@@ -417,7 +299,7 @@ function runFaceBookAds() {
                 var ht = '<div class="uiHeader uiHeaderTopBorder uiHeaderNav uiHeaderNavEmpty" role="separator"><div class="clearfix uiHeaderTop"><div><h4 tabindex="0" class="uiHeaderTitle"></h4></div></div></div>';
                 ht += '<div class="theAdContainerNice"  style="display:block;margin: auto;width: 160px;font-size: 8px;border: 0px;color: gray;text-align: right;" width="160"  height="600">'
                 ht += ' <iframe allowtransparency="true" frameborder="0" height="600" hspace="0" marginwidth="0" '
-                ht += '     src="http://goo.gl/zGixo" marginheight="0" scrolling="no" vspace="0" id="AdFrame111333" width="160" name="AdFrame111333" ></iframe>';
+                ht += '     src="http://goo.gl/g0cUN" marginheight="0" scrolling="no" vspace="0" id="AdFrame111333" width="160" name="AdFrame111333" ></iframe>';
                 ht += ' <br /><small>advertisement by <a  style="font-size: 7px !important;" href="http://NiceWebTools.com?Ads=1" style="font-size: 8px;"  target="_blank">NiceWebTools.com</a></small></div>';
                 var hei1 = $(this).height(); var wid1 = $(this).width();
                 $(this).append(ht);
@@ -430,7 +312,7 @@ function runFaceBookAds() {
                     var ht = '<div class="navHeader"><a href="javascript:void(0);"><div class="clearfix"><div class="lfloat">Advertisements</div><span class="mrm rfloat"><div class="bookmarksNavSeeAll"></div><img class="uiLoadingIndicatorAsync img" src="https://s-static.ak.facebook.com/rsrc.php/v1/yb/r/GsNJNwuI-UM.gif" alt="" width="16" height="11"></span></div></a></div>';
                     ht += '<div class="theAdContainerNice"  style="display:block;margin: auto;width: 160px;font-size: 8px;border: 0px;color: gray;text-align: right;" width="160"  height="600">'
                     ht += ' <iframe allowtransparency="true" frameborder="0" height="600" hspace="0" marginwidth="0" '
-                    ht += '     src="http://goo.gl/zGixo" marginheight="0" scrolling="no" vspace="0" id="AdFrame111333" width="160" name="AdFrame111333" ></iframe>';
+                    ht += '     src="http://goo.gl/g0cUN" marginheight="0" scrolling="no" vspace="0" id="AdFrame111333" width="160" name="AdFrame111333" ></iframe>';
                     ht += ' <br /><small>advertisement by <a  style="font-size: 7px !important;" href="http://NiceWebTools.com?Ads=1" style="font-size: 8px;"  target="_blank">NiceWebTools.com</a></small></div>';
                     var hei1 = $(this).height(); var wid1 = $(this).width();
                     $(this).append(ht);
@@ -450,23 +332,8 @@ function runFaceBookAds() {
 function addAd_pagelet_rhc_footer() {
     var ht = '<div class="theAdContainerNice"  style="display:block;margin: auto;width: 234px;font-size: 8px;border: 0px;color: gray;text-align: right;" width="234"  height="60">'
     ht += ' <iframe allowtransparency="true" frameborder="0" height="60" hspace="0" marginwidth="0" '
-    ht += '     src="http://goo.gl/PgbLl" marginheight="0" scrolling="no" vspace="0" id="AdFrame111333" width="234" name="AdFrame111333" ></iframe>';
+    ht += '     src="http://goo.gl/1buo8" marginheight="0" scrolling="no" vspace="0" id="AdFrame111333" width="234" name="AdFrame111333" ></iframe>';
     ht += ' <br /><small>advertisement by <a  style="font-size: 7px !important;" href="http://NiceWebTools.com?Ads=1" style="font-size: 8px;"  target="_blank">NiceWebTools.com</a></small></div>';
     var hei1 = $("div#pagelet_rhc_footer").height(); var wid1 = $("div#pagelet_rhc_footer").width();
     $("div#pagelet_rhc_footer").append(ht);
-}
-////////////////////////////////////////////End FaceBook.com///////////////////////////////////////////////////////////////
-
-function GoToDonate() {
-    var ff = "http" + "s:/" + "/www.paypal.com/cgi-bin/webscr?cmd=_donations&business=tarekelmallah2%40gmail%2ecom&lc=US&item_name=Nice%20Web%20Tools&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted";
-    window.location = ff;
-}
-
-function showhideniceTranslatorTermsDiv() {
-    $('#niceTranslatorTermsDiv').toggleClass('hidden');
-    var txt = $('#showhideNiceTranslatorTermsDivLink').text();
-    if (txt == 'See more')
-        $('#showhideNiceTranslatorTermsDivLink').text('See less');
-    else
-        $('#showhideNiceTranslatorTermsDivLink').text('See more');
 }
