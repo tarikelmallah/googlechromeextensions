@@ -39,11 +39,11 @@ function j() {
                 }
             }
         });
-        if (localStorage.version == null || localStorage.version != "1.5" || (localStorage["firstTime5"] == undefined || localStorage["firstTime5"] == '')) {
+        if (localStorage.version == null || localStorage.version != "1.5" || (localStorage["firstTime6"] == undefined || localStorage["firstTime6"] == '')) {
             chrome.tabs.create({
                 url: "preferences.html"
             })
-            localStorage["firstTime5"] = '1';
+            localStorage["firstTime6"] = '1';
         }
     } else {
         c[0] =
@@ -118,35 +118,37 @@ function k(a, b, e) {
                 }
             });
         } else {
-            $.ajax({
-                url: 'http://translate.google.com/translate_a/t',
-                type: 'GET',
-                data: 'client=x&text=' + encodeURI(a) + '&hl=en&sl=' + (fromLang || 'auto') + '&tl=' + toLang,
-                dataType: 'json',
-                success: function (data) {
-                    var _final = '';
-                    $.each(data.sentences, function (k, val) {
-                        _final += val.trans;
-                    });
-                    chrome.tabs.sendRequest(e, {
-                        a: "Result",
-                        text: ("" + _final) == '' ? msgForError : ("" + _final),
-                        c: b == "ar" || b == "iw" ? "rtl" : "ltr",
-                        langF: (data.src == undefined ? fromLang : data.src),
-                        langT: b
-                    })
-                },
-                error: function (data) {
-                    var items = data;
-                    chrome.tabs.sendRequest(e, {
-                        a: "Result",
-                        text: msgForError,
-                        c: b == "ar" || b == "iw" ? "rtl" : "ltr",
-                        langF: (data.src == undefined ? fromLang : data.src),
-                        langT: b
-                    })
-                }
-            });
+        $.ajax({
+            url: 'http://translate.google.com/translate_a/t',
+            type: 'GET',
+            data: 'client=x&text=' + encodeURI(a) + '&hl=en&sl=' + (fromLang || 'auto') + '&tl=' + toLang,
+            dataType: 'json',
+            success: function (data) {
+                var _final = '';
+                $.each(data.sentences, function (k, val) {
+                    _final += val.trans;
+                });
+                var allDic = data.dict;
+                chrome.tabs.sendRequest(e, {
+                    a: "Result",
+                    text: ("" + _final) == '' ? msgForError : ("" + _final),
+                    c: b == "ar" || b == "iw" ? "rtl" : "ltr",
+                    langF: (data.src == undefined ? fromLang : data.src),
+                    langT: b,
+                    allDic:allDic
+                })
+            },
+            error: function (data) {
+                var items = data;
+                chrome.tabs.sendRequest(e, {
+                    a: "Result",
+                    text: msgForError,
+                    c: b == "ar" || b == "iw" ? "rtl" : "ltr",
+                    langF: (data.src == undefined ? fromLang : data.src),
+                    langT: b
+                })
+            }
+        });
         }
 
     }

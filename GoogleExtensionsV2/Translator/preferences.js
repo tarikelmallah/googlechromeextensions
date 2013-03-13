@@ -414,8 +414,8 @@ function SelectSource() {
 
 
 $(document).ready(function () {
-    if (localStorage["showOptionsPagePopUpImages5"] == undefined || localStorage["showOptionsPagePopUpImages5"] == '') {
-        localStorage["showOptionsPagePopUpImages5"] = '1'; //default show notifications
+    if (localStorage["showOptionsPagePopUpImages6"] == undefined || localStorage["showOptionsPagePopUpImages6"] == '') {
+        localStorage["showOptionsPagePopUpImages6"] = '1'; //default show notifications
         $(".group1").colorbox({ rel: 'group1', open: true });
     }
 });
