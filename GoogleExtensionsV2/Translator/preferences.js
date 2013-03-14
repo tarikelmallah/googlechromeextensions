@@ -416,6 +416,10 @@ function SelectSource() {
 $(document).ready(function () {
     if (localStorage["showOptionsPagePopUpImages6"] == undefined || localStorage["showOptionsPagePopUpImages6"] == '') {
         localStorage["showOptionsPagePopUpImages6"] = '1'; //default show notifications
-        $(".group1").colorbox({ rel: 'group1', open: true });
+        $(".group1").colorbox({ rel: 'group1', open: true, onClosed: function () {$('#0').click(); } });
+        
     }
+
+    //on start
+    $('#0').click();
 });
