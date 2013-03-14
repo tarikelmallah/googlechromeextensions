@@ -49,8 +49,8 @@ function j() {
         c[0] =
         localStorage.lg && localStorage.lg != "" ? localStorage.lg : defaultLangForThisExt;
         c[1] = defaultLangForThisExt;
-        c[2] = defaultLangForThisExt;// "es";
-        d[0] = localStorage.lg && localStorage.lg != "" ? localStorage.lg : defaultLangForThisExt;// "en";
+        c[2] = defaultLangForThisExt; // "es";
+        d[0] = localStorage.lg && localStorage.lg != "" ? localStorage.lg : defaultLangForThisExt; // "en";
         d[1] = localStorage.sk && localStorage.sk != "" ? JSON.parse(localStorage.sk) : false;
         d[2] = localStorage.ck && localStorage.ck != "" ? JSON.parse(localStorage.ck) : true;
         d[3] = false;
@@ -118,37 +118,37 @@ function k(a, b, e) {
                 }
             });
         } else {
-        $.ajax({
-            url: 'http://translate.google.com/translate_a/t',
-            type: 'GET',
-            data: 'client=x&text=' + encodeURI(a) + '&hl=en&sl=' + (fromLang || 'auto') + '&tl=' + toLang,
-            dataType: 'json',
-            success: function (data) {
-                var _final = '';
-                $.each(data.sentences, function (k, val) {
-                    _final += val.trans;
-                });
-                var allDic = data.dict;
-                chrome.tabs.sendRequest(e, {
-                    a: "Result",
-                    text: ("" + _final) == '' ? msgForError : ("" + _final),
-                    c: b == "ar" || b == "iw" ? "rtl" : "ltr",
-                    langF: (data.src == undefined ? fromLang : data.src),
-                    langT: b,
-                    allDic:allDic
-                })
-            },
-            error: function (data) {
-                var items = data;
-                chrome.tabs.sendRequest(e, {
-                    a: "Result",
-                    text: msgForError,
-                    c: b == "ar" || b == "iw" ? "rtl" : "ltr",
-                    langF: (data.src == undefined ? fromLang : data.src),
-                    langT: b
-                })
-            }
-        });
+            $.ajax({
+                url: 'http://translate.google.com/translate_a/t',
+                type: 'GET',
+                data: 'client=x&text=' + encodeURI(a) + '&hl=en&sl=' + (fromLang || 'auto') + '&tl=' + b, //toLang,
+                dataType: 'json',
+                success: function (data) {
+                    var _final = '';
+                    $.each(data.sentences, function (k, val) {
+                        _final += val.trans;
+                    });
+                    var allDic = data.dict;
+                    chrome.tabs.sendRequest(e, {
+                        a: "Result",
+                        text: ("" + _final) == '' ? msgForError : ("" + _final),
+                        c: b == "ar" || b == "iw" ? "rtl" : "ltr",
+                        langF: (data.src == undefined ? fromLang : data.src),
+                        langT: b,
+                        allDic: allDic
+                    })
+                },
+                error: function (data) {
+                    var items = data;
+                    chrome.tabs.sendRequest(e, {
+                        a: "Result",
+                        text: msgForError,
+                        c: b == "ar" || b == "iw" ? "rtl" : "ltr",
+                        langF: (data.src == undefined ? fromLang : data.src),
+                        langT: b
+                    })
+                }
+            });
         }
 
     }
