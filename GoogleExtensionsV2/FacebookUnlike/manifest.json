@@ -1,0 +1,42 @@
+﻿{
+  "name": "Facebook Unlike",
+  "version": "1",
+  "manifest_version": 2,
+  "description": "Facebook unlike button.",  
+  "icons": {
+    "16": "ExtImages/128.ico",
+    "48": "ExtImages/128.ico",
+    "128": "ExtImages/128.ico"
+  },
+  "page_action": {
+      "default_title": "Facebook Unlike",
+      "default_icon": "ExtImages/128.ico",
+      "default_popup": "popup.html"
+  },  
+  "background":  {"scripts": ["jquery-1.6.2.min.js","background.js"]},
+  "content_scripts":  [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["jquery-1.6.2.min.js","FacebookUnlike.js"]
+    }
+  ],
+  "content_security_policy": "script-src 'self' https://www.google.com; object-src 'self'",
+
+  "offline_enabled": false,
+  "options_page": "preferences.html",
+  "permissions": [
+	 "http://*/*",
+	 "https://*/*"
+  ],
+  "web_accessible_resources": [
+    "images/border.png",
+	"images/controls.png",
+	"images/loading.gif",
+	"images/loading_background.png",
+	"images/overlay.png",
+    "images/small_play.gif",
+    "colorbox/jquery.colorbox-min.js",
+    "FacebookUnlike.js",
+	"colorbox.css"
+  ]
+}
