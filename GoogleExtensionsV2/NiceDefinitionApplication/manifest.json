@@ -1,7 +1,7 @@
 ﻿{
   "name": "English Definition",
-  "version": "2.9",
-  "background_page": "Background.html",
+  "version": "4",
+  "background":  {  "page":"Background.html"},
   "description": "Nice Definition is a free site for English definitions, we try to collect all definitions from all world dictionaries..",
   "app": {
     "launch": {
@@ -24,5 +24,7 @@
     "http://*.nicedefinition.com/*",
 	"http://*/*",
 	"https://*/*"
-  ]
+  ],
+ "manifest_version": 2,
+ "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://www.NiceDefinition.com 'self'"
 }
