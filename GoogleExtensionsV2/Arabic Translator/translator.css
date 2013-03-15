@@ -1,0 +1,49 @@
+a.niceTranslatorSeeMoreLink:visited
+{
+    text-decoration: underline !important;
+    font-size: 11px !important;
+    color: white !important;
+}
+a.niceTranslatorSeeMoreLink:hover
+{
+    text-decoration: underline !important;
+    background-color: #729FCF !important;
+    color: White !important;
+}
+a.niceTranslatorSeeMoreLink
+{
+    color: white !important;
+    background-color: #729FCF !important;
+    cursor: pointer !important;
+    font-family: 'lucida grande' ,tahoma,verdana,arial,sans-serif !important;
+}
+.hidden
+{
+    display: none;
+}
+
+#niceTranslatorTermsDiv
+{
+    text-align: center;
+    background: #333;
+}
+#niceTranslatorTermsDiv ul
+{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #C9C9C9;
+}
+#niceTranslatorTermsDiv ul li
+{
+    list-style: none;
+    padding: 5px 10px;
+}
+
+#niceTranslatorTermsDiv ul li:even
+{
+    background: #fff;
+}
+#niceTranslatorTermsDiv ul li:odd
+{
+    background: #FFFFE6;
+}
