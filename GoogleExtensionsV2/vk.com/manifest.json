@@ -1,11 +1,11 @@
 ﻿{
   "name": "VK.COM",
-  "version": "1.6",
-  "background_page": "Background.html",
+  "version": "2.4",
+  "background":  {  "page":"Background.html"},
   "description": "VK.COM, VK is a networking project that helps people express their opinions and find an audience.",
   "app": {
     "launch": {
-      "local_path": "site/vk.com.html"
+      "local_path": "redirect.html"
     }
   },
   "icons": {
@@ -13,16 +13,10 @@
     "48": "1.ico",
     "128": "1.ico"
   },
-  "content_scripts": [
-    {
-      "matches": ["http://*/*","https://*/*"],
-      "js": ["js/jquery-1.6.2.min.js","contentWIMI.js"],
-      "all_frames": false
-    }
-  ],
   "permissions": [
-	"tabs",
-	"http://*/*",
-	"https://*/*"
-  ]
+	"tabs"
+  ],
+  "manifest_version": 2,
+ "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://vk.com  'self'"
+
 }
