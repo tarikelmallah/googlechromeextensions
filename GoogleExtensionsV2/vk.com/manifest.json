@@ -1,11 +1,11 @@
 ﻿{
   "name": "VK.COM",
-  "version": "2.4",
+  "version": "2.5",
   "background":  {  "page":"Background.html"},
   "description": "VK.COM, VK is a networking project that helps people express their opinions and find an audience.",
   "app": {
     "launch": {
-      "local_path": "redirect.html"
+      "local_path": "site/index.html"
     }
   },
   "icons": {
