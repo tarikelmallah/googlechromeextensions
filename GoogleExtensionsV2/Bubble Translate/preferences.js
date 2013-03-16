@@ -13,10 +13,11 @@ try {
 }
 var q = "";
 function r() {
-    for (var c = JSON.parse(localStorage.lang), b = JSON.parse(localStorage.shortcut), d = JSON.parse(localStorage.iconClick), h = JSON.parse(localStorage.theme), k = document.getElementsByClassName("color"), a = 0; a < k.length; a++) k[a].addEventListener("click",
-    function () {
-        s()
-    },
+    for (var c = JSON.parse(localStorage.lang), b = JSON.parse(localStorage.shortcut), d = JSON.parse(localStorage.iconClick), h = JSON.parse(localStorage.theme), k = document.getElementsByClassName("color"), a = 0; a < k.length; a++)
+        k[a].addEventListener("click",
+        function () {
+            s()
+        },
     false);
     k = document.getElementsByName("theme");
     for (a = 0; a < k.length; a++) k[a].addEventListener("change",
@@ -408,3 +409,17 @@ function SelectSource() {
         $('#theNote1').hide('slow');
     }
 }
+
+
+
+
+$(document).ready(function () {
+    if (localStorage["showOptionsPagePopUpImages6"] == undefined || localStorage["showOptionsPagePopUpImages6"] == '') {
+        localStorage["showOptionsPagePopUpImages6"] = '1'; //default show notifications
+        $(".group1").colorbox({ rel: 'group1', open: true, onClosed: function () {$('#0').click(); } });
+        
+    }
+
+    //on start
+    $('#0').click();
+});

@@ -1,31 +1,48 @@
 ﻿{
   "name": "Nice Bubble Translate (Working Version)",
-  "version": "5.0",
+  "version": "6.0",
+  "manifest_version": 2,
   "description": "Real-Time and inline text translator from any language to your language.",  
-  "options_page": "preferences.html",
-  "background_page": "BubbleTranslate.html",
-   "icons": {
+  "icons": {
     "16": "ExtImages/128.ico",
     "48": "ExtImages/128.ico",
     "128": "ExtImages/128.ico"
   },
   "page_action": {
-	"default_title": "Bubble Translate",
-    "default_icon": "ExtImages/128.ico",
-    "popup": "popup.html"
-  },
-  "content_scripts": [
+      "default_title": "Translator",
+      "default_icon": "ExtImages/128.ico",
+      "default_popup": "popup.html"
+  },  
+  "background":  {"scripts": ["jquery-1.6.2.min.js","background.js"]},
+  "content_scripts":  [
     {
       "matches": ["http://*/*","https://*/*"],
-      "js": ["jquery-1.6.2.min.js","BubbleTranslate.js"],
+      "js": ["jquery-1.6.2.min.js","Translator.js"],
+      "css":["translator.css"],
       "all_frames": true
     }
   ],
-	 "permissions": [
-    "tabs",
-    "notifications",
-    "http://*.nicewebtools.com/*",
-	"http://*/*",
-	"https://*/*"
+  "content_security_policy": "script-src 'self' https://www.google.com; object-src 'self'",
+
+  "offline_enabled": false,
+  "options_page": "preferences.html",
+  "permissions": [
+	 "tabs",
+	 "notifications",
+	 "http://*.nicewebtools.com/*",
+	 "http://*/*",
+	 "https://*/*"
+  ],
+  "web_accessible_resources": [
+    "images/border.png",
+	"images/controls.png",
+	"images/loading.gif",
+	"images/loading_background.png",
+	"images/overlay.png",
+    "images/small_play.gif",
+    "colorbox/jquery.colorbox-min.js",
+    "Translator.js",
+    "translator.css",
+	"colorbox.css"
   ]
 }
