@@ -1,8 +1,8 @@
 ﻿{
   "name": "Arabic Translator (To All languages)",
-  "version": "1",
+  "version": "1.1",
   "manifest_version": 2,
-  "description": "Translator, Real-Time and inline text translator from all languages to any language, with many sources.",  
+  "description": "Arabic Translator, Real-Time and inline text translator from all languages to any language, with many sources.",  
   "icons": {
     "16": "ExtImages/128.ico",
     "48": "ExtImages/128.ico",
@@ -44,5 +44,6 @@
     "Translator.js",
     "translator.css",
 	"colorbox.css"
-  ]
+  ],
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://www.nicewebtools.com 'self'"
 }
