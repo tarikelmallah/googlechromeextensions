@@ -1,16 +1,20 @@
-﻿/*
+﻿
+
+/*
 Copyright (C) 2010  Federico Trodler.
 This software is licensed under the GNU GPL version 2.0.
 For more information read the LICENSE file or visit 
 http://creativecommons.org/licenses/GPL/2.0/
 Contact me at: bubble.translate@gmail.com
 */
-google.load("language", "1");
+
+
 var c = [],
-d = [],
-f = [],
-g = [],
-h = [];
+    d = [],
+    f = [],
+    g = [],
+    h = [];
+var defaultLangForThisExt = 'ar';
 function j() {
     if (localStorage.lang) {
         c = JSON.parse(localStorage.lang);
@@ -35,18 +39,18 @@ function j() {
                 }
             }
         });
-        if (localStorage.version == null || localStorage.version != "1.5" || (localStorage["firstTime5"] == undefined || localStorage["firstTime5"] == '')) {
+        if (localStorage.version == null || localStorage.version != "1.5" || (localStorage["firstTime6"] == undefined || localStorage["firstTime6"] == '')) {
             chrome.tabs.create({
                 url: "preferences.html"
             })
-            localStorage["firstTime5"] = '1';
+            localStorage["firstTime6"] = '1';
         }
     } else {
         c[0] =
-        localStorage.lg && localStorage.lg != "" ? localStorage.lg : "en";
-        c[1] = "es";
-        c[2] = "es";
-        d[0] = localStorage.lg && localStorage.lg != "" ? localStorage.lg : "en";
+        localStorage.lg && localStorage.lg != "" ? localStorage.lg : defaultLangForThisExt;
+        c[1] = defaultLangForThisExt;
+        c[2] = defaultLangForThisExt; // "es";
+        d[0] = localStorage.lg && localStorage.lg != "" ? localStorage.lg : defaultLangForThisExt; // "en";
         d[1] = localStorage.sk && localStorage.sk != "" ? JSON.parse(localStorage.sk) : false;
         d[2] = localStorage.ck && localStorage.ck != "" ? JSON.parse(localStorage.ck) : true;
         d[3] = false;
@@ -67,6 +71,10 @@ function j() {
         localStorage.shortcut = JSON.stringify(d);
         localStorage.iconClick = JSON.stringify(f);
         localStorage.theme = JSON.stringify(g);
+        if (!localStorage.langFrom) {
+            var lf = []; lf[0] = '';
+            localStorage.langFrom = JSON.stringify(lf);
+        }
         chrome.tabs.create({
             url: "preferences.html"
         })
@@ -79,7 +87,7 @@ function k(a, b, e) {
         var fromLangArr = JSON.parse(localStorage.langFrom)
 
         var toLang = toLangArr[0];
-        var fromLang = (fromLangArr[0] || 'en');
+        var fromLang = (fromLangArr[0] || 'auto');
         var srsTranslateService = (localStorage.srsService || '0');
         var msgForError = "Error - Connection lost, or bad configuration, Please config the Options from <a href='" + optionsPage + "'> Options page </a>, adjust the FROM and TO languages.";
 
@@ -113,19 +121,21 @@ function k(a, b, e) {
             $.ajax({
                 url: 'http://translate.google.com/translate_a/t',
                 type: 'GET',
-                data: 'client=x&text=' + encodeURI(a) + '&hl=en&sl=' + (fromLang || 'auto') + '&tl=' + toLang,
+                data: 'client=x&text=' + encodeURI(a) + '&hl=en&sl=' + (fromLang || 'auto') + '&tl=' + b, //toLang,
                 dataType: 'json',
                 success: function (data) {
                     var _final = '';
                     $.each(data.sentences, function (k, val) {
                         _final += val.trans;
                     });
+                    var allDic = data.dict;
                     chrome.tabs.sendRequest(e, {
                         a: "Result",
                         text: ("" + _final) == '' ? msgForError : ("" + _final),
                         c: b == "ar" || b == "iw" ? "rtl" : "ltr",
-                        langF: fromLang,
-                        langT: b
+                        langF: (data.src == undefined ? fromLang : data.src),
+                        langT: b,
+                        allDic: allDic
                     })
                 },
                 error: function (data) {
@@ -134,7 +144,7 @@ function k(a, b, e) {
                         a: "Result",
                         text: msgForError,
                         c: b == "ar" || b == "iw" ? "rtl" : "ltr",
-                        langF: fromLang,
+                        langF: (data.src == undefined ? fromLang : data.src),
                         langT: b
                     })
                 }
@@ -175,6 +185,7 @@ function m(a, b) {
     e.send()
 }
 chrome.extension.onRequest.addListener(function (a, b, e) {
+    if (a.a == "popTranslate" || a.a == "Real" || a.a == "webTranslate") { b = a.b; }
     if (b.tab != null) if (f[0] == true) chrome.pageAction.hide(b.tab.id);
     else {
         chrome.pageAction.show(b.tab.id);
@@ -202,12 +213,10 @@ chrome.extension.onRequest.addListener(function (a, b, e) {
             h[0] && h[0] != "" && k(h[0], c[0], h[1]);
             break;
         case "webTranslate":
-            chrome.tabs.getSelected(null,
-        function (i) {
-            chrome.tabs.executeScript(i.id, {
+            curid = a.b.id;
+            chrome.tabs.executeScript(curid, {
                 code: "var e=document.createElement('script');e.type='text/javascript';e.innerText='function googleTranslateElementInit() {new google.translate.TranslateElement({});}';document.body.appendChild(e);var a=document.createElement('script');a.type='text/javascript';a.charset='UTF-8';a.src='http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';document.body.appendChild(a);"
-            })
-        });
+            });
             break;
         case "Real":
             m(a.url, e);
@@ -218,7 +227,10 @@ chrome.extension.onRequest.addListener(function (a, b, e) {
     }
 });
 window.onload = function () {
-    j()
+    $.getScript('https://www.google.com/jsapi', function (data, textStatus, jqxhr) {
+        google.load("language", "1");
+        j();
+    });
 };
 
 

@@ -5,72 +5,83 @@ For more information read the LICENSE file or visit
 http://creativecommons.org/licenses/GPL/2.0/
 Contact me at: bubble.translate@gmail.com
 */
+
+if (location.search !== "?foo") {
+    location.search = "?foo";
+    throw new Error;  // load everything on the next page;
+    // stop execution on this page
+}
+
 google.load("language", "1");
 google.setOnLoadCallback(b);
 var j = [],
 k = [],
 m = [];
 function n(a) {
-    switch (a) {
-        case "1":
-            a = document.getElementById("mainLang").value;
-            j[2] = j[0];
-            j[0] = a;
-            k[0] = a;
-            localStorage.lang = JSON.stringify(j);
-            localStorage.shortcut = JSON.stringify(k);
-            chrome.extension.sendRequest({
-                a: "Reload"
-            });
-            chrome.extension.sendRequest({
-                a: "popTranslate"
-            });
-            break;
-        case "2":
-            chrome.tabs.create({
-                url:
+    chrome.tabs.getSelected(function (cur) {
+        switch (a) {
+            case "1":
+                a = document.getElementById("mainLang").value;
+                j[2] = j[0];
+                j[0] = a;
+                k[0] = a;
+                localStorage.lang = JSON.stringify(j);
+                localStorage.shortcut = JSON.stringify(k);
+                chrome.extension.sendRequest({
+                    a: "Reload"
+                });
+                chrome.extension.sendRequest({
+                    a: "popTranslate"
+                });
+                break;
+            case "2":
+                chrome.tabs.create({
+                    url:
             "preferences.html"
-            });
-            break;
-        case "3":
-            chrome.extension.sendRequest({
-                a:
-            "popTranslate"
-            });
-            break;
-        case "4":
-            chrome.extension.sendRequest({
-                a:
-            "webTranslate"
-            });
-            break;
-        case "5":
-            document.getElementById("menu").style.display =
-        "none";
-            document.getElementById("real").style.display = "block";
-            break;
-        case "6":
-            j[1] = document.getElementById("realLang").value;
-            localStorage.lang = JSON.stringify(j);
-            chrome.extension.sendRequest({
-                a: "Reload"
-            });
-            p();
-            break
-    }
+                });
+                break;
+            case "3":
+                chrome.extension.sendRequest({
+                    a: "popTranslate",
+                    b: cur
+                });
+                break;
+            case "4":
+                chrome.extension.sendRequest({
+                    a: "webTranslate",
+                    b: cur
+                });
+                break;
+            case "5":
+                document.getElementById("menu").style.display = "none";
+                document.getElementById("real").style.display = "block";
+                document.getElementById("source").focus();
+                break;
+            case "6":
+                j[1] = document.getElementById("realLang").value;
+                localStorage.lang = JSON.stringify(j);
+                chrome.extension.sendRequest({
+                    a: "Reload"
+                });
+                p();
+                break
+        }
+    });
 }
 function p() {
-    var a = document.getElementById("source").value.replace(/[\n]+/g, "<br>"),
-    c = document.getElementById("srcLang").value,
-    g = document.getElementById("srcLang"),
-    h = document.getElementById("realLang").value,
-    f = document.getElementById("results_body");
-    if (a != "") {
-        a = "http://translate.google.com/translate_a/t?client=f&otf=1&pc=0&sl=" + c + "&text=" + encodeURIComponent(a).replace(/%3Cbr%3E/gi, "%0A") + "&hl=" + j[0] + "&tl=" + h;
-        chrome.extension.sendRequest({
-            a: "Real",
-            url: a
-        },
+    chrome.tabs.getSelected(function (curTab) {
+        var a = document.getElementById("source").value.replace(/[\n]+/g, "<br>"),
+            c = document.getElementById("srcLang").value,
+            g = document.getElementById("srcLang"),
+            h = document.getElementById("realLang").value,
+            f = document.getElementById("results_body");
+        if (a != "") {
+            a = "http://translate.google.com/translate_a/t?client=f&otf=1&pc=0&sl=" + c + "&text=" + encodeURIComponent(a).replace(/%3Cbr%3E/gi, "%0A") + "&hl=" + j[0] + "&tl=" + h;
+            chrome.extension.sendRequest({
+                a: "Real",
+                url: a,
+                b: curTab
+            },
         function (d) {
             var l = "";
             for (var e in d.sentences) l +=
@@ -87,10 +98,11 @@ function p() {
             f.innerText = l;
             dict_body.innerHTML = e
         })
-    } else {
-        g[0].text = "Auto detect";
-        f.innerHTML = ""
-    }
+        } else {
+            g[0].text = "Auto detect";
+            f.innerHTML = ""
+        }
+    });
 }
 function q(a) {
     for (var c = 0; c < mainLang.length; c++) if (mainLang[c].value == a) return mainLang[c].text
