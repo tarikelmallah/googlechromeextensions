@@ -395,10 +395,10 @@ function readXMLConfig() {
                                 }
                             }
                         }
-
+                        rssi.parent_SiteItem = si;
                         si.rssItems.push(rssi);
                     });
-
+                    si.parent_ParentSite = ps;
                     ps.siteItems.push(si);
                 });
 
@@ -471,6 +471,7 @@ function siteItem() {
     this.largeimage = '';
     this.smallimage = '';
     this.description = '';
+    this.parent_ParentSite = new ParentSite();
 }
 
 function rssItem() {
@@ -494,6 +495,7 @@ function rssItem() {
     this.ChannelImagetitle = '';
     this.ChannelImageSrcUrl = '';
     this.ChannelImageLinkTo = '';
+    this.parent_SiteItem = new siteItem();    
 }
 
 function rssSettingItem() {
