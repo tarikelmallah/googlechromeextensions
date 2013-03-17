@@ -23,11 +23,12 @@ function initPop() {
 
             var theId = varItem.sourceRss_id;
             var sourceRssItem = bk.getRssItemById(theId)
+            ParentSiteDisplayName = sourceRssItem.parent_SiteItem.parent_ParentSite.displayname;
             var tabsDivId = 'tabs-' + theId;
             var thesourceRss_text = varItem.sourceRss_text;
             //if category not found then create it
             if ($('#' + tabsDivId).length == 0) {
-                $('<li><a href="#' + tabsDivId + '">' + thesourceRss_text + '</a></li>').appendTo('#TabsNamesUlLis ul');
+                $('<li><a href="#' + tabsDivId + '">' + ParentSiteDisplayName + '<br/>'+thesourceRss_text + '</a></li>').appendTo('#TabsNamesUlLis ul');
                 $('<div id="' + tabsDivId + '" class="mainTabDiv"><div class="accordion ' + tabsDivId + 'Class"  sourceRss_text="' + varItem.sourceRss_text + '"  sourceRss_id="' + varItem.sourceRss_id + '"  sourceRss_text="' + escape(varItem.sourceRss_text) + '"  sourceRss_smallimage="' + varItem.sourceRss_smallimage + '" sourceRss_largeimage="' + varItem.sourceRss_largeimage + '" ></div></div>').appendTo('#Contentstabs');
                 allItemsIDs.push(tabsDivId);
             }
