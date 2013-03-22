@@ -110,7 +110,7 @@ function k(a, b, e) {
                     var items = data;
                     chrome.tabs.sendRequest(e, {
                         a: "Result",
-                        text: msgForError,
+                         text: msgForError,
                         c: b == "ar" || b == "iw" ? "rtl" : "ltr",
                         langF: fromLang,
                         langT: b
