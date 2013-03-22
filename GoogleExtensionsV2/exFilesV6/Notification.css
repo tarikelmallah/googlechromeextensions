@@ -54,6 +54,7 @@ body
 {
     padding: 0px;
     margin: 0px;
+    overflow:hidden;
 }
 .hideThis
 {
@@ -149,6 +150,7 @@ body
     background-color: #F7F7F7;
     margin-top: 2px;
     padding-left: 6px;
+    overflow:hidden;
 }
 .facebookClassMain
 {
