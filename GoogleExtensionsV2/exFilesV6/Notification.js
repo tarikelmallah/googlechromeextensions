@@ -89,14 +89,16 @@ function init() {
         switch (event.which) {
             case 2:
                 //alert('Middle mouse button pressed');
-             //   bk.closeThenotification();
+                bk.closeThenotification();
                 break;
             case 3:
                 //alert('Right mouse button pressed');
-             //   bk.closeThenotification();
+                bk.closeThenotification();
                 break;
         }
     });
+
+    $("body").css({ overflow: 'inherit' }, function () { $("body").css({ overflow: 'hidden' }); });
 
     //initiate amazon link
     var amazonLinkUrl = "http://astore.amazon.com/nicamaoff-20";
