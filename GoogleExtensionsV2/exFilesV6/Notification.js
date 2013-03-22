@@ -89,11 +89,11 @@ function init() {
         switch (event.which) {
             case 2:
                 //alert('Middle mouse button pressed');
-                bk.closeThenotification();
+             //   bk.closeThenotification();
                 break;
             case 3:
                 //alert('Right mouse button pressed');
-                bk.closeThenotification();
+             //   bk.closeThenotification();
                 break;
         }
     });
