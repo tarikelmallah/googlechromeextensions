@@ -297,6 +297,7 @@ function findItunesSummaryContentTag(obj) {
     } catch (ex) { return ''; }
     return '';
 }
+var lastNotificationTime = new Date();
 
 function StartNotification() {
     //show notification
@@ -307,7 +308,8 @@ function StartNotification() {
                         );
         testnotificationWindow.onclose = closeTheNotification;
         isNotificationWindowOppened = true;
-        testnotificationWindow.show();
+        if (((new Date()) - lastNotificationTime) > 30000) //if last notification from more than 30 sec then show this notification
+            testnotificationWindow.show();
 
         console.log("\n -- here -- \n" + CurrentAllNotificationQueue);
 
@@ -405,7 +407,7 @@ function readXMLConfig() {
                 parentSites.push(ps);
             });
             if (localStorage["firstTime_6"] == undefined || localStorage["firstTime_6"] == '') {
-                localStorage["siteItemsOptions"] =parentSites[0].siteItems[0].rssItems[0].id + '#10#true';
+                localStorage["siteItemsOptions"] = parentSites[0].siteItems[0].rssItems[0].id + '#10#true';
                 localStorage["firstTime_6"] = '1';
                 chrome.tabs.create({
                     'url': chrome.extension.getURL("options.html"),
@@ -495,7 +497,7 @@ function rssItem() {
     this.ChannelImagetitle = '';
     this.ChannelImageSrcUrl = '';
     this.ChannelImageLinkTo = '';
-    this.parent_SiteItem = new siteItem();    
+    this.parent_SiteItem = new siteItem();
 }
 
 function rssSettingItem() {
