@@ -297,7 +297,7 @@ function findItunesSummaryContentTag(obj) {
     } catch (ex) { return ''; }
     return '';
 }
-var lastNotificationTime = new Date();
+var lastNotificationTime = new Date(2000, 0, 1, 9, 0);
 
 function StartNotification() {
     //show notification
@@ -309,7 +309,10 @@ function StartNotification() {
         testnotificationWindow.onclose = closeTheNotification;
         isNotificationWindowOppened = true;
         if (((new Date()) - lastNotificationTime) > 30000) //if last notification from more than 30 sec then show this notification
+        {
+            lastNotificationTime = new Date();
             testnotificationWindow.show();
+        }
 
         console.log("\n -- here -- \n" + CurrentAllNotificationQueue);
 
