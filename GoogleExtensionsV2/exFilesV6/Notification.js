@@ -10,12 +10,12 @@ function init() {
     $('.btnNextClass').click(function () { btnNext(); });
     //load CSS
     $("head").append("<link>");
-    css = $("head").children(":last");
-    css.attr({
-        rel: "stylesheet",
-        type: "text/css",
-        href: bk.NotificationsCssFile + '.css'
-    });
+    //css = $("head").children(":last");
+    //css.attr({
+    //    rel: "stylesheet",
+    //    type: "text/css",
+    //    href: bk.NotificationsCssFile + '.css'
+    //});
     //lang specific css
     $("head").append("<link>");
     css = $("head").children(":last");
