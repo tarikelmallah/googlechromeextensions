@@ -1,203 +1,549 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <items>
-    <parentsite displayname="Yahoo" displaynameforoptions="Yahoo" id="yahoo1" link="samplelink" logo="samplelogo" description="yahoo news from yahoo rss">
-        <site id="_01" text="Yahoo! News Headlines" site="news.yahoo.com"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
-            <rssItem id="_01_1" text="Headlines" link="http://news.yahoo.com/rss/"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <parentsite displayname="Yahoo" displaynameforoptions="Yahoo News" id="yahoo1" link="http://news.yahoo.com" searchUrl="http://search.yahoo.com/search?fr=ush-globalnews&amp;p=" logo="yahoo.gif" description="yahoo World! News, The latest news and headlines, breaking news and coverage with photos and more.">
+        <site id="yahoo1_01" text="Yahoo! News Headlines" site="news.yahoo.com"
+        largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+            <rssItem id="yahoo1_01_1" text="Headlines" link="http://news.yahoo.com/rss/"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
         </site>
-        <site id="1" text="U.S." site="news.yahoo.com"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
-            <rssItem id="1_1" text="U.S." link="http://news.yahoo.com/rss/us"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="1_2" text="Elections" link="http://news.yahoo.com/rss/elections/"
-             largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="1_3" text="Education" link="http://news.yahoo.com/rss/education"
-              largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="1_4" text="Religion" link="http://news.yahoo.com/rss/religion"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="1_5" text="Politics" link="http://news.yahoo.com/rss/politics"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="1_6" text="Crimes And Trials" link="http://news.yahoo.com/rss/crime-trials"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="1_7" text="Contributor Network" link="http://news.yahoo.com/rss/contributor-network"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="1_8" text="Green Tech" link="http://news.news.yahoo.com/8300-11128_3-54.xml"
-              largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <site id="yahoo11" text="U.S." site="news.yahoo.com"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+            <rssItem id="yahoo11_1" text="U.S." link="http://news.yahoo.com/rss/us"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo11_2" text="Elections" link="http://news.yahoo.com/rss/elections/"
+             largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo11_3" text="Education" link="http://news.yahoo.com/rss/education"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo11_4" text="Religion" link="http://news.yahoo.com/rss/religion"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo11_5" text="Politics" link="http://news.yahoo.com/rss/politics"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo11_6" text="Crimes And Trials" link="http://news.yahoo.com/rss/crime-trials"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo11_7" text="Contributor Network" link="http://news.yahoo.com/rss/contributor-network"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo11_8" text="Green Tech" link="http://news.news.yahoo.com/8300-11128_3-54.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
         </site>
-        <site id="2" text="BUSINESS" site="news.yahoo.com"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
-            <rssItem id="2_2" text="Business" link="http://news.yahoo.com/rss/business"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="2_1" text="U.S. Economy" link="http://news.yahoo.com/rss/economy"
-              largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="2_3" text="Stock Markets" link="http://news.yahoo.com/rss/stock-markets"
-              largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="2_4" text="Earnings" link="http://news.yahoo.com/rss/earnings"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="2_5" text="Personal Finance" link="http://news.yahoo.com/rss/personal-finance"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="2_6" text="Business Press Releases" link="http://news.yahoo.com/rss/business-press-releases"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="2_7" text="Taxes" link="http://news.yahoo.com/rss/taxes"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="2_8" text="Marketplace" link="http://news.yahoo.com/rss/marketplace"
-              largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <site id="yahoo12" text="BUSINESS" site="news.yahoo.com"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+            <rssItem id="yahoo12_2" text="Business" link="http://news.yahoo.com/rss/business"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo12_1" text="U.S. Economy" link="http://news.yahoo.com/rss/economy"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo12_3" text="Stock Markets" link="http://news.yahoo.com/rss/stock-markets"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo12_4" text="Earnings" link="http://news.yahoo.com/rss/earnings"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo12_5" text="Personal Finance" link="http://news.yahoo.com/rss/personal-finance"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo12_6" text="Business Press Releases" link="http://news.yahoo.com/rss/business-press-releases"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo12_7" text="Taxes" link="http://news.yahoo.com/rss/taxes"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo12_8" text="Marketplace" link="http://news.yahoo.com/rss/marketplace"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
         </site>
-        <site id="4" text="WORLD" site="news.yahoo.com"
-         largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
-            <rssItem id="4_2" text="WORLD" link="http://news.yahoo.com/rss/world"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="4_3" text="Middle East" link="http://news.yahoo.com/rss/middle-east"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="4_4" text="Europe" link="http://news.yahoo.com/rss/europe"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="4_5" text="Latin America" link="http://news.yahoo.com/rss/latin-america"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="4_6" text="Africa" link="http://news.yahoo.com/rss/africa"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <site id="yahoo14" text="WORLD" site="news.yahoo.com"
+         largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+            <rssItem id="yahoo14_2" text="WORLD" link="http://news.yahoo.com/rss/world"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo14_3" text="Middle East" link="http://news.yahoo.com/rss/middle-east"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo14_4" text="Europe" link="http://news.yahoo.com/rss/europe"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo14_5" text="Latin America" link="http://news.yahoo.com/rss/latin-america"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo14_6" text="Africa" link="http://news.yahoo.com/rss/africa"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
 
-            <rssItem id="4_7" text="Asia" link="http://news.yahoo.com/rss/asia"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="4_8" text="Canada" link="http://news.yahoo.com/rss/canada"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="4_9" text="Australia/Antarctica" link="http://news.yahoo.com/rss/australia-antarctica"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo14_7" text="Asia" link="http://news.yahoo.com/rss/asia"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo14_8" text="Canada" link="http://news.yahoo.com/rss/canada"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo14_9" text="Australia/Antarctica" link="http://news.yahoo.com/rss/australia-antarctica"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+        </site>
+        <site id="yahoo15" text="ENTERTAINMENT" site="news.yahoo.com"
+         largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+            <rssItem id="yahoo15_2" text="ENTERTAINMENT" link="http://news.yahoo.com/rss/entertainment"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo15_3" text="Celebrity" link="http://news.yahoo.com/rss/celebrity"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo15_4" text="TV" link="http://news.yahoo.com/rss/tv"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo15_5" text="Movies" link="http://news.yahoo.com/rss/movies"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo15_6" text="Music" link="http://news.yahoo.com/rss/music"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo15_7" text="Reviews" link="http://news.yahoo.com/rss/reviews"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo15_8" text="Fashion" link="http://news.yahoo.com/rss/fashion"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo15_9" text="Books" link="http://news.yahoo.com/rss/books"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo15_10" text="Arts" link="http://news.yahoo.com/rss/arts"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo15_11" text="Dear Abby" link="http://news.yahoo.com/rss/dear-abby"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo15_12" text="Odd News" link="http://news.yahoo.com/rss/odd"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+        </site>
+        <site id="yahoo16" text="SPORTS" site="news.yahoo.com"
+         largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+            <rssItem id="yahoo16_2" text="SPORTS" link="http://news.yahoo.com/rss/sports"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo16_3" text="Football" link="http://news.yahoo.com/rss/football"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo16_4" text="Baseball" link="http://news.yahoo.com/rss/baseball"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo16_5" text="Basketball" link="http://news.yahoo.com/rss/basketball"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo16_6" text="College" link="http://news.yahoo.com/rss/college-sports"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo16_7" text="Soccer" link="http://news.yahoo.com/rss/soccer"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo16_8" text="Cycling" link="http://news.yahoo.com/rss/cycling"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo16_9" text="Hockey" link="http://news.yahoo.com/rss/hockey"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo16_10" text="Tennis" link="http://news.yahoo.com/rss/tennis"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo16_11" text="Golf" link="http://news.yahoo.com/rss/golf"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo16_12" text="World Cup" link="http://news.yahoo.com/rss/world-cup"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo16_13" text="Boxing" link="http://news.yahoo.com/rss/boxing"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo16_14" text="Motorsports" link="http://news.yahoo.com/rss/motorsports"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo16_15" text="Extreme Sports" link="http://news.yahoo.com/rss/extreme-sports"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+        </site>
+        <site id="yahoo17" text="TECH" site="news.yahoo.com"
+           largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+            <rssItem id="yahoo17_1" text="TECH" link="http://news.yahoo.com/rss/tech"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo17_2" text="Internet" link="http://news.yahoo.com/rss/internet"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo17_3" text="Gadgets" link="http://news.yahoo.com/rss/gadgets"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo17_4" text="Wireless" link="http://news.yahoo.com/rss/wireless"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo17_5" text="Apple" link="http://news.yahoo.com/rss/apple"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo17_6" text="Social Media" link="http://news.yahoo.com/rss/social-media"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo17_7" text="Security" link="http://news.yahoo.com/rss/security"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo17_8" text="Linux/Open Source" link="http://news.yahoo.com/rss/open-source"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo17_9" text="Gaming" link="http://news.yahoo.com/rss/gaming"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+        </site>
+        <site id="yahoo18" text="POLITICS" site="news.yahoo.com"
+           largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+            <rssItem id="yahoo18_1" text="All Politics" link="http://news.yahoo.com/rss/politics"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo18_2" text="White House" link="http://news.yahoo.com/rss/white-house"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo18_3" text="Congress" link="http://news.yahoo.com/rss/congress"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo18_4" text="U.S. Government" link="http://news.yahoo.com/rss/us-government"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo18_5" text="World" link="http://news.yahoo.com/rss/politics-world"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo18_6" text="Ths Courts" link="http://news.yahoo.com/rss/the-courts"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo18_7" text="Opinion" link="http://news.yahoo.com/rss/opinion"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo18_8" text="Politics Press Release" link="http://news.yahoo.com/rss/politics-press-releases"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo18_9" text="Elections 2012" link="http://news.yahoo.com/rss/elections-2012"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+        </site>
+        <site id="yahoo19" text="SCIENCE" site="news.yahoo.com"
+           largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+            <rssItem id="yahoo19_1" text="SCIENCE" link="http://news.yahoo.com/rss/science"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo19_2" text="Weather News" link="http://news.yahoo.com/rss/weather"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo19_3" text="Space / Astronomy" link="http://news.yahoo.com/rss/astronomy"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo19_4" text="Animal / Pets" link="http://news.yahoo.com/rss/animal-pets"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo19_5" text="Dinosaurs / Fossils" link="http://news.yahoo.com/rss/dinosaurs-fossils"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo19_6" text="Biotec" link="http://news.yahoo.com/rss/biotech"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo19_7" text="Energy" link="http://news.yahoo.com/rss/energy"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo19_8" text="Green" link="http://news.yahoo.com/rss/green"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+        </site>
+        <site id="yahoo110" text="HEALTH" site="news.yahoo.com"
+           largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+            <rssItem id="yahoo110_1" text="Health" link="http://news.yahoo.com/rss/health"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo110_2" text="Medications / Drugs" link="http://news.yahoo.com/rss/medications-drugs"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo110_3" text="Parenting / Kids" link="http://news.yahoo.com/rss/parenting-kids"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo110_4" text="Seniors / Aging" link="http://news.yahoo.com/rss/seniors-aging"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo110_5" text="Disease / Conditions" link="http://news.yahoo.com/rss/diseases-conditions"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+            <rssItem id="yahoo110_6" text="Vitality" link="http://news.yahoo.com/rss/vitality"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
         </site>
     </parentsite>
-    <parentsite displayname="BBC" displaynameforoptions="BBC" id="BBC1" link="samplelink" logo="samplelogo" description="BBC news from BBC rss">
-        <site id="5" text="ENTERTAINMENT" site="news.yahoo.com"
-         largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
-            <rssItem id="5_2" text="ENTERTAINMENT" link="http://news.yahoo.com/rss/entertainment"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="5_3" text="Celebrity" link="http://news.yahoo.com/rss/celebrity"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="5_4" text="TV" link="http://news.yahoo.com/rss/tv"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="5_5" text="Movies" link="http://news.yahoo.com/rss/movies"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="5_6" text="Music" link="http://news.yahoo.com/rss/music"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="5_7" text="Reviews" link="http://news.yahoo.com/rss/reviews"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="5_8" text="Fashion" link="http://news.yahoo.com/rss/fashion"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="5_9" text="Books" link="http://news.yahoo.com/rss/books"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="5_10" text="Arts" link="http://news.yahoo.com/rss/arts"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="5_11" text="Dear Abby" link="http://news.yahoo.com/rss/dear-abby"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="5_12" text="Odd News" link="http://news.yahoo.com/rss/odd"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+    <parentsite displayname="USA Today" displaynameforoptions="USA Today" id="usatoday2" link="http://www.usatoday.com" searchUrl="http://www.usatoday.com/search/results?submit.x=0&amp;submit.y=0&amp;submit=Search&amp;q=" logo="usatoday.png" description="USATODAY.com Breaking news on sports, world, science, financial, national, economy, videos, and entertainment.">
+        <site id="usatoday21" text="USA Today News" site="usatoday.com"
+          largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png">
+            <rssItem id="usatoday21_1" text="Top Headlines" link="http://rssfeeds.usatoday.com/usatoday-NewsTopStories"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday21_2" text="On Deadline Blog" link="http://rssfeeds.usatoday.com/TP-OnDeadline"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday21_3" text="National" link="http://rssfeeds.usatoday.com/UsatodaycomNation-TopStories"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday21_4" text="Washington" link="http://rssfeeds.usatoday.com/UsatodaycomWashington-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday21_5" text="World" link="http://i.usatoday.net/marketing/_images/xmlbox.gif"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday21_6" text="Religion" link="http://rssfeeds.usatoday.com/Religion-TopStories"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday21_7" text="Education" link="http://rssfeeds.usatoday.com/Education-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday21_8" text="Offbeat News" link="http://rssfeeds.usatoday.com/UsatodaycomOffbeat-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday21_9" text="Health" link="http://rssfeeds.usatoday.com/UsatodaycomHealth-TopStories"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday21_10" text="Weight Loss" link="http://rssfeeds.usatoday.com/Usatodaycom-Weightloss"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday21_11" text="Al Neuharth" link="http://rssfeeds.usatoday.com/UsatodaycomNewsOpinion-Neuharth"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday21_12" text="Chuck Raasch" link="http://rssfeeds.usatoday.com/UsatodaycomNewsOpinion-Raasch"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday21_13" text="DeWayne Wickham" link="http://rssfeeds.usatoday.com/UsatodaycomNewsOpinion-Wickham"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday21_14" text="Opinion" link="http://rssfeeds.usatoday.com/News-Opinion"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday21_15" text="OnPolitics" link="http://rssfeeds.usatoday.com/TP-OnPolitics"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday21_16" text="The Oval" link="http://rssfeeds.usatoday.com/TheOvalTopStoriesCommunityFeed"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
         </site>
-        <site id="6" text="SPORTS" site="news.yahoo.com"
-         largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
-            <rssItem id="6_2" text="SPORTS" link="http://news.yahoo.com/rss/sports"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="6_3" text="Football" link="http://news.yahoo.com/rss/football"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="6_4" text="Baseball" link="http://news.yahoo.com/rss/baseball"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="6_5" text="Basketball" link="http://news.yahoo.com/rss/basketball"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="6_6" text="College" link="http://news.yahoo.com/rss/college-sports"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="6_7" text="Soccer" link="http://news.yahoo.com/rss/soccer"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="6_8" text="Cycling" link="http://news.yahoo.com/rss/cycling"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="6_9" text="Hockey" link="http://news.yahoo.com/rss/hockey"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="6_10" text="Tennis" link="http://news.yahoo.com/rss/tennis"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="6_11" text="Golf" link="http://news.yahoo.com/rss/golf"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="6_12" text="World Cup" link="http://news.yahoo.com/rss/world-cup"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="6_13" text="Boxing" link="http://news.yahoo.com/rss/boxing"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="6_14" text="Motorsports" link="http://news.yahoo.com/rss/motorsports"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="6_15" text="Extreme Sports" link="http://news.yahoo.com/rss/extreme-sports"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <site id="usatoday212" text="Sports" site="usatoday.com"
+           largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png">
+            <rssItem id="usatoday212_1" text="Sports Headlines" link="http://rssfeeds.usatoday.com/UsatodaycomSports-TopStories"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_2" text="Game On" link="http://rssfeeds.usatoday.com/TP-GameOn"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_3" text="The Huddle" link="http://rssfeeds.usatoday.com/TP-TheHuddle"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_4" text="NFL" link="http://rssfeeds.usatoday.com/UsatodaycomNfl-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_5" text="AL Baseball" link="http://rssfeeds.usatoday.com/UsatodaycomMlbAl-TopStories"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_6" text="NL Baseball" link="http://rssfeeds.usatoday.com/UsatodaycomMlbNl-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_7" text="NBA" link="http://rssfeeds.usatoday.com/UsatodaycomNba-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_8" text="Boxing" link="http://rssfeeds.usatoday.com/UsatodaycomBoxing-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_9" text="College Sports" link="http://rssfeeds.usatoday.com/UsatodaycomCollegeSports-TopStories"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_10" text="College Football" link="http://rssfeeds.usatoday.com/UsatodaycomCollegeFootball-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_11" text="College Basketball Mens" link="http://rssfeeds.usatoday.com/UsatodaycomCollegeMensBasketball-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_12" text="College Basketball Womens" link="http://rssfeeds.usatoday.com/UsatodaycomCollegeWomensBasketball-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_13" text="Golf" link="http://rssfeeds.usatoday.com/UsatodaycomGolf-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_14" text="Hockey" link="http://rssfeeds.usatoday.com/UsatodaycomNhl-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_15" text="Horse Racing" link="http://rssfeeds.usatoday.com/usatoday-HorseRacing"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_16" text="Motor Sports" link="http://rssfeeds.usatoday.com/UsatodaycomMotorSports-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_17" text="Prep Sports" link="http://rssfeeds.usatoday.com/UsatodaycomPreps-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_18" text="Soccer" link="http://rssfeeds.usatoday.com/UsatodaycomSoccer-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_19" text="WNBA" link="http://rssfeeds.usatoday.com/UsatodaycomWnba-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_18_1" text="Tennis" link="http://rssfeeds.usatoday.com/UsatodayTennis-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_19_2" text="Cycling" link="http://rssfeeds.usatoday.com/UsatodayCycling-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_20_3" text="Olympics" link="http://rssfeeds.usatoday.com/UsatodaycomOlympicsCoverage-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_21" text="Kevin Allen (NHL)" link="http://rssfeeds.usatoday.com/UsatodaycomSports-Allen"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_22" text="Christine Brennan" link="http://rssfeeds.usatoday.com/UsatodaycomSports-Brennan"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_23" text="Steve Gardner (Baseball)" link="http://rssfeeds.usatoday.com/UsatodaycomSports-Gardner"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_24" text="Rob Harrington - Basketball" link="http://rssfeeds.usatoday.com/UsatodaycomSports-Harrington"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_25" text="Michael Hiestand" link="http://rssfeeds.usatoday.com/UsatodaycomSports-Hiestand"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_26" text="Mike Lopresti" link="http://rssfeeds.usatoday.com/UsatodaycomSports-Lopresti"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_27" text="Michael McCarthy" link="http://rssfeeds.usatoday.com/UsatodaycomSports-McCarthy"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday212_28" text="Kyle Woodlief" link="http://rssfeeds.usatoday.com/UsatodaycomSports-Woodlief"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
         </site>
-        <site id="7" text="TECH" site="news.yahoo.com"
-           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
-            <rssItem id="7_1" text="TECH" link="http://news.yahoo.com/rss/tech"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="7_2" text="Internet" link="http://news.yahoo.com/rss/internet"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="7_3" text="Gadgets" link="http://news.yahoo.com/rss/gadgets"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="7_4" text="Wireless" link="http://news.yahoo.com/rss/wireless"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="7_5" text="Apple" link="http://news.yahoo.com/rss/apple"
-              largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="7_6" text="Social Media" link="http://news.yahoo.com/rss/social-media"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="7_7" text="Security" link="http://news.yahoo.com/rss/security"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="7_8" text="Linux/Open Source" link="http://news.yahoo.com/rss/open-source"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="7_9" text="Gaming" link="http://news.yahoo.com/rss/gaming"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <site id="usatoday221" text="Tech" site="usatoday.com"
+           largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png">
+            <rssItem id="usatoday221_1" text="Tech Headlines" link="http://rssfeeds.usatoday.com/usatoday-TechTopStories"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday221_2" text="Science &amp; Space" link="http://rssfeeds.usatoday.com/UsatodaycomScienceAndSpace-TopStories"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday221_3" text="Edward C. Baig" link="http://rssfeeds.usatoday.com/UsatodaycomTech-PersonalTalk"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday221_4" text="Jinny Gudmundsen" link="http://rssfeeds.usatoday.com/UsatodaycomTech-CSpeak-Gudmundsen"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday221_5" text="Kim Komando" link="http://rssfeeds.usatoday.com/TP-Komando"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday221_6" text="Marc Saltzman" link="http://rssfeeds.usatoday.com/UsatodaycomTech-CSpeak-Saltzman"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday221_7" text="Science Fair" link="http://rssfeeds.usatoday.com/TP-ScienceFair"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday221_8" text="Technology Live" link="http://rssfeeds.usatoday.com/TP-TechnologyLive"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
         </site>
-        <site id="8" text="POLITICS" site="news.yahoo.com"
-           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
-            <rssItem id="8_1" text="All Politics" link="http://news.yahoo.com/rss/politics"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="8_2" text="White House" link="http://news.yahoo.com/rss/white-house"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="8_3" text="Congress" link="http://news.yahoo.com/rss/congress"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="8_4" text="U.S. Government" link="http://news.yahoo.com/rss/us-government"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="8_5" text="World" link="http://news.yahoo.com/rss/politics-world"
-              largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="8_6" text="Ths Courts" link="http://news.yahoo.com/rss/the-courts"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="8_7" text="Opinion" link="http://news.yahoo.com/rss/opinion"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="8_8" text="Politics Press Release" link="http://news.yahoo.com/rss/politics-press-releases"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="8_9" text="Elections 2012" link="http://news.yahoo.com/rss/elections-2012"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <site id="usatoday22" text="Travel" site="usatoday.com"
+             largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png">
+            <rssItem id="usatoday22_1" text="Travel Headlines" link="http://rssfeeds.usatoday.com/UsatodaycomTravel-TopStories"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday22_2" text="Travel - Today in the Sky" link="http://rssfeeds.usatoday.com/TP-TodayInTheSky"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday22_3" text="Hotels" link="http://rssfeeds.usatoday.com/UsatodayTravel-Hotels"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday22_4" text="Hotel Check-In" link="http://rssfeeds.usatoday.com/hotelcheckincommunityfeed"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday22_5" text="The Cruise Log" link="http://rssfeeds.usatoday.com/TP-TheCruiseLog"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday22_6" text="Travelers Aide" link="http://rssfeeds.usatoday.com/UsatodaycomTravel-TravelersAide"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+
+            <rssItem id="usatoday22_7" text="Business Travel" link="http://rssfeeds.usatoday.com/UsatodaycomTravel-BT-Grossman"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday22_8" text="At the Airport" link="http://rssfeeds.usatoday.com/UsatodaycomTravel-OTRW-Baskas"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday22_9" text="Behind the Screen" link="http://rssfeeds.usatoday.com/UsatodaycomTravel-OTRW-McGee"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday22_10" text="Flights" link="http://rssfeeds.usatoday.com/UsatodayTravel-Flights"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday22_11" text="Destinations" link="http://rssfeeds.usatoday.com/UsatodayTravel-Destinations"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+
         </site>
-        <site id="9" text="SCIENCE" site="news.yahoo.com"
-           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
-            <rssItem id="9_1" text="SCIENCE" link="http://news.yahoo.com/rss/science"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="9_2" text="Weather News" link="http://news.yahoo.com/rss/weather"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="9_3" text="Space / Astronomy" link="http://news.yahoo.com/rss/astronomy"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="9_4" text="Animal / Pets" link="http://news.yahoo.com/rss/animal-pets"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="9_5" text="Dinosaurs / Fossils" link="http://news.yahoo.com/rss/dinosaurs-fossils"
-              largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="9_6" text="Biotec" link="http://news.yahoo.com/rss/biotech"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="9_7" text="Energy" link="http://news.yahoo.com/rss/energy"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="9_8" text="Green" link="http://news.yahoo.com/rss/green"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <site id="usatoday23" text="Money" site="usatoday.com"
+            largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png">
+            <rssItem id="usatoday23_1" text="Money Headlines" link="http://rssfeeds.usatoday.com/UsatodaycomMoney-TopStories"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday23_2" text="Test Drive" link="http://rssfeeds.usatoday.com/UsatodaycomMoney-Healey"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday23_3" text="Your Money" link="http://rssfeeds.usatoday.com/UsatodaycomMoney-Block"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+
+            <rssItem id="usatoday23_4" text="Investing" link="http://rssfeeds.usatoday.com/UsatodaycomMoney-Waggoner"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday23_5" text="Small Business" link="http://rssfeeds.usatoday.com/UsatodaycomMoney-Strauss"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+            <rssItem id="usatoday23_6" text="Ask Matt about Stocks" link="http://rssfeeds.usatoday.com/UsatodaycomTech-AskMatt"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+
+            <rssItem id="usatoday23_7" text="Small Business" link="http://rssfeeds.usatoday.com/ColEdmundsRss"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
         </site>
-        <site id="10" text="HEALTH" site="news.yahoo.com"
-           largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif">
-            <rssItem id="10_1" text="Health" link="http://news.yahoo.com/rss/health"
-                largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="10_2" text="Medications / Drugs" link="http://news.yahoo.com/rss/medications-drugs"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="10_3" text="Parenting / Kids" link="http://news.yahoo.com/rss/parenting-kids"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="10_4" text="Seniors / Aging" link="http://news.yahoo.com/rss/seniors-aging"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="10_5" text="Disease / Conditions" link="http://news.yahoo.com/rss/diseases-conditions"
-              largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-            <rssItem id="10_6" text="Vitality" link="http://news.yahoo.com/rss/vitality"
-               largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
+        <site id="usatoday211" text="Life" site="usatoday.com"
+           largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png">
+            <rssItem id="usatoday211_1" text="Books" link="http://rssfeeds.usatoday.com/UsatodaycomBooks-TopStories"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+        </site>
+        <site id="usatoday25" text="Weather" site="usatoday.com"
+            largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png">
+            <rssItem id="usatoday25_1" text="Weather Headlines" link="http://rssfeeds.usatoday.com/usatoday-WeatherTopStories"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
+        </site>
+        <site id="usatoday26" text="Podcast" site="usatoday.com"
+             largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png">
+            <rssItem id="usatoday26_1" text="Podcast ITunes" link="http://rssfeeds.usatoday.com/TalkingTechPodCast"
+                largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.png" description="" />
         </site>
     </parentsite>
+   <parentsite displayname="WSJ" displaynameforoptions="Wall Street Journal" id="wsj3" link="http://online.wsj.com" searchUrl="http://online.wsj.com/search/term.html?KEYWORDS=" logo="wsj.gif" description="WSJ online coverage of breaking news and current headlines from the US and around the world.">
+       <site id="wsj31" text="Wall Street Journal WSJ U.S." site="wsj.com"
+          largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+           <rssItem id="wsj31_1" text="U.S. Home Page" link="http://online.wsj.com/xml/rss/3_7011.xml"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj31_2" text="U.S News" link="http://online.wsj.com/xml/rss/3_8068.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj31_3" text="Politics &amp; Campaign" link="http://online.wsj.com/xml/rss/3_7087.xml"
+             largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj31_4" text="Politics &amp; Policy" link="http://online.wsj.com/xml/rss/3_7087.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj31_5" text="Washington Wire" link="http://blogs.wsj.com/washwire/feed/"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+       </site>
+       <site id="wsj34" text="WSJ Todays Newspaper" site="online.wsj.com"
+         largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+           <rssItem id="wsj34_1" text="Page One - Print" link="http://online.wsj.com/xml/rss/3_7205.xml"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+
+       </site>
+       <site id="wsj312" text="WSJ World" site="wsj.com"
+          largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+           <rssItem id="wsj312_1" text="World News" link="http://online.wsj.com/xml/rss/3_7085.xml"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_2" text="Asia Whats News" link="http://online.wsj.com/xml/rss/3_7013.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_3" text="Europe Whats News" link="http://online.wsj.com/xml/rss/3_7012.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_4" text="World Markets" link="http://online.wsj.com/xml/rss/3_7432.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+
+           <rssItem id="wsj312_5" text="Home Asia" link="http://online.wsj.com/xml/rss/3_7480.xml"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_6" text="China" link="http://online.wsj.com/xml/rss/3_7441.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_7" text="Hong Kong" link="http://online.wsj.com/xml/rss/3_8070.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_8" text="Southeast Asia" link="http://online.wsj.com/xml/rss/3_9033.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+
+           <rssItem id="wsj312_9" text="India" link="http://online.wsj.com/xml/rss/3_7442.xml"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_10" text="Scene HK" link="http://blogs.wsj.com/scene/tag/hong-kong/feed/"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_11" text="Exchange HK" link="http://blogs.wsj.com/exchange/feed/"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_12" text="Managing in Asia" link="http://online.wsj.com/xml/rss/3_7448.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_13" text="Home Europe" link="http://online.wsj.com/xml/rss/3_7481.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_14" text="Financial Muse" link="http://www.efinancialnews.com/blog/feed/"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_15" text="U.K" link="http://online.wsj.com/xml/rss/3_7440.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_16" text="Middle East" link="http://online.wsj.com/xml/rss/3_7701.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_17" text="Africa" link="http://online.wsj.com/xml/rss/3_7736.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_18" text="Americas - en Espanol" link="http://online.wsj.com/xml/rss/3_7687.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_19" text="Americas - em Portugues" link="http://online.wsj.com/xml/rss/3_7688.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_20" text="Latin America" link="http://online.wsj.com/xml/rss/3_7921.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj312_21" text="Canada" link="http://online.wsj.com/xml/rss/3_7922.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+       </site>
+       <site id="wsj313" text="WSJ New York" site="online.wsj.com"
+        largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+           <rssItem id="wsj313_1" text="New York Main" link="http://online.wsj.com/xml/rss/3_7730.xml"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj313_2" text="New York News" link="http://online.wsj.com/xml/rss/3_7731.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj313_3" text="New York Culture" link="http://online.wsj.com/xml/rss/3_7732.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj313_4" text="New York Sports" link="http://online.wsj.com/xml/rss/3_7733.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+       </site>
+       <site id="wsj32" text="WSJ Business" site="online.wsj.com"
+            largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+           <rssItem id="wsj32_1" text="U.S. Business" link="http://online.wsj.com/xml/rss/3_7014.xml"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj32_2" text="Managing in Asia" link="http://online.wsj.com/xml/rss/3_7448.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj32_3" text="Earnings" link="http://online.wsj.com/xml/rss/3_7088.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj32_4" text="Economy" link="http://online.wsj.com/xml/rss/3_7086.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj32_5" text="Health" link="http://online.wsj.com/xml/rss/3_7089.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj32_6" text="Law" link="http://online.wsj.com/xml/rss/3_7091.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj32_7" text="Management" link="http://online.wsj.com/xml/rss/3_7433.xml"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj32_8" text="Media &amp; Marketing" link="http://online.wsj.com/xml/rss/3_7020.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj32_9" text="Autos" link="http://online.wsj.com/xml/rss/3_7925.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj32_10" text="Energy" link="http://online.wsj.com/xml/rss/3_7275.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+       </site>
+       <site id="wsj33" text="WSJ Technology" site="online.wsj.com"
+           largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+           <rssItem id="wsj33_1" text="Technology Whats News" link="http://online.wsj.com/xml/rss/3_7455.xml"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj33_2" text="Personal Technology" link="http://online.wsj.com/xml/rss/3_7454.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj33_3" text="Digits" link="http://blogs.wsj.com/digits/feed/"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+       </site>
+       <site id="wsj311" text="OTHER" site="online.wsj.com"
+          largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+           <rssItem id="wsj311_1" text="Markets News" link="http://online.wsj.com/xml/rss/3_7031.xml"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj311_2" text="World Markets" link="http://online.wsj.com/xml/rss/3_7432.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj311_3" text="Personal Finance" link="http://online.wsj.com/xml/rss/3_7104.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj311_4" text="Taxes" link="http://online.wsj.com/xml/rss/3_7428.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj311_5" text="Opinion" link="http://online.wsj.com/xml/rss/3_7041.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj311_6" text="Careers" link="http://online.wsj.com/xml/rss/3_7107.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj311_7" text="Real Estate" link="http://online.wsj.com/xml/rss/3_7400.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj311_8" text="Small Business" link="http://online.wsj.com/xml/rss/3_7672.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj311_9" text="Franchising" link="http://online.wsj.com/xml/rss/3_7415.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj311_11" text="Most Commented Articles" link="http://online.wsj.com/community/rss/mostactivediscussions.sync"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj311_12" text="Community Live" link="http://online.wsj.com/community/rss/communitylive.sync?mod=rss_com_live"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj311_13" text="WSJ Most Viewed Today" link="http://online.wsj.com/xml/rss/3_7198.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj311_14" text="This Weeks Magazine" link="http://online.wsj.com/xml/rss/3_7510.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj311_15" text="MarketWatch" link="http://www.marketwatch.com/rss/topstories"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj311_16" text="Internet" link="http://www.marketwatch.com/rss/internet"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj311_17" text="SmartMoney" link="http://feeds.smartmoney.com/smartmoney/headlines"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj311_18" text="Investing Articles" link="http://feeds.smartmoney.com/smartmoney/investing"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+       </site>
+       <site id="wsj35" text="WSJ Columnists" site="online.wsj.com"
+           largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif">
+           <rssItem id="wsj35_1" text="Ask Teri/Agins" link="http://online.wsj.com/xml/rss/3_7323.xml"
+               largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj35_2" text="Tax Report/Saunders" link="http://online.wsj.com/xml/rss/3_7129.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj35_3" text="Middle Seat/McCartney" link="http://online.wsj.com/xml/rss/3_7139.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj35_4" text="Health Journal/Beck" link="http://online.wsj.com/xml/rss/3_7150.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj35_5" text="Washington Wire/Staff" link="http://online.wsj.com/xml/rss/3_7172.xml"
+             largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj35_6" text="Capital/Wessel" link="http://online.wsj.com/xml/rss/3_7164.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj35_7" text="Family Value/Greene" link="http://online.wsj.com/xml/rss/3_7924.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+           <rssItem id="wsj35_8" text="The Outlook" link="http://online.wsj.com/xml/rss/3_7338.xml"
+              largeimage="\VarFiles\news-icon.png" smallimage="\VarFiles\small.gif" description="" />
+       </site>
+
+   </parentsite> 
 </items>
 

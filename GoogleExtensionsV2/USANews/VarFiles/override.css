@@ -1,18 +1,22 @@
 ﻿.LastUpdatedDateItem
 {
-    overflow: hidden !important;
+    /*overflow: hidden !important;
     width: 156px !important;
-    height: 14px !important;
+    height: 14px !important;*/
 }
 
 
 #header h1 {
-    padding-left: 91px !important;
+    /*padding-left: 91px !important;
     background-size: 77px !important;
-    padding-top: 43px !important;
+    padding-top: 43px !important;*/
 }
 
 .smallimagedivmain {
     margin-right: 2px !important;
     font-size: 9px !important;
+}
+.allInfoDivMain
+{
+    height: 43px;
 }

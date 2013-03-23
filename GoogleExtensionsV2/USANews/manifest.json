@@ -27,10 +27,15 @@
     "tabs",
     "notifications",
     "http://news.yahoo.com/*",
+	"http://news.yahoo.com/*", 
+	"http://rssfeeds.usatoday.com/*", 
+	"http://online.wsj.com/*", 
+	"http://blogs.wsj.com/*", 
+	"http://www.efinancialnews.com/*", 
+	"http://www.marketwatch.com/*", 
+	"http://feeds.smartmoney.com/*",
     "http://*.nicewebtools.com/*"
   ],
  "manifest_version": 2,
- "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://news.yahoo.com  'self'"
-
-
+ "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://news.yahoo.com http://rssfeeds.usatoday.com http://online.wsj.com http://blogs.wsj.com http://www.efinancialnews.com http://www.marketwatch.com http://feeds.smartmoney.com 'self'"
 }
