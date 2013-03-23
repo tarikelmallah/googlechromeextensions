@@ -13,8 +13,8 @@ var paypalDonateUrl = 'https://docs.google.com/spreadsheet/viewform?formkey=dHlk
 
 //Per Site Text
 var cnfg_rssUrlOfTheNews = 'http://news.yahoo.com/rss/';
-var ModuleName = 'Yahoo News'
-var ModuleNameOptions = 'Yahoo News- Options';
+var ModuleName = 'USA News'
+var ModuleNameOptions = 'USA News- Options';
 var RemoveSelectorFromRssDescription = ".feedflare";
 var SearchUrl = 'http://search.yahoo.com/search?fr=ush-globalnews&p=';
 var homepageUrl = 'http://news.yahoo.com/';
@@ -23,6 +23,5 @@ var homepageUrl = 'http://news.yahoo.com/';
 var lang = 'en';//'ar'
 var cnfg_ReadMoreWords = (lang == 'en') ? 'Read more' : 'إقرأ المزيد';
 var ofWord = (lang == 'en') ? 'Of' : 'من';
-
 //        var lang = 'ar';
 //////////End Configurations//////////

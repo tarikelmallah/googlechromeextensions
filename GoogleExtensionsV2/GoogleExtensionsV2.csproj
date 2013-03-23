@@ -502,7 +502,6 @@
     <Content Include="USANews\css\theme\jquery-ui-1.8.16.custom.css" />
     <Content Include="USANews\css\theme\theme.txt" />
     <Content Include="USANews\ExtImages\128.png" />
-    <Content Include="USANews\ExtImages\fav128.ico" />
     <Content Include="USANews\FeedExtensionBackground.html" />
     <Content Include="USANews\FeedExtensionBackground_Settings.js" />
     <Content Include="USANews\FeedExtensionPop.html" />
@@ -524,8 +523,15 @@
     <Content Include="USANews\js\jquery-ui-1.8.16.custom.min.js" />
     <Content Include="USANews\Notification.html" />
     <Content Include="USANews\options.html" />
-    <Content Include="USANews\VarFiles\largeLogo.gif" />
+    <Content Include="USANews\sitesVars\usatoday.png" />
+    <Content Include="USANews\sitesVars\yahoo.gif" />
+    <Content Include="USANews\sitesVars\wsj.gif" />
+    <Content Include="USANews\ExtImages\fav128.ico" />
+    <Content Include="USANews\VarFiles\NotofocationFixs.js" />
+    <Content Include="USANews\VarFiles\NotificationOverride.css" />
     <Content Include="USANews\VarFiles\Logo.gif" />
+    <Content Include="USANews\VarFiles\largeLogo.gif" />
+    <Content Include="USANews\VarFiles\news-icon.png" />
     <Content Include="USANews\VarFiles\override.css" />
     <Content Include="USANews\VarFiles\site.xml" />
     <Content Include="USANews\VarFiles\small.gif" />

@@ -98,7 +98,7 @@ function init() {
         }
     });
 
-    $('body').load(function () { adjustBodyStyle(); $("body").css({ color: 'red' }); });
+    
 
     //initiate amazon link
     var amazonLinkUrl = "http://astore.amazon.com/nicamaoff-20";
@@ -106,11 +106,7 @@ function init() {
     $('.plusClassMain').append('<div><a href="javascript:void(0)" category="" categorysmallimage="" class="amazonLinkUrlClass"  title="Amazon deals, Electronics, Jewelry, Kitchen &amp; Housewares, Office Products, Shoes, Watches, Home &amp; Garden, Gift Cards, Computers, Cell Phones &amp; Accessories, Appliances, Baby, Automotive, Books, Kindle Store"><img src="http://nicewebtools.com/GoogleExtensions/exFilesV4/amazon popup.png" style="width: 81px;position: absolute;top: 1px;left: 74px;border: 0px;"></a></div>');
     $('.amazonLinkUrlClass').click(function () { goOpenUrlNotif('http://astore.amazon.com/nicamaoff-20'); })
 }
-function adjustBodyStyle() {
-    //get current node
-    $("body").css({ overflow: 'inherit' });
-    timerRotation = window.setTimeout(function () { $("body").css({ overflow: 'hidden' }); }, 1000);
-}
+
 //previos button script
 function btnPrevios() {
     //get current node

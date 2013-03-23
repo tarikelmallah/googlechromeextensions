@@ -118,10 +118,16 @@ function k(a, b, e) {
                 }
             });
         } else {
+            var theWords = a;
+            if (a.indexOf('&') > -1) {
+                theWords = escape(a);
+            } else {
+                theWords = encodeURI(a);
+            }
             $.ajax({
                 url: 'http://translate.google.com/translate_a/t',
                 type: 'GET',
-                data: 'client=x&text=' + encodeURI(a) + '&hl=en&sl=' + (fromLang || 'auto') + '&tl=' + b, //toLang,
+                data: 'client=x&text=' + theWords + '&hl=en&sl=' + (fromLang || 'auto') + '&tl=' + b, //toLang,
                 dataType: 'json',
                 success: function (data) {
                     var _final = '';
@@ -253,10 +259,16 @@ function translateit() {
 }
 
 function translateit2() {
+    var theWords = msg;
+    if (a.indexOf('&') > -1) {
+        theWords = escape(msg);
+    } else {
+        theWords = encodeURI(msg);
+    }
     $.ajax({
         url: 'http://translate.google.com/translate_a/t',
         type: 'GET',
-        data: 'client=x&text=' + encodeURI(msg) + '&hl=en&sl=' + (from || 'auto') + '&tl=' + to,
+        data: 'client=x&text=' + encodeURI(theWords) + '&hl=en&sl=' + (from || 'auto') + '&tl=' + to,
         dataType: 'json',
         success: function (data) {
             console.log(data);
