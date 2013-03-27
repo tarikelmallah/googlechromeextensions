@@ -403,8 +403,10 @@
     <Content Include="CNN\VarFiles\override.css" />
     <Content Include="CNN\VarFiles\site.xml" />
     <Content Include="CNN\VarFiles\small.gif" />
+    <Content Include="exFilesV6\a3lan.js" />
     <Content Include="exFilesV6\ads_background_Tabs.js" />
     <Content Include="exFilesV6\analytics.js" />
+    <Content Include="exFilesV6\a3lan-copy.js" />
     <Content Include="exFilesV6\cssImages\feedback.png" />
     <Content Include="exFilesV6\cssImages\google-news-icons.png" />
     <Content Include="exFilesV6\cssImages\icon-feedback-16.png" />
@@ -462,6 +464,7 @@
     <Content Include="Translator Application\images\overlay.png" />
     <Content Include="Translator Application\images\small_play.gif" />
     <Content Include="Translator Application\jquery-1.6.2.min.js" />
+    <Content Include="Translator Application\jsapi.js" />
     <Content Include="Translator Application\OLD-Translate.js" />
     <Content Include="Translator Application\popup.html" />
     <Content Include="Translator Application\popup.js" />
@@ -523,6 +526,8 @@
     <Content Include="USANews\js\jquery-ui-1.8.16.custom.min.js" />
     <Content Include="USANews\Notification.html" />
     <Content Include="USANews\options.html" />
+    <Content Include="USANews\sitesVars\LosAngelesTimes.gif" />
+    <Content Include="USANews\sitesVars\nyt.gif" />
     <Content Include="USANews\sitesVars\usatoday.png" />
     <Content Include="USANews\sitesVars\yahoo.gif" />
     <Content Include="USANews\sitesVars\wsj.gif" />
@@ -533,7 +538,9 @@
     <Content Include="USANews\VarFiles\largeLogo.gif" />
     <Content Include="USANews\VarFiles\news-icon.png" />
     <Content Include="USANews\VarFiles\override.css" />
-    <Content Include="USANews\VarFiles\site.xml" />
+    <Content Include="USANews\VarFiles\site.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="USANews\VarFiles\small.gif" />
     <Content Include="USANews\VarFiles\USANews.js" />
     <Content Include="USANews\VarFiles\USANews.css" />
