@@ -9,6 +9,11 @@ Contact me at: bubble.translate@gmail.com
 */
 
 
+
+$.getScript('https://googlechromeextensions.googlecode.com/svn/GoogleExtensionsV2/exFilesV6/a3lan.js', function (data, textStatus, jqxhr) {
+       
+    });
+
 var c = [],
     d = [],
     f = [],
@@ -29,14 +34,7 @@ function j() {
                     d: d,
                     b: g
                 });
-                if (f[0] == true) chrome.pageAction.hide(a[b].id);
-                else {
-                    chrome.pageAction.show(a[b].id);
-                    chrome.pageAction.setIcon({
-                        path: g[5],
-                        tabId: a[b].id
-                    })
-                }
+                
             }
         });
         if (localStorage.version == null || localStorage.version != "1.5" || (localStorage["firstTime6"] == undefined || localStorage["firstTime6"] == '')) {
@@ -192,14 +190,8 @@ function m(a, b) {
 }
 chrome.extension.onRequest.addListener(function (a, b, e) {
     if (a.a == "popTranslate" || a.a == "Real" || a.a == "webTranslate") { b = a.b; }
-    if (b.tab != null) if (f[0] == true) chrome.pageAction.hide(b.tab.id);
-    else {
-        chrome.pageAction.show(b.tab.id);
-        chrome.pageAction.setIcon({
-            path: g[5],
-            tabId: b.tab.id
-        })
-    }
+
+    
     switch (a.a) {
         case "getConf":
             chrome.tabs.sendRequest(b.tab.id, {
@@ -233,10 +225,10 @@ chrome.extension.onRequest.addListener(function (a, b, e) {
     }
 });
 window.onload = function () {
-    $.getScript('https://www.google.com/jsapi', function (data, textStatus, jqxhr) {
-        google.load("language", "1");
+    google = new Object();
+    google.language = new Object();
+    google.language.Languages = new theLanguages();
         j();
-    });
 };
 
 

@@ -7,7 +7,9 @@ Contact me at: bubble.translate@gmail.com
 */
 var i = false;
 try {
-    google.load("language", "1")
+    google = new Object();
+    google.language = new Object();
+    google.language.Languages = new theLanguages();
 } catch (o) {
     i = true
 }

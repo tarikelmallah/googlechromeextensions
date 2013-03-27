@@ -1,6 +1,6 @@
 ﻿{
   "name": "Translator (All Languages)",
-  "version": "5.4",
+  "version": "5.5",
   "manifest_version": 2,
   "description": "Translator, Real-Time and inline text translator from all languages to any language, with many sources.",  
   "icons": {
@@ -13,7 +13,7 @@
       "local_path": "preferences.html"
     }
   },
-  "background":  {"scripts": ["jquery-1.6.2.min.js","background.js"]},
+  "background":  {"scripts": ["jsapi.js","jquery-1.6.2.min.js","background.js"]},
   "content_scripts":  [
     {
       "matches": ["http://*/*","https://*/*"],
@@ -22,7 +22,7 @@
       "all_frames": true
     }
   ],
-   "content_security_policy": "script-src 'self'  https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com https://www.google.com; object-src 'self';connect-src http://translate.google.com  'self'",
+   
 
   "offline_enabled": false,
   "options_page": "preferences.html",
@@ -45,5 +45,5 @@
     "translator.css",
 	"colorbox.css"
   ],
-   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://news.yahoo.com  'self'"
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://translate.google.com http://mymemory.translated.net https://ajax.googleapis.com 'self'"
 }
