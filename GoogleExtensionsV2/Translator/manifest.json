@@ -22,7 +22,7 @@
       "all_frames": true
     }
   ],
-  "content_security_policy": "script-src 'self' https://www.google.com; object-src 'self';connect-src http://translate.google.com  'self'",
+  "content_security_policy": "script-src 'self' https://www.google.com; object-src 'self';connect-src http://translate.google.com http://mymemory.translated.net 'self'",
 
   "offline_enabled": false,
   "options_page": "preferences.html",
