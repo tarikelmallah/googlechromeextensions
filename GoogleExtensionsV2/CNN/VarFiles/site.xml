@@ -31,8 +31,6 @@
        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
     <rssItem id="1_14" text="Most Recent" link="http://rss.cnn.com/rss/cnn_latest.rss"
        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
-    <rssItem id="1_14_1" text="Belief Blog" link="http://religion.blogs.cnn.com/feed/"
-       largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
     <rssItem id="1_14_2" text="This Just In" link="http://news.blogs.cnn.com/feed/"
        largeimage="\VarFiles\largeLogo.gif" smallimage="\VarFiles\small.gif" description="" />
     <rssItem id="1_14_3" text="Cafferty File" link="http://caffertyfile.blogs.cnn.com/feed/"
