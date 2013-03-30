@@ -159,8 +159,11 @@ $().ready(function () {
         //fill the #feedmoreinfo div
         var feedmoreinfoDivcnt = '<div class="mainfeedmoreinfoDiv">';
         feedmoreinfoDivcnt += '<div class="OptionsDiv"><a class="OptionsDivClass" href="javascript:void(0)"  title="Extension options" id="link-options">Options</a></div>';
-        var amazonLinkUrl = "http://astore.amazon.com/nicamaoff-20";
-        var amazonLink = '<div><a href="javascript:void(0)" class="amazonLinkUrlClass" title="Amazon deals, Electronics, Jewelry, Kitchen &amp; Housewares, Office Products, Shoes, Watches, Home &amp; Garden, Gift Cards, Computers, Cell Phones &amp; Accessories, Appliances, Baby, Automotive, Books, Kindle Store"><img src="http://nicewebtools.com/GoogleExtensions/exFilesV4/amazon popup.png" style="width: 120px;position: absolute;top: 1px;left: 210px;border: 0px;"></a></div>'
+        //var amazonLinkUrl = "http://astore.amazon.com/nicamaoff-20";
+        //var amazonLink = '<div><a href="javascript:void(0)" class="amazonLinkUrlClass" title="Amazon deals, Electronics, Jewelry, Kitchen &amp; Housewares, Office Products, Shoes, Watches, Home &amp; Garden, Gift Cards, Computers, Cell Phones &amp; Accessories, Appliances, Baby, Automotive, Books, Kindle Store"><img src="http://nicewebtools.com/GoogleExtensions/exFilesV4/amazon popup.png" style="width: 120px;position: absolute;top: 1px;left: 210px;border: 0px;"></a></div>'
+        var amazonLinkUrl = "https://www.facebook.com/sharer/sharer.php?u=" + escape("https://chrome.google.com/webstore/detail/" + myid);
+        var amazonLink = '<div><a href="javascript:void(0)" class="amazonLinkUrlClass" title="Share this application on Facebook"><img src="https://googlechromeextensions.googlecode.com/svn/GoogleExtensionsV2/exFilesV6/images/shareApp.png" style="height: 30px;position: absolute;top: 2px;left:227px;border: 0px;"></a></div>'
+
         feedmoreinfoDivcnt += '<div class="buymeDiv"><a class="buymeDivClass" href="javascript:void(0)"  title="your feedback important for us to continue improve this component.">Feedback</a>' + amazonLink + '</div>';
         feedmoreinfoDivcnt += '<div class="nicewebtoolsDiv"><a class="nicewebtoolsDivClass" href="javascript:void(0)" title="Nice web tools" id="link-nicewebtools">By Nice Web Tools Corporation</a></div>';
         feedmoreinfoDivcnt += '</div>'
