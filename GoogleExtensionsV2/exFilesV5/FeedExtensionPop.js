@@ -155,6 +155,10 @@ function updateSocialLinks() {
 $().ready(function () {
     window.setTimeout(function () {
         updateSocialLinks();
+        var myid = '';
+        try { myid = chrome.i18n.getMessage("@@extension_id"); }
+        catch (ex) { }
+
         var bk = chrome.extension.getBackgroundPage();
         //fill the #feedmoreinfo div
         var feedmoreinfoDivcnt = '<div class="mainfeedmoreinfoDiv">';
