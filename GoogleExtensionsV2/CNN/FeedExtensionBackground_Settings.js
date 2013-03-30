@@ -12,12 +12,12 @@ var FormActionUrl = '';//  'http://nativenews.info/Frames/NewsFrame.aspx?ext=CNN
 var paypalDonateUrl = 'https://docs.google.com/spreadsheet/viewform?formkey=dDVEWWFieldwWXJwS2pnTnZkTEZ1dkE6MQ';
 
 //Per Site Text
-var cnfg_rssUrlOfTheNews = 'http://online.wsj.com/xml/rss/3_7011.xml';
-var ModuleName = 'The Wall Street Journal'
-var ModuleNameOptions = 'The Wall Street Journal- Options';
+var cnfg_rssUrlOfTheNews = 'http://www.cnn.com/partners/google/cnn_topstories.rss';
+var ModuleName = 'CNN World'
+var ModuleNameOptions = 'CNN World- Options';
 var RemoveSelectorFromRssDescription = ".feedflare";
-var SearchUrl = 'http://online.wsj.com/search/term.html?KEYWORDS=';
-var homepageUrl = 'http://www.wsj.com/';
+var SearchUrl = 'http://www.cnn.com/search/?query=';
+var homepageUrl = 'http://www.cnn.com/';
 
 //localized texts
 var lang = 'en';//'ar'
