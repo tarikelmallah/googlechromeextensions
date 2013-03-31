@@ -160,8 +160,8 @@ $().ready(function () {
         catch (ex) { }
 
         updateSocialLinks();
-        var bk = chrome.extension.getBackgroundPage();
-        //fill the #feedmoreinfo div
+        var bk = chrome.extension.getBackgroundPage();  
+        //fill the #feedmoreinfo div 
         var feedmoreinfoDivcnt = '<div class="mainfeedmoreinfoDiv">';
         feedmoreinfoDivcnt += '<div class="OptionsDiv"><a class="OptionsDivClass" href="javascript:void(0)"  title="Extension options" id="link-options">Options</a></div>';
         //var amazonLinkUrl = "http://astore.amazon.com/nicamaoff-20";
