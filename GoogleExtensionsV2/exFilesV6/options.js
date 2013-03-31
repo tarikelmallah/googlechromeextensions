@@ -82,7 +82,7 @@ function save(isAuto) {
 
 function markDirty() {
     saveButton.disabled = false;
-
+    showHideControlsItems();
     save(true);
 }
 
@@ -189,6 +189,6 @@ function showHideControlsItems() {
 
 function enptyOptions() {
     //unselect options
-    $('span.checkb input:checkbox').prop('checked', false);
+    $('span.checkb input:checkbox').prop('checked', false);    
     markDirty();
 }
