@@ -186,3 +186,9 @@ function showHideControlsItems() {
         }
     });
 }
+
+function enptyOptions() {
+    //unselect options
+    $('span.checkb input:checkbox').prop('checked', false);
+    markDirty();
+}
