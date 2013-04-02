@@ -431,6 +431,7 @@
     <Content Include="exFilesV6\images\Pause.png" />
     <Content Include="exFilesV6\images\Pause1.PNG" />
     <Content Include="exFilesV6\images\Right.png" />
+    <Content Include="exFilesV6\images\shareApp.png" />
     <Content Include="exFilesV6\images\widget35.png" />
     <Content Include="exFilesV6\NiceDefinitionApplication.js" />
     <Content Include="exFilesV6\Notification.css" />
@@ -526,18 +527,26 @@
     <Content Include="USANews\js\jquery-ui-1.8.16.custom.min.js" />
     <Content Include="USANews\Notification.html" />
     <Content Include="USANews\options.html" />
+    <Content Include="USANews\sitesVars\cnn.gif" />
+    <Content Include="USANews\sitesVars\laTimes.gif" />
     <Content Include="USANews\sitesVars\LosAngelesTimes.gif" />
     <Content Include="USANews\sitesVars\nyt.gif" />
     <Content Include="USANews\sitesVars\usatoday.png" />
     <Content Include="USANews\sitesVars\yahoo.gif" />
     <Content Include="USANews\sitesVars\wsj.gif" />
     <Content Include="USANews\ExtImages\fav128.ico" />
+    <Content Include="USANews\VarFiles\cssImages\feedback.png" />
+    <Content Include="USANews\VarFiles\cssImages\google-news-icons.png" />
+    <Content Include="USANews\VarFiles\cssImages\icon-feedback-16.png" />
+    <Content Include="USANews\VarFiles\cssImages\service-icons-sprite.png" />
+    <Content Include="USANews\VarFiles\cssImages\widget35.png" />
     <Content Include="USANews\VarFiles\NotofocationFixs.js" />
     <Content Include="USANews\VarFiles\NotificationOverride.css" />
     <Content Include="USANews\VarFiles\Logo.gif" />
     <Content Include="USANews\VarFiles\largeLogo.gif" />
     <Content Include="USANews\VarFiles\news-icon.png" />
     <Content Include="USANews\VarFiles\override.css" />
+    <Content Include="USANews\VarFiles\service-icons-sprite.png" />
     <Content Include="USANews\VarFiles\site.xml">
       <SubType>Designer</SubType>
     </Content>
