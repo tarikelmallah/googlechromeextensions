@@ -6,29 +6,42 @@
 }
 
 
-#header h1 {
+#header h1
+{
     /*padding-left: 91px !important;
     background-size: 77px !important;
     padding-top: 43px !important;*/
 }
 
-.smallimagedivmain {
+.smallimagedivmain
+{
     margin-right: 2px !important;
     font-size: 9px !important;
 }
+
 .allInfoDivMain
 {
     height: 43px;
 }
+
 #allInfo
 {
-    display:none;
+    display: none;
 }
+
 .searchDiv
 {
-    display:none;
+    display: none;
 }
+
 .smallImageDivMain img
 {
-    max-height:10px !important;
+    max-height: 10px !important;
+}
+
+#feedmoreinfo
+{
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 1px !important;
 }
