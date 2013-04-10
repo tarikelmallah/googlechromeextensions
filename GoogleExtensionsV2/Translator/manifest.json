@@ -1,6 +1,6 @@
 ﻿{
   "name": "Translator",
-  "version": "6.3",
+  "version": "6.4",
   "manifest_version": 2,
   "description": "Translator, Real-Time and inline text translator from all languages to any language, with many sources.",  
   "icons": {
