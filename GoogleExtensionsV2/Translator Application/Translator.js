@@ -20,7 +20,7 @@ function i() {
 }
 document.addEventListener("mouseup",
 function (b) {
-    if (b.target.parentNode.className != c && b.target.parentNode.id != c + "_cont") {
+    if (b.target.parentNode.className != c && b.target.parentNode.id != c + "_cont" && b.target.parentNode.className != c + '_exclude' && b.target.className != c + '_exclude') {
         i();
         chrome.extension.sendRequest({
             a: "Selection",
@@ -53,20 +53,20 @@ chrome.extension.onRequest.addListener(function (b) {
             var e = b.c;
             var langF = b.langF;
             var langT = b.langT;
-
+            var c2 = c + '_exclude';
             //prepare the terms DIV
 
             var termsDiv = '';
-            var termsDiv2 = '';
+            var termsDiv_for_Ad = '<div class="' + c2 + '" id="buyfullversion"  style="text-align: center;width: 100%;cursor: pointer;"><img src="http://nicewebtools.com/GoogleExtensions/Images/buyfullversion.png"></div>';
             try {
 
                 if (b.allDic != undefined) {
                     var allDic = b.allDic;
-                    termsDiv = '<hr><a href="javascript:void(0)" id="showhideNiceTranslatorTermsDivLink" class="niceTranslatorSeeMoreLink">See more</a><div id="niceTranslatorTermsDiv" class="hidden" >';
+                    termsDiv = '<hr><a href="javascript:void(0)" id="showhideNiceTranslatorTermsDivLink" class="' + c2 + ' niceTranslatorSeeMoreLink">See more</a><div id="niceTranslatorTermsDiv" class="' + c2 + ' hidden" >';
                     for (var i12 = 0; i12 < allDic.length; i12++) {
-                        termsDiv += '<div>"';
+                        termsDiv += '<div class="' + c2 + '">"';
                         termsDiv += '<b>' + allDic[i12].pos + '</b>"';
-                        termsDiv += '<ul>';
+                        termsDiv += '<ul class="' + c2 + '">';
                         //                        for (var ij = 0; ij < allDic[i12].terms.length; ij++) {
                         //                            termsDiv += '<li>' + allDic[i12].terms[ij] + '</li>';
                         //                        }
@@ -80,7 +80,7 @@ chrome.extension.onRequest.addListener(function (b) {
                                 }
                                 otherMeenings += ')';
                             }
-                            termsDiv += '<li>' + allDic[i12].entry[ij].word + otherMeenings + '</li>';
+                            termsDiv += '<li class="' + c2 + '">' + allDic[i12].entry[ij].word + otherMeenings + '</li>';
                         }
 
                         termsDiv += '</ul></div>';
@@ -121,6 +121,7 @@ chrome.extension.onRequest.addListener(function (b) {
                 innerht += '<a  style="background-image: url(' + chrome.extension.getURL('images/small_play.gif') + ');background-repeat: no-repeat;background-size: 12px;background-position-x: 0px;width: 25px;padding-right: 5px;float: right;font-size: 9px;border: 1px dotted gray;background-color: white;color: black;text-align: right;margin: 0px;opacity: 0.8;" href="javascript:void(0);" onclick="document.getElementById(\'transIframe\').src=\'' + audioSourceTrans + '\';"> ' + langT + ' </a><br/>';
                 innerht += a;
                 innerht += termsDiv;
+                innerht += termsDiv_for_Ad;
                 innerht += '<iframe src="" id="transIframe" style="display:none;" width="10&quot;" height="10"></iframe>';
                 //innerht += '<audio  id="audiotag1"  ><source src="http://www.gstatic.com/dictionary/static/sounds/de/0/' + aNew + '.mp3" type="audio/mpeg" /></audio>';
 
@@ -189,6 +190,7 @@ chrome.extension.onRequest.addListener(function (b) {
                 }
                 b.fill()
                 $('#showhideNiceTranslatorTermsDivLink').click(function () { showhideniceTranslatorTermsDiv(); });
+                $('#buyfullversion').click(function () { alert('Thank you!! , but please note that you should remove this version after buy the full version to be able to use the full features, Enjoy!!'); location.href = "https://chrome.google.com/webstore/detail/translator-all-languages/dejfdlfbnhbecegbdefmacnakifgjofl"; });
             }
             break
     }
