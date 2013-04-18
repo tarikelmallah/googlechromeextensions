@@ -47,3 +47,7 @@ a.niceTranslatorSeeMoreLink
 {
     background: #FFFFE6;
 }
+    #niceTranslatorTermsDiv li
+    {
+        color:white !important;
+    }
