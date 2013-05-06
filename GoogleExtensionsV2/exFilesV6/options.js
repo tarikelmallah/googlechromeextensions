@@ -31,11 +31,12 @@ function init() {
 
     //show hide controls
     showHideControlsItems();
-     
+
     markClean();
 
     //adjust links
     $('#feedbacklink').attr('href', bk.paypalDonateUrl);
+    $('.removeSelections a').click(function () { emptyOptions(); });
 }
 
 function save(isAuto) {
@@ -176,19 +177,23 @@ function showHideControlsItems() {
         if ($(this).is(':checked')) {
             $($(this).parent().parent().find('.thedrpDownNumbers')[0]).show();
             $($(this).parent().parent().find('.thedrpDownNotification')[0]).show();
-           // $($(this).parent().parent().find('.selShowNotificationYesNo')[0]).attr('disabled', false);
+            // $($(this).parent().parent().find('.selShowNotificationYesNo')[0]).attr('disabled', false);
             //$($(this).parent().parent().find('.selNumbersDropDown')[0]).attr('disabled', false);
         } else {
             $($(this).parent().parent().find('.thedrpDownNumbers')[0]).hide();
             $($(this).parent().parent().find('.thedrpDownNotification')[0]).hide();
-           // $($(this).parent().parent().find('.selShowNotificationYesNo')[0]).attr('disabled', true);
-           // $($(this).parent().parent().find('.selNumbersDropDown')[0]).attr('disabled', true);
+            // $($(this).parent().parent().find('.selShowNotificationYesNo')[0]).attr('disabled', true);
+            // $($(this).parent().parent().find('.selNumbersDropDown')[0]).attr('disabled', true);
         }
     });
 }
 
-function enptyOptions() {
-    //unselect options
-    $('span.checkb input:checkbox').prop('checked', false);    
-    markDirty();
+function emptyOptions() {
+    var result = confirm("You really want to remove all selected items and save?");
+    if (result == true) {
+        //unselect options
+        $('span.checkb input:checkbox').prop('checked', false);
+        markDirty();
+        alert('Now no item is selected, you should select Items to be shown in the news pop-up secreen or Notification screen.');
+    }
 }
