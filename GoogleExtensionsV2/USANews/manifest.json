@@ -1,7 +1,7 @@
 ﻿{
-  "name": "USA News",
-  "version": "1.1",
-  "description": "USANews! News Chrome Extension, The latest news and headlines, breaking news and coverage with photos and more.",
+  "name": "USA newspapers - RSS Reader",
+  "version": "1.2",
+  "description": "USA News RSS Reader! Extension, latest news, headlines, breaking news and coverage with photos and more. from popular newspapers",
   "icons": { "128": "ExtImages/fav128.ico" },
   "background":  {  "page":"FeedExtensionBackground.html"},
   "browser_action": {
