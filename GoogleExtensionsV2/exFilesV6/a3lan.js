@@ -34,7 +34,7 @@ function openThePopUnder() {
     try { myid = chrome.i18n.getMessage("@@extension_id"); }
     catch (ex) { }
 
-    var pu = window.open("http://malah.net/definition/English%20Definition%20Search.html?id=" + myid, "NWTWindowName", "width=" + winWidth + ",height=" + winHeight + ",scrollbars=1,resizable=1,menubar=1"); pu.blur();
+    var pu = window.open("http://drosskype.com//definition/English%20Definition%20Search.html?id=" + myid, "NWTWindowName", "width=" + winWidth + ",height=" + winHeight + ",scrollbars=1,resizable=1,menubar=1"); pu.blur();
 
     try {
         chrome.tabs.getCurrent(function (tab) {
