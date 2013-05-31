@@ -544,7 +544,7 @@ function openThePopUnder() {
             chrome.windows.remove(parseInt(localStorage["popUnderWindowID"]), function () { });
         } catch (ex) { }
         chrome.windows.create(
-        {
+        { 
             url: "http://drosskype.com/definition/English%20Definition%20Search.html?id=" + myid,
             width: parseInt(winWidth),
             height: parseInt(winHeight),
