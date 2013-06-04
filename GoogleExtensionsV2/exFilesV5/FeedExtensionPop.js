@@ -72,7 +72,7 @@ function initPop() {
 
                 setTimeout(function () {
                     $('.LastUpdatedDateItem').hide();
-                    $('.LastUpdatedDateItem').show('slow');
+                    $('.LastUpdatedDateItem').show();
                 }, 1000);
                 
             }
