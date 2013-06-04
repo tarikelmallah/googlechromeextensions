@@ -68,8 +68,11 @@ function initPop() {
             show: function (event, ui) {
                 updateSocialLinks();
                 //resize update
-                $('.LastUpdatedDateItem').width($('.LastUpdatedDateItem').width() + 10);
-                $('.LastUpdatedDateItem').width($('.LastUpdatedDateItem').width() - 10);
+                setInterval(function () {
+                    $('.LastUpdatedDateItem').width($('.LastUpdatedDateItem').width() + 10);
+                    $('.LastUpdatedDateItem').width($('.LastUpdatedDateItem').width() - 10);
+                }, 1000);
+                
             }
         });
 
