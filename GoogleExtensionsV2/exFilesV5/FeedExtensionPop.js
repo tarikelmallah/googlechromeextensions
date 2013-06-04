@@ -153,6 +153,8 @@ function updateSocialLinks() {
                     $('#SocialLinks' + itemID + ' div.socialBuuttonsInner').html(templ);
                     $('#SocialLinks' + itemID + ' div.overTheSocialWhite').fadeOut('fast', function () {
                         //$('#SocialLinks' + itemID + ' div.LastUpdatedDateItem').fadeIn('slow');
+                        $('div.LastUpdatedDateItem').hide();
+                        $('div.LastUpdatedDateItem').show();
                     });
                 }
             }
