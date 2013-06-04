@@ -45,5 +45,5 @@
     "translator.css",
 	"colorbox.css"
   ],
-  "content_security_policy": "script-src 'self' https://ajax.googleapis.com https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://translate.google.com http://mymemory.translated.net https://ajax.googleapis.com 'self'"
+  "content_security_policy": "script-src 'self' https://www.google.com https://ajax.googleapis.com https://ssl.google-analytics.com/ https://googlechromeextensions.googlecode.com; object-src 'self';connect-src http://translate.google.com http://mymemory.translated.net https://ajax.googleapis.com 'self'"
 }
