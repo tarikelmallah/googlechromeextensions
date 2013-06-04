@@ -68,9 +68,9 @@ function initPop() {
             show: function (event, ui) {
                 updateSocialLinks();
                 //resize update
-                $('.LastUpdatedDateItem').hide();
-                setInterval(function () {
-                    $('.LastUpdatedDateItem').show();
+                setTimeout(function () {
+                    $('.LastUpdatedDateItem').hide();
+                    $('.LastUpdatedDateItem').show('slow');
                 }, 1000);
                 
             }
