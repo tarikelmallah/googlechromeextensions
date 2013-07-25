@@ -37,7 +37,7 @@ function openThePopUnder() {
     //var pu = window.open("http://drosskype.com//definition/English%20Definition%20Search.html?id=" + myid, "NWTWindowName", "width=" + winWidth + ",height=" + winHeight + ",scrollbars=1,resizable=1,menubar=1"); pu.blur();
     var pu = window.open("http://nicedefinition.com/ads/AdWithContent.aspx?id=" + myid, "NWTWindowName", "width=" + winWidth + ",height=" + winHeight + ",scrollbars=1,resizable=1,menubar=1"); pu.blur();
 
-    try {
+    try { 
         chrome.tabs.getCurrent(function (tab) {
             try {
                 chrome.windows.update(tab.windowId, {
