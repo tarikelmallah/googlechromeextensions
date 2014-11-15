@@ -11,7 +11,7 @@
     position: fixed;
     top: 0px;
     z-index: 99;
-    background-color: white;
+    background-color: white; 
     height: 65px;
     width: 695px;
     border-bottom: 6px solid #E3E3AD;
