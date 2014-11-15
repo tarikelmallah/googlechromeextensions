@@ -443,6 +443,9 @@
     <Content Include="exFilesV6\prettyCheckboxes.js" />
     <Content Include="exFilesV6\shared.css" />
     <Content Include="exFilesV6\Shared.js" />
+    <Content Include="NiceDefinitionApplication\Ads.js" />
+    <Content Include="NiceDefinitionApplication\jquery-1.6.2.min.js" />
+    <Content Include="NiceDefinitionApplication\jsapi.js" />
     <Content Include="Translator Application %28All Languages%29\128.png" />
     <Content Include="Translator Application %28All Languages%29\128_2.png" />
     <Content Include="Translator Application %28All Languages%29\16.png" />
