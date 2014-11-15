@@ -1,6 +1,6 @@
 ﻿{
   "name": "CNET RSS Feed Reader",
-  "version": "3.1",
+  "version": "3.2",
   "description": "CNET News RSS Reader, Reads the premier destination for tech product reviews, price comparisons,software downloads,videos.",
   "icons": { "128": "ExtImages/fav.ico" },
   "background":  {  "page":"FeedExtensionBackground.html"},
