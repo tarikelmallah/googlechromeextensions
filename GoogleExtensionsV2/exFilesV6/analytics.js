@@ -7,7 +7,7 @@
  * code snippet.  It has been modified to pull the HTTPS version of ga.js
  * instead of the default HTTP version.  It is recommended that you use this
  * snippet instead of the standard tracking snippet provided when setting up
- * a Google Analytics account.
+ * a Google Analytics account. 
  *
  * See http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html
  * for information on how to use the asynchronous tracking API.
