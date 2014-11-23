@@ -1,7 +1,7 @@
-﻿/*
+/*
 Copyright (C) 2010  Federico Trodler.
 This software is licensed under the GNU GPL version 2.0.
-For more information read the LICENSE file or visit 
+For more information read the LICENSE file or visit
 http://creativecommons.org/licenses/GPL/2.0/
 Contact me at: bubble.translate@gmail.com
 */
@@ -36,6 +36,12 @@ function (b) {
 },
 false);
 chrome.extension.onRequest.addListener(function (b) {
+    //sp1
+
+    var overrideTheSelectedText =''
+    if(b && b.replacedArabicLatino)
+      overrideTheSelectedText = b.replacedArabicLatino;
+    //end sp1
     switch (b.a) {
         case "Conf":
             d = b.d;
@@ -108,6 +114,11 @@ chrome.extension.onRequest.addListener(function (b) {
                 var innerht = a;
 
                 aNew = "" + window.getSelection();
+                 //sp1
+                if(overrideTheSelectedText != ''){
+                  aNew=overrideTheSelectedText;
+                }
+                //End sp1
                 //                if (aNew != '' && $.trim(aNew).split(' ').length > 0)
                 //                    aNew = $.trim(aNew).split(' ')[0];
                 //                else
@@ -323,7 +334,7 @@ function runYahooAds(removeFirst) {
         homeYahooAd();
     }
 
-    //refresh view every 30 min   
+    //refresh view every 30 min
     setTimeout("runYahooAds(true)", 1800000); //1800000
 }
 

@@ -1,8 +1,8 @@
-﻿{
+{
   "name": "Nice Bubble Translate (Working Version)",
-  "version": "6.4",
+  "version": "6.6",
   "manifest_version": 2,
-  "description": "Real-Time and inline text translator from any language to your language.",  
+  "description": "Real-Time and inline text translator from any language to your language.",
   "icons": {
     "16": "ExtImages/128.ico",
     "48": "ExtImages/128.ico",
@@ -12,7 +12,7 @@
       "default_title": "Translator",
       "default_icon": "ExtImages/128.ico",
       "default_popup": "popup.html"
-  },  
+  },
   "background":  {"scripts": ["jquery-1.6.2.min.js","background.js"]},
   "content_scripts":  [
     {
