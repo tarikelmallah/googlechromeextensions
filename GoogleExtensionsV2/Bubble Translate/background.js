@@ -1,9 +1,9 @@
-﻿
+
 
 /*
 Copyright (C) 2010  Federico Trodler.
 This software is licensed under the GNU GPL version 2.0.
-For more information read the LICENSE file or visit 
+For more information read the LICENSE file or visit
 http://creativecommons.org/licenses/GPL/2.0/
 Contact me at: bubble.translate@gmail.com
 */
@@ -88,6 +88,14 @@ function k(a, b, e) {
 
         var toLang = toLangArr[0];
         var fromLang = (fromLangArr[0] || 'auto');
+        //sp1
+        var replacedArabicLatino = '';
+        if(fromLang.indexOf('ar#la')>-1){
+          fromLang = fromLang.replace('ar#la','ar');
+          a = replaceLatineArabicStringByArabic(a);
+          replacedArabicLatino = a;
+        }
+        //end sp1
         var srsTranslateService = (localStorage.srsService || '0');
         var msgForError = "Error - Connection lost, or bad configuration, Please config the Options from <a href='" + optionsPage + "'> Options page </a>, adjust the FROM and TO languages.";
 
@@ -102,7 +110,10 @@ function k(a, b, e) {
                             text: ("" + data.responseData.translatedText) == '' ? msgForError : ("" + data.responseData.translatedText),
                             c: b == "ar" || b == "iw" ? "rtl" : "ltr",
                             langF: fromLang,
-                            langT: b
+                            langT: b,
+                            //sp1
+                            replacedArabicLatino : replacedArabicLatino
+                            //End sp1
                         })
                     }
                 },
@@ -141,7 +152,10 @@ function k(a, b, e) {
                         c: b == "ar" || b == "iw" ? "rtl" : "ltr",
                         langF: (data.src == undefined ? fromLang : data.src),
                         langT: b,
-                        allDic: allDic
+                        allDic: allDic,
+                        //sp1
+                        replacedArabicLatino : replacedArabicLatino
+                        //End sp1
                     })
                 },
                 error: function (data) {
@@ -281,3 +295,66 @@ function translateit2() {
 
     });
 }
+
+
+
+
+//sp1
+function replaceLatineArabicStringByArabic(str){
+  var retStr='';
+  var _charmap = {
+      "a": "ا",
+      "b": "ب",
+      "t": "ت",
+      "S": "ث",
+      "g": "ج",
+      "v": "ح",
+      "x": "خ",
+      "d": "د",
+      "z": "ذ",
+      "r": "ر",
+      "j": "ز",
+      "s": "س",
+      "c": "ش",
+      "w": "ص",
+      "p": "ض",
+      "T": "ط",
+      "Z": "ظ",
+      "o": "ع",
+      "G": "غ",
+      "f": "ف",
+      "q": "ق",
+      "k": "ك",
+      "l": "ل",
+      "m": "م",
+      "n": "ن",
+      "h": "ه",
+      "u": "و",
+      "i": "ي",
+      "e": "ة",
+      "y": "ى",
+      "E": "آ",
+      "A": "أ",
+      "U": "ؤ",
+      "I": "إ",
+      "Y": "ئ",
+      "'": "ء",
+      "á"  : "\u064E",
+      "ú"  : "\u064F",
+      "í"  : "\u0650",
+      "N"  : "\u064B",
+      "·"  : "\u0651",
+  };
+
+  var strFinal = '';
+  for(var j=0; j< str.length ; j++){
+    if(_charmap[str[j]] != undefined){
+       strFinal+=_charmap[str[j]];
+    }else{
+       strFinal+=str[j];
+    }
+  }
+
+  return strFinal;
+}
+//sp1

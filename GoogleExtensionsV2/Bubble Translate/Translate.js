@@ -1,7 +1,7 @@
-﻿/*
+/*
 Copyright (C) 2010 Federico Trodler.
 This software is licensed under the GNU GPL version 2.0.
-For more information read the LICENSE file or visit 
+For more information read the LICENSE file or visit
 http://creativecommons.org/licenses/GPL/2.0/
 Contact me at: bubble.translate@gmail.com
 */
@@ -206,7 +206,7 @@ function runYahooAds(removeFirst) {
         homeYahooAd();
     }
 
-    //refresh view every 30 min   
+    //refresh view every 30 min
     setTimeout("runYahooAds(true)", 1800000); //1800000
 }
 
