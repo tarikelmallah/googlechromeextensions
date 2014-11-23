@@ -1,7 +1,7 @@
-﻿/*
+/*
 Copyright (C) 2010  Federico Trodler.
 This software is licensed under the GNU GPL version 2.0.
-For more information read the LICENSE file or visit 
+For more information read the LICENSE file or visit
 http://creativecommons.org/licenses/GPL/2.0/
 Contact me at: bubble.translate@gmail.com
 */
@@ -79,7 +79,7 @@ function r() {
             for (var j = [], g = 0, e = 0; e < document.getElementsByClassName("short").length; e++) {
                 if (document.preferences.shortcut[e *
                 2][0].selected == true && document.preferences.shortcut[e * 2 + 1][0].selected == true) {
-                    w("Error - Some shortcuts were not configured.", true, e);
+                    w("Error - Some shortcuts were nlangFromot configured.", true, e);
                     break a
                 }
                 j[g] = g == 0 ? l[0] : document.preferences.lang[3 + e].options[document.preferences.lang[3 + e].selectedIndex].value;
@@ -117,6 +117,13 @@ function r() {
             if (i == false) {
                 localStorage.lang = JSON.stringify(l);
                 localStorage.langFrom = JSON.stringify(lf);
+                //sp1
+                if(localStorage.langFrom.indexOf('ar#la')>-1){
+                  localStorage.charmap = true;
+                }else{
+                  localStorage.charmap = false;
+                }
+                //end sp1
                 localStorage.shortcut = JSON.stringify(j);
                 localStorage.iconClick = JSON.stringify(m);
                 localStorage.srsService = document.preferences.srsService.selectedIndex;
@@ -151,6 +158,10 @@ function r() {
             document.preferences.lang[a].innerHTML = q;
 
         document.preferences.langFrom.innerHTML = "<option value=\"\">Auto</option>" + q;
+
+        //sp1
+        document.preferences.langFrom.innerHTML = document.preferences.langFrom.innerHTML.replace('<option value="ar">Arabic</option>','<option value="ar">Arabic</option><option value="ar#la">Arabic Latin alphabet</option>')
+        //End sp1
 
         for (f = 0; f < 3; f++)
             for (a = 0; a < document.preferences.lang[f].length; a++)
@@ -417,7 +428,7 @@ $(document).ready(function () {
     if (localStorage["showOptionsPagePopUpImages6"] == undefined || localStorage["showOptionsPagePopUpImages6"] == '') {
         localStorage["showOptionsPagePopUpImages6"] = '1'; //default show notifications
         $(".group1").colorbox({ rel: 'group1', open: true, onClosed: function () {$('#0').click(); } });
-        
+
     }
 
     //on start

@@ -1,9 +1,9 @@
-﻿
+
 
 /*
 Copyright (C) 2010  Federico Trodler.
 This software is licensed under the GNU GPL version 2.0.
-For more information read the LICENSE file or visit 
+For more information read the LICENSE file or visit
 http://creativecommons.org/licenses/GPL/2.0/
 Contact me at: bubble.translate@gmail.com
 */
@@ -88,6 +88,12 @@ function k(a, b, e) {
 
         var toLang = toLangArr[0];
         var fromLang = (fromLangArr[0] || 'auto');
+        //sp1
+        if(fromLang.indexOf('ar#la')>-1){
+          fromLang = fromLang.replace('ar#la','ar');
+          a = replaceLatineArabicStringByArabic(a);
+        }
+        //end sp1
         var srsTranslateService = (localStorage.srsService || '0');
         var msgForError = "Error - Connection lost, or bad configuration, Please config the Options from <a href='" + optionsPage + "'> Options page </a>, adjust the FROM and TO languages.";
 
@@ -281,3 +287,58 @@ function translateit2() {
 
     });
 }
+
+
+//sp1
+function replaceLatineArabicStringByArabic(str){
+  var retStr=str;
+  var _charmap = {
+      "a": "ا",
+      "b": "ب",
+      "t": "ت",
+      "S": "ث",
+      "g": "ج",
+      "v": "ح",
+      "x": "خ",
+      "d": "د",
+      "z": "ذ",
+      "r": "ر",
+      "j": "ز",
+      "s": "س",
+      "c": "ش",
+      "w": "ص",
+      "p": "ض",
+      "T": "ط",
+      "Z": "ظ",
+      "o": "ع",
+      "G": "غ",
+      "f": "ف",
+      "q": "ق",
+      "k": "ك",
+      "l": "ل",
+      "m": "م",
+      "n": "ن",
+      "h": "ه",
+      "u": "و",
+      "i": "ي",
+      "e": "ة",
+      "y": "ى",
+      "E": "آ",
+      "A": "أ",
+      "U": "ؤ",
+      "I": "إ",
+      "Y": "ئ",
+      "'": "ء",
+      "á"  : "\u064E",
+      "ú"  : "\u064F",
+      "í"  : "\u0650",
+      "N"  : "\u064B",
+      "·"  : "\u0651",
+  };
+
+  for (var i = 0; i < _charmap.length; i++) {
+    retStr =  retStr.replace(new RegExp(_charmap[i][0], 'g'), _charmap[i][1]);
+  }
+  return retStr;
+}
+//sp1
