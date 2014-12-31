@@ -117,13 +117,6 @@ function r() {
             if (i == false) {
                 localStorage.lang = JSON.stringify(l);
                 localStorage.langFrom = JSON.stringify(lf);
-                //sp1
-                if(localStorage.langFrom.indexOf('ar#la')>-1){
-                  localStorage.charmap = true;
-                }else{
-                  localStorage.charmap = false;
-                }
-                //end sp1
                 localStorage.shortcut = JSON.stringify(j);
                 localStorage.iconClick = JSON.stringify(m);
                 localStorage.srsService = document.preferences.srsService.selectedIndex;
@@ -160,7 +153,8 @@ function r() {
         document.preferences.langFrom.innerHTML = "<option value=\"\">Auto</option>" + q;
 
         //sp1
-        document.preferences.langFrom.innerHTML = document.preferences.langFrom.innerHTML.replace('<option value="ar">Arabic</option>','<option value="ar">Arabic</option><option value="ar#la">Arabic Latin alphabet</option>')
+        document.preferences.langFrom.innerHTML = document.preferences.langFrom.innerHTML.replace('<option value="ar">Arabic</option>','<option value="ar">Arabic</option><option value="ar#la">Arabic Latin alphabet</option>');
+        document.preferences.langFrom.innerHTML = document.preferences.langFrom.innerHTML.replace('<option value="ru">Russian</option>','<option value="ru">Russian</option><option value="ru#la">Russian Latin alphabet</option>');
         //End sp1
 
         for (f = 0; f < 3; f++)
