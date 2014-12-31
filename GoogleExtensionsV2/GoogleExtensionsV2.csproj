@@ -14,10 +14,10 @@
     <RootNamespace>GoogleExtensionsV2</RootNamespace>
     <AssemblyName>GoogleExtensionsV2</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <SccProjectName>Svn</SccProjectName>
-    <SccLocalPath>Svn</SccLocalPath>
-    <SccAuxPath>Svn</SccAuxPath>
-    <SccProvider>SubversionScc</SccProvider>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -444,8 +444,6 @@
     <Content Include="exFilesV6\shared.css" />
     <Content Include="exFilesV6\Shared.js" />
     <Content Include="NiceDefinitionApplication\Ads.js" />
-    <Content Include="NiceDefinitionApplication\jquery-1.6.2.min.js" />
-    <Content Include="NiceDefinitionApplication\jsapi.js" />
     <Content Include="Translator Application %28All Languages%29\128.png" />
     <Content Include="Translator Application %28All Languages%29\128_2.png" />
     <Content Include="Translator Application %28All Languages%29\16.png" />
@@ -1699,7 +1697,6 @@
     <None Include="BBC\images\Thumbs.db" />
     <None Include="BBC\manifest.json" />
     <None Include="Bubble Translate\Copy of manifest.json" />
-    <None Include="Bubble Translate\key.pem" />
     <None Include="Bubble Translate\manifest.json" />
     <None Include="CNET\manifest.json" />
     <None Include="CNN\images\Thumbs.db" />

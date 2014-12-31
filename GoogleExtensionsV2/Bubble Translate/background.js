@@ -92,7 +92,11 @@ function k(a, b, e) {
         var replacedArabicLatino = '';
         if(fromLang.indexOf('ar#la')>-1){
           fromLang = fromLang.replace('ar#la','ar');
-          a = replaceLatineArabicStringByArabic(a);
+          a = replaceLatineStringByLang(a,'ar#la');
+          replacedArabicLatino = a;
+        }else if (fromLang.indexOf('ru#la')>-1){
+          fromLang = fromLang.replace('ru#la','ru');
+          a = replaceLatineStringByLang(a,'ru#la');
           replacedArabicLatino = a;
         }
         //end sp1
@@ -300,9 +304,9 @@ function translateit2() {
 
 
 //sp1
-function replaceLatineArabicStringByArabic(str){
+function replaceLatineStringByLang(str, lang){
   var retStr='';
-  var _charmap = {
+  var _charmap_ar = {
       "a": "ا",
       "b": "ب",
       "t": "ت",
@@ -315,8 +319,8 @@ function replaceLatineArabicStringByArabic(str){
       "r": "ر",
       "j": "ز",
       "s": "س",
-      "c": "ش",
-      "w": "ص",
+      "w": "ش",
+      "c": "ص",
       "p": "ض",
       "T": "ط",
       "Z": "ظ",
@@ -346,10 +350,88 @@ function replaceLatineArabicStringByArabic(str){
       "·"  : "\u0651",
   };
 
+  var _charmap_ru = {
+     "ó" : "ё",
+     "ç" : "ц",
+     "a" : "а",
+     "b" : "б",
+     "w" : "ж",
+     "g" : "г",
+     "v" : "в",
+     "x" : "х",
+     "d" : "д",
+     "z" : "з",
+     "r" : "р",
+     "j" : "й",
+     "s" : "с",
+     "c" : "ч",
+     "p" : "п",
+     "t" : "т",
+     "o" : "о",
+     "f" : "ф",
+     "q" : "я",
+     "k" : "к",
+     "l" : "л",
+     "m" : "м",
+     "n" : "н",
+     "h" : "ш",
+     "u" : "у",
+     "i" : "и",
+     "e" : "е",
+     "y" : "ы",
+     "é" : "э",
+     "ú" : "ю",
+     "º" : "ъ",
+     "'" : "ь",
+     "^" : "Ъ",
+     "¨" : "Ь",
+     "ý" : "щ",
+
+     "Ó" : "Ё",
+     "Ç" : "Ц",
+
+     "A" : "А",
+     "B" : "Б",
+     "W" : "Ж",
+     "G" : "Г",
+     "V" : "В",
+     "X" : "Х",
+     "D" : "Д",
+     "Z" : "З",
+     "R" : "Р",
+
+     "J" : "Й",
+     "S" : "С",
+     "C" : "Ч",
+     "P" : "П",
+     "T" : "Т",
+     "O" : "О",
+     "F" : "Ф",
+     "Q" : "Я",
+     "K" : "К",
+     "L" : "Л",
+     "M" : "М",
+     "N" : "Н",
+     "H" : "Ш",
+     "U" : "У",
+     "I" : "И",
+     "E" : "Е",
+     "Y" : "Ы",
+     "É" : "Э",
+     "Ú" : "Ю",
+     "Ý" : "Щ"
+  };
+
+  var langReplace = _charmap_ar; //default arabic
+  if(lang == 'ar#la')
+    langReplace = _charmap_ar;
+  else if (lang == 'ru#la')
+    langReplace = _charmap_ru;
+
   var strFinal = '';
   for(var j=0; j< str.length ; j++){
-    if(_charmap[str[j]] != undefined){
-       strFinal+=_charmap[str[j]];
+    if(langReplace[str[j]] != undefined){
+       strFinal+=langReplace[str[j]];
     }else{
        strFinal+=str[j];
     }
