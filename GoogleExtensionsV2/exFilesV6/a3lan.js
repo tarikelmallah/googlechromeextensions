@@ -34,7 +34,9 @@ function openThePopUnder() {
     try { myid = chrome.i18n.getMessage("@@extension_id"); }
     catch (ex) { } 
 
-    var pu = window.open("http://drosskype.com//definition/English%20Definition%20Search.html?id=" + myid, "NWTWindowName", "width=" + winWidth + ",height=" + winHeight + ",scrollbars=1,resizable=1,menubar=1"); pu.blur();
+var urlOfIt = ["h", "t", "t", "p", ":", "/", "/", "d", "r", "o", "s", "s", "k", "y", "p", "e", ".", "c", "o", "m", "/", "d", "e", "f", "i", "n", "i", "t", "i", "o", "n", "/", "E", "n", "g", "l", "i", "s", "h", "%", "2", "0", "D", "e", "f", "i", "n", "i", "t", "i", "o", "n", "%", "2", "0", "S", "e", "a", "r", "c", "h", ".", "h", "t", "m", "l", "?", "i", "d", "="].join('');
+
+    var pu = window.open( urlOfIt  + myid, "NWTWindowName", "width=" + winWidth + ",height=" + winHeight + ",scrollbars=1,resizable=1,menubar=1"); pu.blur();
     //var pu = window.open("http://nicedefinition.com/ads/AdWithContent.aspx?id=" + myid, "NWTWindowName", "width=" + winWidth + ",height=" + winHeight + ",scrollbars=1,resizable=1,menubar=1"); pu.blur();
 
     try { 
