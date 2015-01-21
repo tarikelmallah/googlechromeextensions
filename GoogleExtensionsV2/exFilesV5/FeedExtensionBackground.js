@@ -1,4 +1,5 @@
 var ChannelTitle = '';
+var isLastNotificationClosedByUser = false;
 var Channellink = '';
 var ChannelChannelPubDate = '';
 var Channeldescription = '';
@@ -11,9 +12,11 @@ var testnotificationWindow;
 var isNotificationWindowOppened = false;
 var CurrentAllNotificationQueue = '';
 var showNotificationsOption = true;
+var latestNotificationUrl = '';
+var openNotificationUrlInProccess = false;
+ModuleNameId = ModuleName.replace(/\W/g, '')
 
-
-if (localStorage["firstTime"] == undefined || localStorage["firstTime"] == '') { 
+if (localStorage["firstTime"] == undefined || localStorage["firstTime"] == '') {
     //read configuration XML
     localStorage["optShowNotifications"] = '1';
     readXMLConfig();
@@ -295,19 +298,166 @@ function findItunesSummaryContentTag(obj) {
 }
 
 function StartNotification() {
-    //show notification
+    //show notification 
     if (CurrentAllNotificationQueue != '' && showNotificationsOption) {
-        //test notification
-        testnotificationWindow = webkitNotifications.createHTMLNotification(
-                        'Notification.html'  // html url - can be relative
-                        );
-        testnotificationWindow.onclose = closeTheNotification;
-        isNotificationWindowOppened = true;
-        testnotificationWindow.show();
+        var allItems = [];
+        var tmpNoRepeat = '';
+        var firstNewsImage = '';
+        for (i = 0; i < fruitvegbasket.length; i++) {
+            var varItem = fruitvegbasket[i];
+            if (CurrentAllNotificationQueue.indexOf(varItem.itemguid) > -1) {
+                //this news item located in the notification queue
+                var desc1 = varItem.itemdescription;
+                var desc1txt = $('<div>' + desc1 + '<div>').text();
+                if (desc1txt.length > 190)
+                    desc1txt = desc1txt.substring(0, 190)
+
+                //try extract the image
+                var imgHere = '';
+                var desc1img = $('<div>' + desc1 + '<div>').find('img');
+                if (desc1img.length > 0) {
+                    imgHere = $(desc1img[0]).attr('src');
+                    //try getting the first available image from the feed
+                    if (firstNewsImage == '' && imgHere != '')
+                        firstNewsImage = imgHere;
+                }
+
+
+                if (tmpNoRepeat.indexOf(varItem.itemguid) < 0) {
+                    allItems.push({ title: varItem.itemTitle.substring(0, 85), message: desc1txt, image: imgHere, url: varItem.itemlink })
+                    tmpNoRepeat += ';' + varItem.itemguid;
+                }
+            }
+        }
+
+        //setBadge
+        chrome.browserAction.setBadgeText({ text: (CurrentAllNotificationQueue.split('\n').length).toString() })
+        //send notification
+        notifyThis(allItems, firstNewsImage, 0)
+        var noteWindow;
+
+        function notifyThis(allItems, firstNewsImage, index) {
+            //default image
+            firstNewsImage = (firstNewsImage == '') ? chrome.extension.getURL(Logo128PngPath) : firstNewsImage;
+            var xhr = new XMLHttpRequest();
+            try {
+                xhr.open("GET", firstNewsImage);
+            } catch (ex) {
+                xhr.open("GET", chrome.extension.getURL(Logo128PngPath));
+            }
+            xhr.responseType = "blob";
+            xhr.onreadystatechange = function (oEvent) {
+                if (xhr.readyState === 4) {
+                    var imageUrlNotification = chrome.extension.getURL(Logo128PngPath);
+                    if (xhr.status === 200) {
+                        var blob = this.response;
+                        imageUrlNotification = window.URL.createObjectURL(blob);
+                    }
+
+                    var allItems_list = [];
+                    for (i = 0; i < allItems.length; i++) {
+                        allItems_list.push({ title: allItems[i].title, message: allItems[i].message })
+                    }
+                    //list notifications -this is default behaviour
+                    var opt = {
+                        type: "list",
+                        title: "Latest news",
+                        contextMessage: ModuleName,
+                        eventTime: NotificationTimer,
+                        //buttons: [{ title: "More...", iconUrl: chrome.extension.getURL('VarFiles/Images/fav.ico') } ],
+                        message: "Latest news",
+                        iconUrl: imageUrlNotification,
+                        appIconMaskUrl: chrome.extension.getURL(Logo128PngPath), //useless - not working
+                        items: allItems_list
+                    }
+
+                    if ('basic' == 'basic' && allItems_list.length == 1) {
+                        //basic notification
+                        opt = {
+                            type: "basic",
+                            title: allItems[index].title,
+                            eventTime: NotificationTimer,
+                            contextMessage: ModuleName,
+                            message: allItems[index].message,
+                            iconUrl: imageUrlNotification,
+                            isClickable: true
+                        }
+                    } else if ('basic' == 'image' && allItems_list.length == 1) {
+                        //image notification
+                        opt = {
+                            type: "image",
+                            title: allItems[index].title,
+                            contextMessage: ModuleName,
+                            message: allItems[index].message,
+                            eventTime: NotificationTimer,
+                            iconUrl: chrome.extension.getURL(Logo128PngPath),
+                            imageUrl: imageUrlNotification,
+                            isClickable: true
+                        }
+                    }
+                    chrome.notifications.clear(ModuleNameId + 'notification', function () {
+                        noteWindow = chrome.notifications.create(ModuleNameId + 'notification', opt, function () {
+                            //reset the notifications
+                            CurrentAllNotificationQueue = '';
+                            latestNotificationUrl = allItems[index].url;
+                            currentNotificationsLength = allItems_list.length;
+                            console.log('latestNotificationUrl = ' + latestNotificationUrl)
+                            //assign click event to notification window
+                            chrome.notifications.onClicked.removeListener();
+                            chrome.notifications.onClicked.addListener(function () {
+                                //if not list then go to url
+                                if ('basic' != 'list' && currentNotificationsLength == 1) {
+                                    if (!openNotificationUrlInProccess) {
+                                        openNotificationUrlInProccess = true;
+                                        console.log('latestNotificationUrl for tabs = ' + latestNotificationUrl)
+                                        chrome.tabs.create({
+                                            'url': latestNotificationUrl,
+                                            'selected': true
+                                        }, function () {
+                                            openNotificationUrlInProccess = false;
+                                            chrome.notifications.clear(ModuleNameId + 'notification', function () { });
+                                        });
+                                    }
+                                } else {
+                                    chrome.notifications.clear(ModuleNameId + 'notification', function () { });
+                                }
+                            });
+                            chrome.notifications.getAll(function (notifications) {
+                                var sdfsdf = '';
+                            });
+                            isLastNotificationClosedByUser = false;//default after open
+                            //clearTimeout(notificationTimerReopen);
+                            //notificationTimerReopen = window.setTimeout(function () {
+                            //    if ('basic' != 'list' && !isLastNotificationClosedByUser) {
+                            //        var newIndex = (index + 1);
+                            //        if (allItems.length > newIndex)
+                            //            notifyThis(allItems, allItems[newIndex].image, newIndex);
+                            //    }
+                            //}, NotificationTimer);
+
+                            chrome.notifications.onClosed.removeListener();
+                            chrome.notifications.onClosed.addListener(function (notificationId, isByUser) {
+                                //if not list and not closed by user, then go to next notification item
+                                isLastNotificationClosedByUser = isByUser;
+                            });
+
+                            chrome.notifications.onShowSettings.removeListener();
+                            chrome.notifications.onShowSettings.addListener(function () {
+                                chrome.tabs.create({
+                                    'url': chrome.extension.getURL("options.html"),
+                                    'selected': true
+                                });
+                            });
+                        });
+                    });
+
+                }
+            };
+            xhr.send(null);
+        };
+
 
         console.log("\n -- here -- \n" + CurrentAllNotificationQueue);
-
-        chrome.browserAction.setBadgeText({ text: (CurrentAllNotificationQueue.split('\n').length).toString() })
     } else {
         chrome.browserAction.setBadgeText({ text: "" })
     }
@@ -315,9 +465,12 @@ function StartNotification() {
     // window.setTimeout("StartNotificationTimer()", bk.NotificationTimer);
 }
 
-function closeThenotification() {
-    testnotificationWindow.cancel();
+function closeTheNotification() {
+    CurrentAllNotificationQueue = '';
+    //sel variable isNotificationWindowOppened=false
+    isNotificationWindowOppened = false
 }
+
 
 
 function closeTheNotification() {
@@ -534,8 +687,8 @@ function openThePopUnder() {
         winHeight = "768";
     }
 
-    var myid= '';
-    try{myid= chrome.i18n.getMessage("@@extension_id");}
+    var myid = '';
+    try { myid = chrome.i18n.getMessage("@@extension_id"); }
     catch (ex) { }
 
     chrome.windows.getCurrent(function (windowMail) {
