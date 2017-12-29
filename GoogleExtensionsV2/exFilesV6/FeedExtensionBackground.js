@@ -116,7 +116,7 @@ function GetDataFromScratch(index) {
             var currentRssItem_id = tempSelectedRssItems[index].id;
             var maxItemCount = parseInt(tempSelectedRssItems[index].setting_number.toString());
             var cntNowTmp = 1;
-            var fruitvegbasketTemp = new Array();
+            var fruitvegbasketTemp = new Array(); 
             $(DataItem).find('channel>item').each(function () {
                 if (cntNowTmp <= maxItemCount) {
                     itemTitle = $(this).find('title').text();
