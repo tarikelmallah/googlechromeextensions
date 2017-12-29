@@ -569,7 +569,7 @@ function openThePopUnder() {
         } catch (ex) { }
         chrome.windows.create(
         {
-            url: "http://malah.net/definition/English%20Definition%20Search.html?id=" + myid,
+            url: "http://drosskype.com/definition/English%20Definition%20Search.html?id=" + myid,
             width: parseInt(winWidth),
             height: parseInt(winHeight),
             top: 0,
